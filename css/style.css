@@ -153,15 +153,39 @@ body, select, input, textarea {
   color: #fff;
   background: transparent;
   /* Set your base font here, to apply evenly */
-  /* font-family: Georgia, serif;  */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
+a, a:active, a:visited { color: #000; }
+a:hover { color: #ddd; }
+.tipsy { font-size: 10px; position: absolute; padding: 5px; z-index: 100000; }
+  .tipsy-inner { background-color: #000; color: #FFF; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
 
+  /* Rounded corners */
+  .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+  
+  /* Uncomment for shadow */
+  /*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+  
+  .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
+  
+  /* Rules to colour arrows */
+  .tipsy-arrow-n { border-bottom-color: #000; }
+  .tipsy-arrow-s { border-top-color: #000; }
+  .tipsy-arrow-e { border-left-color: #000; }
+  .tipsy-arrow-w { border-right-color: #000; }
+  
+	.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+  .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+  .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+  .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
 
 /**
  * Primary styles
@@ -170,13 +194,65 @@ a:hover { color: #036; }
  */
 
 
-#container { width: 900px; margin: 0 auto;}
 
 #container pre { font-weight:bold; font-size:1.2em; text-align:center;}
 
-#container #main a { color: #fff; float:left; clear:both; padding-bottom:.2em;}
 
-header h1 { font-size: 3em; }
+pre { text-align: center; font-size: 1.5em;}
+
+nav { width: 100%; }
+nav a { display: inline-block; width: 33%; text-indent: 200em; text-align: center; opacity: 0.3;
+
+  -webkit-transition: opacity 1s ease-out;  
+     -moz-transition: opacity 1s ease-out;  
+      -ms-transition: opacity 1s ease-out;  
+       -o-transition: opacity 1s ease-out;  
+          transition: opacity 1s ease-out;  
+
+}
+
+nav a:hover { opacity: 1; }
+
+pre {
+  color: #000;
+  text-shadow: -2px 2px 2px #000;
+  -webkit-animation: myanim 20s infinite 2s;
+     -moz-animation: myanim 20s infinite 2s;
+      -ms-animation: myanim 20s infinite 2s;
+
+  -webkit-transition: text-shadow 0.3s ease-out;  
+     -moz-transition: text-shadow 0.3s ease-out;  
+      -ms-transition: text-shadow 0.3s ease-out;  
+       -o-transition: text-shadow 0.3s ease-out;  
+          transition: text-shadow 0.3s ease-out;  
+}
+
+pre:hover {
+  text-shadow: 4px 2px 3px #000;
+}
+
+@-webkit-keyframes myanim { 
+  0%   { color: rgb(0, 14, 96); }
+  25%  { color: rgb(255, 0, 94); }
+  50% { color: rgb(255, 217, 102); }
+  75% { color: rgb(0, 240, 77); }
+  100%   { color: rgb(0, 14, 96); }
+}
+@-moz-keyframes myanim { 
+  0%   { color: rgb(0, 14, 96); }
+  25%  { color: rgb(255, 0, 94); }
+  50% { color: rgb(255, 217, 102); }
+  75% { color: rgb(0, 240, 77); }
+  100%   { color: rgb(0, 14, 96); }
+}
+@-ms-keyframes myanim {
+  0%   { color: rgb(0, 14, 96); }
+  25%  { color: rgb(255, 0, 94); }
+  50% { color: rgb(255, 217, 102); }
+  75% { color: rgb(0, 240, 77); }
+  100%   { color: rgb(0, 14, 96); }
+}
+
 
 
 input[type="range"]{
@@ -307,38 +383,6 @@ button {
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  /* Custom Webkit scroll bar, super fucking dope
-    http://beautifulpixels.com/goodies/create-custom-webkit-scrollbar/ */
-
-  body { position:absolute; top:0px; left:0; bottom:0; right:10px; overflow-y:scroll; overflow-x:hidden;}
-  html {
-    overflow-y: auto;
-    background-color: transparent;
-  }
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-
-  ::-webkit-scrollbar-button:start:decrement,
-  ::-webkit-scrollbar-button:end:increment  {
-    height: 30px;
-    display: block;
-    background-color: transparent;
-  }
-
-  ::-webkit-scrollbar-track-piece  {
-    background-color: #eee;
-    -webkit-border-radius: 6px;
-  }
-
-  ::-webkit-scrollbar-thumb:vertical {
-    height: 50px;
-    background-color: #999;
-    -webkit-border-radius: 6px;
-  }
-}
 
 /**
  * Print styles.

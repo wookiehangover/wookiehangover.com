@@ -1,8 +1,4 @@
-/* Author: Sam Breed for Quick Left 2011
-
-*/
-
-$(function(){
+jQuery(function($){
   var pause = false,
       timeout = $("#timeout");
 
@@ -70,6 +66,14 @@ $(function(){
       requestAnimFrame( animate );
     }
   });
+
+
+  $('#main a').each(function(i, elem) {
+    var el = $(this);
+    el.qrcode( el.attr('href') );
+  });
+
+  $('#main a').tipsy();
 
 });
 
