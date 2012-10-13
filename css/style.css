@@ -1,4 +1,4 @@
-/**
+/*
  * HTML5 ✰ Boilerplate
  *
  * style.css contains a reset, font normalization and some base styles.
@@ -75,9 +75,6 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
  * Minimal base styles.
  */
 
-/* Always force a scrollbar in non-IE */
-html { overflow-y: scroll; }
-
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
@@ -130,8 +127,8 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none;}
+::selection { background: #FF5E99; color:#fff; text-shadow: none;}
 
 /* j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; }
@@ -160,48 +157,52 @@ body, select, input, textarea {
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 a, a:active, a:visited { color: #000; }
-a:hover { color: #ddd; }
-.tipsy { font-size: 10px; position: absolute; padding: 5px; z-index: 100000; }
-  .tipsy-inner { background-color: #000; color: #FFF; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
+a:hover {
+  /* color: #ddd; */
+  -webkit-animation: myanim 8s infinite;
+     -moz-animation: myanim 8s infinite;
+      -ms-animation: myanim 8s infinite;
+}
 
-  /* Rounded corners */
-  .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
-  
-  /* Uncomment for shadow */
-  /*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
-  
-  .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #000; }
-  
-  /* Rules to colour arrows */
-  .tipsy-arrow-n { border-bottom-color: #000; }
-  .tipsy-arrow-s { border-top-color: #000; }
-  .tipsy-arrow-e { border-left-color: #000; }
-  .tipsy-arrow-w { border-right-color: #000; }
-  
-  .tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
-    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
-    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
-  .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
-    .tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
-    .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
-  .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
-  .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
+body {
+  position: relative;
+}
 
-/**
- * Primary styles
- *
- * Author: 
- */
+body.show-blog {
+  top: -1200px;
+  left: -1600px;
+-webkit-transition: all 2s ease-in-out;
+   -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+     -o-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out;
+}
 
 
 
-#container pre { font-weight:bold; font-size:1.2em; text-align:center;}
+.show-blog section {
+  display: block !important;
+}
 
+#blog {
+  display: none;
+  position: absolute;
+  top: 1200px;
+  left: 1600px;
+  width: 60%;
+  max-width: 488px;
+  margin-left:10%;
+  padding: 1em;
+  background: rgba(255,255,255,0.6);
+  color: #444;
+}
+
+/* #container pre { font-weight:bold; font-size:1.2em; text-align:center;} */
 
 pre { text-align: center; font-size: 1.5em;}
 
 nav { width: 80%; margin: 4em auto; }
-nav a { display: inline-block; width: 33%; font-size: 3em; font-weight: bold; text-decoration: none; text-align: center; opacity: 0.3;
+nav a { display: inline-block; width: 24%; font-size: 3em; font-weight: bold; text-decoration: none; text-align: center; opacity: 0.3;
 
   -webkit-transition: opacity 1s ease-out;  
      -moz-transition: opacity 1s ease-out;  
@@ -252,7 +253,6 @@ pre:hover {
   75% { color: rgb(0, 240, 77); }
   100%   { color: rgb(0, 14, 96); }
 }
-
 
 
 input[type="range"]{

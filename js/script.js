@@ -52,7 +52,7 @@ jQuery(function($){
   $(window).resize(function(){
     my_canvas.resize( $(window).width(), $(window).height() );
     var h = ($(window).height() - 500) / 2;
-    $('body').animate({ marginTop: h +'px' }, 2000);
+    $('#container').animate({ marginTop: h +'px' }, 2000);
   }).trigger('resize');
 
   $('#pause').click(function(e){
@@ -69,12 +69,13 @@ jQuery(function($){
     }
   });
 
-//   $('#main a').each(function(i, elem) {
-//     var el = $(this);
-//     el.qrcode( el.attr('href') );
-//   });
+  $('#container').on('click','[data-action]', function(e){
+    e.preventDefault();
 
-  // $('#main a').tipsy();
+    var action = $(e.currentTarget).data('action');
+
+    $('body').addClass('show-'+ action);
+  });
 
 });
 
