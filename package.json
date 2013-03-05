@@ -13,7 +13,7 @@
   "author": "wookiehangover",
   "license": "BSD",
   "dependencies": {
-    "ramrod": "0.0.6",
+    "ramrod": "~0.0.6",
     "ecstatic": "~0.1.6",
     "forever": "~0.10.0"
   }

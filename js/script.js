@@ -1,6 +1,6 @@
 jQuery(function($){
-  var pause = false,
-      timeout = $("#timeout");
+  var pause = false;
+  var speed = 200;
 
   window.my_canvas = ql_canvas({
     width: $(window).width(),
@@ -10,7 +10,7 @@ jQuery(function($){
       var red, blue, green,
 
           x = 60,
-          y = x,
+          y = 60,
 
           width = settings.width / x,
           height = settings.height / y,
@@ -37,12 +37,10 @@ jQuery(function($){
   function animate() {
     if( pause ) return;
 
-    var delayTime = 200;
-
     my_canvas.init();
 
-    if (delayTime)
-      return setTimeout( function(){ requestAnimFrame( animate ); }, delayTime);
+    if (speed)
+      return setTimeout( function(){ requestAnimFrame( animate ); }, speed);
 
     requestAnimFrame( animate );
   }
@@ -55,19 +53,16 @@ jQuery(function($){
     $('#container').animate({ marginTop: h +'px' }, 2000);
   }).trigger('resize');
 
-  $('#pause').click(function(e){
-    e.preventDefault();
-    var $this = $(this);
 
-    pause = !pause;
+  function stop(e){
+    speed = 2000;
+  }
 
-    if( $this.text() == "Stop" ){
-      $this.text('Start');
-    } else {
-      $this.text('Stop');
-      requestAnimFrame( animate );
-    }
-  });
+  function start(e){
+    speed = 200;
+  }
+
+  $('nav').on('mouseover', 'a', stop).on('mouseout', 'a', start);
 
   $('#container').on('click','[data-action]', function(e){
     e.preventDefault();

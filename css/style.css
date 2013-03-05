@@ -159,9 +159,9 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 a, a:active, a:visited { color: #000; }
 a:hover {
   /* color: #ddd; */
-  -webkit-animation: myanim 8s infinite;
-     -moz-animation: myanim 8s infinite;
-      -ms-animation: myanim 8s infinite;
+  -webkit-animation: rainbows 8s infinite;
+     -moz-animation: rainbows 8s infinite;
+      -ms-animation: rainbows 8s infinite;
 }
 
 body {
@@ -197,9 +197,11 @@ body.show-blog {
   color: #444;
 }
 
-/* #container pre { font-weight:bold; font-size:1.2em; text-align:center;} */
+pre { text-align: center; font-size: 1.5em; }
 
-pre { text-align: center; font-size: 1.5em;}
+#container, canvas {
+  -webkit-transform: translateZ(0);
+}
 
 nav { width: 80%; margin: 4em auto; }
 nav a { display: inline-block; width: 24%; font-size: 3em; font-weight: bold; text-decoration: none; text-align: center; opacity: 0.3;
@@ -217,9 +219,9 @@ nav a:hover { opacity: 1; }
 pre {
   color: #000;
   text-shadow: -2px 2px 2px #000;
-  -webkit-animation: myanim 20s infinite 2s;
-     -moz-animation: myanim 20s infinite 2s;
-      -ms-animation: myanim 20s infinite 2s;
+  -webkit-animation: rainbows 20s infinite 2s;
+     -moz-animation: rainbows 20s infinite 2s;
+      -ms-animation: rainbows 20s infinite 2s;
 
   -webkit-transition: text-shadow 0.3s ease-out;  
      -moz-transition: text-shadow 0.3s ease-out;  
@@ -232,100 +234,71 @@ pre:hover {
   text-shadow: 4px 2px 3px #000;
 }
 
-@-webkit-keyframes myanim { 
-  0%   { color: rgb(0, 14, 96); }
-  25%  { color: rgb(255, 0, 94); }
-  50% { color: rgb(255, 217, 102); }
-  75% { color: rgb(0, 240, 77); }
-  100%   { color: rgb(0, 14, 96); }
-}
-@-moz-keyframes myanim { 
-  0%   { color: rgb(0, 14, 96); }
-  25%  { color: rgb(255, 0, 94); }
-  50% { color: rgb(255, 217, 102); }
-  75% { color: rgb(0, 240, 77); }
-  100%   { color: rgb(0, 14, 96); }
-}
-@-ms-keyframes myanim {
-  0%   { color: rgb(0, 14, 96); }
-  25%  { color: rgb(255, 0, 94); }
-  50% { color: rgb(255, 217, 102); }
-  75% { color: rgb(0, 240, 77); }
-  100%   { color: rgb(0, 14, 96); }
+
+
+@media only screen and (min-width: 480px) {
+  
+
 }
 
-
-input[type="range"]{
-  float:left;
-  clear:both;
-  margin-top:1em;
-  background: #ffffff; /* old browsers */
-  border:1px solid #333;
-  padding: 10px 8px 10px;
-  width:auto;
-  font-size:2em;
-  line-height:2em;
-  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* firefox */ 
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* webkit */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* ie */
-  width: 3em;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance:none !important;
-  width:1em;
-  height:1em;
-  -webkit-border-radius: 1em;
-  -webkit-box-shadow: 4px 4px 4px #ddd inset;
-  background: #ffffff; /* old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* firefox */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* webkit */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* ie */
-}
-
-label { margin-top:2em; float:left; clear:both; }
-
-p { float:left; padding: 1em 0;}
-
-button { 
-  float:left;
-  clear:both;
-  margin-top:2em;
-  border: 1px solid #555;
-  padding: 0.5em;
-  font-size: 15px;
-  line-height: 1.2em;
-  width: auto;
-  background: #fff;
-  background: #ffffff; /* old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* firefox */
-
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* webkit */
-
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* ie */
-    
-  -webkit-appearance: none;
-  -webkit-border-radius: 0.5em;
-     -moz-border-radius: 0.5em;
-         -border-radius: 0.5em;
-}
-
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  input[type="range"] {
-    -webkit-appearance:none !important;
-    border: 1px solid #000;
-    -webkit-border-radius: 1em;
-    padding:0;
-    font-size:12px;
-    line-height:12px;
-    width:900px;
-    height:4px;
-    border: 1px solid #000;
-    background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#eee),color-stop(1,#eaeaea));
+@media only screen and (max-width: 1210px) {
+  pre {
+    width: 100%;
+    font-size: 1.2em;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
- 
+
+@media only screen and (max-width: 1000px) {
+  pre {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  pre {
+    font-size: 0.6em;
+    float: left;
+    clear: both;
+    text-align: left;
+  }
+
+  nav a {
+    float: left;
+    clear: both;
+    text-align: left;
+  }
+}
+
+
+@-webkit-keyframes rainbows { 
+  0%   { color: rgb(0, 14, 96); }
+  25%  { color: rgb(255, 0, 94); }
+  50% { color: rgb(255, 217, 102); }
+  75% { color: rgb(0, 240, 77); }
+  100%   { color: rgb(0, 14, 96); }
+}
+@-moz-keyframes rainbows { 
+  0%   { color: rgb(0, 14, 96); }
+  25%  { color: rgb(255, 0, 94); }
+  50% { color: rgb(255, 217, 102); }
+  75% { color: rgb(0, 240, 77); }
+  100%   { color: rgb(0, 14, 96); }
+}
+@-ms-keyframes rainbows {
+  0%   { color: rgb(0, 14, 96); }
+  25%  { color: rgb(255, 0, 94); }
+  50% { color: rgb(255, 217, 102); }
+  75% { color: rgb(0, 240, 77); }
+  100%   { color: rgb(0, 14, 96); }
+}
+
+
+
+p { float:left; padding: 1em 0; }
+
+
 
 
 /**
