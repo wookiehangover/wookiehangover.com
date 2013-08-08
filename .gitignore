@@ -31,3 +31,6 @@ config.a*
 config.d*
 bin/*.pid
 log/*.log
+
+js/vendor
+dist/

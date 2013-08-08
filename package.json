@@ -13,8 +13,18 @@
   "author": "wookiehangover",
   "license": "BSD",
   "dependencies": {
-    "ramrod": "~0.0.6",
+    "ramrod": "~0.0.8",
     "ecstatic": "~0.1.6",
-    "forever": "~0.10.0"
+    "forever": "~0.10.0",
+    "es6-module-transpiler": "~0.2.0"
+  },
+  "devDependencies": {
+    "grunt-es6-module-transpiler": "~0.4.1",
+    "grunt-cli": "~0.1.9",
+    "grunt": "~0.4.1",
+    "grunt-bbb-requirejs": "~0.1.0-alpha.5",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.1"
   }
 }
