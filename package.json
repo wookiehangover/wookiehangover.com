@@ -16,7 +16,8 @@
     "ramrod": "~0.0.8",
     "ecstatic": "~0.1.6",
     "forever": "~0.10.0",
-    "es6-module-transpiler": "~0.2.0"
+    "es6-module-transpiler": "~0.2.0",
+    "requirejs": "~2.1.8"
   },
   "devDependencies": {
     "grunt-es6-module-transpiler": "~0.4.1",

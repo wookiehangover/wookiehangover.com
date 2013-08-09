@@ -164,13 +164,13 @@ a:hover {
       -ms-animation: rainbows 8s infinite;
 }
 
-body {
-  position: relative;
+html {
+  overflow: hidden;
 }
 
-body.show-blog {
-  top: -1200px;
-  left: -1600px;
+body {
+  position: relative;
+  width: 100%;
 -webkit-transition: all 2s ease-in-out;
    -moz-transition: all 2s ease-in-out;
     -ms-transition: all 2s ease-in-out;
@@ -178,14 +178,13 @@ body.show-blog {
         transition: all 2s ease-in-out;
 }
 
-
-
-.show-blog section {
-  display: block !important;
+body.show-blog {
+  top: -1200px;
+  left: -1600px;
 }
 
+
 #blog {
-  display: none;
   position: absolute;
   top: 1200px;
   left: 1600px;

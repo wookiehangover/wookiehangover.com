@@ -4,4 +4,5 @@ import raf from "jquery-raf";
 
 $(function(){
   window.wookie = new Wookie();
+  Backbone.history.start();
 });
