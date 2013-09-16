@@ -171,6 +171,9 @@ html {
 body {
   position: relative;
   width: 100%;
+}
+
+.loaded body {
 -webkit-transition: all 2s ease-in-out;
    -moz-transition: all 2s ease-in-out;
     -ms-transition: all 2s ease-in-out;

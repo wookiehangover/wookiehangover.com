@@ -11,5 +11,6 @@
     "pid",
     "logfile",
     "uptime"
-  ]
+  ],
+  "logstream": false
 }

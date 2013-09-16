@@ -15,7 +15,7 @@
   "dependencies": {
     "ramrod": "~0.0.8",
     "ecstatic": "~0.1.6",
-    "forever": "~0.10.0",
+    "forever": "~0.10.8",
     "es6-module-transpiler": "~0.2.0",
     "requirejs": "~2.1.8"
   },

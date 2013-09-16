@@ -20,6 +20,9 @@ var Wookie = Backbone.View.extend({
     };
 
     this.render();
+    setTimeout(function(){
+      $('html').addClass('loaded');
+    }, 100);
   },
 
   render: function(time){
