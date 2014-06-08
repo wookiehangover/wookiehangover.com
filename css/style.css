@@ -171,23 +171,27 @@ html {
 body {
   position: relative;
   width: 100%;
+  transition: all 2s ease-in-out;
 }
 
-.loaded body {
--webkit-transition: all 2s ease-in-out;
-   -moz-transition: all 2s ease-in-out;
-    -ms-transition: all 2s ease-in-out;
-     -o-transition: all 2s ease-in-out;
-        transition: all 2s ease-in-out;
+html, body {
+  height: 100%;
 }
 
-body.show-blog {
-  top: -1200px;
-  left: -1600px;
+body.show-blog #blog,
+body.show-blog #container {
+  transform: translateX(-1600px) translateY(-1200px);
+}
+
+#blog, #container {
+  margin-top: 2em;
+  height: 80%;
 }
 
 
 #blog {
+  overflow: scroll;
+  transition: all 2s ease-in-out;
   position: absolute;
   top: 1200px;
   left: 1600px;
@@ -199,9 +203,15 @@ body.show-blog {
   color: #444;
 }
 
+#blog hr {
+  width: 100%;
+  border-color: #0047FF;
+}
+
 pre { text-align: center; font-size: 1.5em; }
 
 #container, canvas {
+  transition: all 2s ease-in-out;
   -webkit-transform: translateZ(0);
 }
 
@@ -306,7 +316,7 @@ canvas {
 
 
 
-p { float:left; padding: 1em 0; }
+p { padding: 1em 0; line-height: 1.4; }
 
 
 

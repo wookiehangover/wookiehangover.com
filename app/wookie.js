@@ -18,18 +18,6 @@ var Wookie = Backbone.View.extend({
     this.views = {
       blog: new BlogView(injector)
     };
-
-    this.render();
-    setTimeout(function(){
-      $('html').addClass('loaded');
-    }, 100);
-  },
-
-  render: function(time){
-    this.$el
-      .css({
-        'margin-top': (this.background.height - this.$('#container').height()) / 2
-      });
   },
 
   showView: function(view){
