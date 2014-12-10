@@ -33,4 +33,3 @@ bin/*.pid
 log/*.log
 
 js/vendor
-dist/
