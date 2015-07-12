@@ -4,7 +4,9 @@
   "description": "ERROR: No README.md file found!",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify app/main.js -dv | exorcist dist/wookie.js.map > dist/wookie.js",
+    "watch": "watchify app/main.js -o 'exorcist dist/wookie.js.map > dist/wookie.js' -dv",
+    "release": "NODE_ENV=productiong browserify app/main.js | uglifyjs --compress > dist/wookie.js"
   },
   "repository": {
     "type": "git",
@@ -13,19 +15,22 @@
   "author": "wookiehangover",
   "license": "BSD",
   "dependencies": {
-    "ramrod": "~0.0.8",
-    "ecstatic": "~0.1.6",
-    "forever": "~0.10.8",
-    "es6-module-transpiler": "~0.2.0",
-    "requirejs": "~2.1.8"
+    "backbone": "^1.2.1",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.0"
   },
   "devDependencies": {
-    "grunt-es6-module-transpiler": "~0.4.1",
-    "grunt-cli": "~0.1.9",
-    "grunt": "~0.4.1",
-    "grunt-bbb-requirejs": "~0.1.0-alpha.5",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-watch": "~0.5.1"
+    "babelify": "^6.1.3",
+    "browserify": "^10.2.6",
+    "uglifyjs": "^2.4.10",
+    "watchify": "^3.2.3"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "browser": {
+    "underscore": "lodash"
   }
 }

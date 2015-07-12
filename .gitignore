@@ -33,4 +33,4 @@ bin/*.pid
 log/*.log
 
 js/vendor
-dist/
+dist/wookie.js.map

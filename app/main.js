@@ -1,6 +1,8 @@
 import $ from "jquery";
-import Wookie from "wookie";
-import raf from "jquery-raf";
+import Backbone from "backbone";
+import Wookie from "./wookie";
+
+Backbone.$ = $
 
 $(function(){
   window.wookie = new Wookie();
