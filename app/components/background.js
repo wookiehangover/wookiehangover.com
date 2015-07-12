@@ -1,7 +1,28 @@
 import $ from "jquery";
-import Backbone from "backbone";
+import _ from "lodash";
+import {View} from "backbone";
 
-var BackgroundView = Backbone.View.extend({
+function Rect(x, y, w, h, color, angle, radius, angularSpeed) {
+  this.x = x;
+  this.y = y;
+  this.w = w;
+  this.h = h;
+  this.color = color;
+  this.angle = angle;
+  this.radius = radius;
+  this.angularSpeed = angularSpeed;
+}
+
+let requestAnimFrame = (function() {
+  return window.requestAnimationFrame ||
+     window.webkitRequestAnimationFrame ||
+     window.mozRequestAnimationFrame ||
+     function(callback) {
+        window.setTimeout(callback, 1000 / 60);
+     };
+})();
+
+let BackgroundView = View.extend({
   el: $('canvas'),
 
   initialize: function(options){
@@ -10,36 +31,104 @@ var BackgroundView = Backbone.View.extend({
     }
     this.app = options.app;
 
-    _.bindAll(this, 'scene');
+    _.bindAll(this, 'scene', 'nextTick');
 
     this.canvas = this.el;
     this.ctx = this.canvas.getContext('2d');
-    this.setDefaultValues();
+
     this.setDimensions();
+    this.setDefaultValues();
+
+    this.cells = [];
+    this.buildCells();
+
+    this.particles = [];
+    this.buildParticles();
+
     this.scene();
 
-    var self = this;
-    $(window).resize(function(){
-      if( self.timer ){
-        clearTimeout(self.timer);
-      }
+    this.tick = 0;
+    this.previousTick = 0;
+    this.nextTick();
 
-      self.setDimensions();
-      self.scene();
-      self.app.render(0);
+    $(window).resize(() => {
+      this.setDimensions();
+      this.cells = [];
+      this.buildCells();
     });
+
+  },
+
+  buildCells() {
+    let w = this.CELL_SIZE;
+    let h = this.CELL_SIZE;
+
+    let width = this.width / w;
+    let height = this.height / h;
+
+    for(let i = 0; i < width; i++ ){
+      for(let j = 0; j < height; j++ ){
+        let color = this.getColorForCell(i, j);
+        let x = i * w;
+        let y = j * h;
+
+        this.cells.push(
+          new Rect(x, y, w, h, color, 0, 0, 0)
+        );
+      }
+    }
+  },
+
+  buildParticles() {
+    for(var i = 0; i < this.PARTICLE_COUNT; i++) {
+      let x = this.width / 2;
+      let y = this.height / 2;
+      let w = Math.random() * 60;
+      let h = w;
+
+      let r = Math.random() * 255;
+      let g = Math.random() * 255;
+      let b = 255;
+
+      let color = `rgba(${~~r},${~~g},${~~b},0.8)`;
+      let angle = Math.random() * 2 * Math.PI;
+      let radius = Math.random() * (this.width + this.height) / 3 + 20;
+      let angularSpeed = 0.2 * Math.random() *  Math.PI / radius;
+
+      this.particles.push(
+        new Rect(x, y, w, h, color, angle, radius, angularSpeed)
+      );
+    }
+  },
+
+  getColorForCell(x, y, randomize=true) {
+    let colorOffset = randomize ? Math.random() * this.OFFSET: 0;
+
+    let red = (this.X_COLOR_VELOCITY * x) + colorOffset;
+    let green = (this.Y_COLOR_VELOCITY * y) - colorOffset;
+    let blue = Math.abs(this.X_COLOR_VELOCITY * this.Y_COLOR_VELOCITY - colorOffset);
+    return `rgb(${~~red}, ${~~green}, ${~~blue})`;
   },
 
   setDefaultValues: function(){
-    this.SPEED = 200;
+    this.PARTICLE_COUNT = 666;
+    this.SPEED = 1200;
     this.X_COLOR = 255;
     this.Y_COLOR = 255;
     this.OFFSET = 10;
+    this.CELL_SIZE = 60
+    this.X_COLOR_VELOCITY = this.X_COLOR / (this.width / this.CELL_SIZE);
+    this.Y_COLOR_VELOCITY = this.Y_COLOR / (this.height / this.CELL_SIZE);
+  },
+
+  nextTick() {
+    this.tick += 1;
+    setTimeout(this.nextTick, this.SPEED);
   },
 
   scene: function(){
     this.animateBackground();
-    this.timer = setTimeout(this.scene, this.SPEED);
+    requestAnimFrame(this.scene);
   },
 
   setDimensions: function(){
@@ -51,27 +140,43 @@ var BackgroundView = Backbone.View.extend({
     }
   },
 
+  setBg() {
+    this.ctx.fillStyle = "rgb(20,25,30)";
+    this.ctx.fillRect(0, 0, this.width, this.height);
+  },
+
   animateBackground: function(){
-    var red, blue, green, offset;
-    var x = 60;
-    var y = 60;
+    this.setBg();
 
-    var width = this.width / x;
-    var height = this.height / y;
+    for (let i = 0; i < this.cells.length; i++) {
+      let cell = this.cells[i];
 
-    var x_color = this.X_COLOR / width;
-    var y_color = this.Y_COLOR / height;
+      // Draw current position
+      this.ctx.fillStyle = cell.color;
+      this.ctx.fillRect(cell.x, cell.y, cell.w, cell.h);
 
-    for(var i = 0; i < width; i += 1 ){
-      for(var j = 0; j < height; j += 1 ){
-        offset = Math.random() * this.OFFSET;
-        red = (x_color * i) + offset;
-        green = (y_color * j) - offset;
-        blue = Math.abs(x_color * y_color - offset);
-        // console.log(red,green,blue);
-        this.ctx.fillStyle = 'rgb('+ ~~red +','+ ~~green +','+ ~~blue +')';
-        this.ctx.fillRect( i * x, j * y, x, y);
+      if (this.tick !== this.previousTick) {
+        // Set next color variation
+        cell.color = this.getColorForCell(cell.x / this.CELL_SIZE, cell.y / this.CELL_SIZE);
       }
+    }
+
+    if (this.tick !== this.previousTick) {
+      this.previousTick = this.tick;
+    }
+
+    for(let i = 0; i < this.particles.length; i++) {
+      let particle = this.particles[i];
+
+      // Draw current position
+      this.ctx.fillStyle = particle.color;
+      this.ctx.fillRect(particle.x, particle.y, particle.w, particle.h)
+
+      // Setup next position
+      particle.x = this.width / 2 + Math.sin(particle.angle) * particle.radius;
+      particle.y = this.height / 2 + Math.cos(particle.angle) * particle.radius;
+      particle.angle += particle.angularSpeed;
+      particle.color = this.getColorForCell(particle.x / this.CELL_SIZE, particle.y / this.CELL_SIZE, false)
     }
   }
 

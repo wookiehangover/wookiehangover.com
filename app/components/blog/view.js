@@ -1,6 +1,5 @@
 import Backbone from "backbone";
 import $ from "jquery";
-import _ from "underscore";
 
 var BlogView = Backbone.View.extend({
   el: $('#blog'),
