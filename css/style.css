@@ -210,6 +210,15 @@ body.show-blog #container {
 
 pre { text-align: center; font-size: 1.5em; }
 
+h1 {
+  text-align: center;
+  font-size: 6em;
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  -webkit-animation: rainbows 20s infinite;
+     -moz-animation: rainbows 20s infinite;
+      -ms-animation: rainbows 20s infinite;
+}
+
 #container, canvas {
   transition: all 2s ease-in-out;
   -webkit-transform: translateZ(0);
