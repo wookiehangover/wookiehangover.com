@@ -132,18 +132,29 @@ canvas {
 
 @keyframes rainbows {
   0% {
-    color: rgb(0, 14, 96);
+    color: red;
   }
-  25% {
-    color: rgb(255, 0, 94);
+  14% {
+    color: orange;
   }
-  50% {
-    color: rgb(255, 217, 102);
+  28% {
+    color: yellow;
   }
-  75% {
-    color: rgb(0, 240, 77);
+  42% {
+    color: green;
+  }
+  56% {
+    color: blue;
+  }
+  70% {
+    color: indigo;
+  }
+  84% {
+    color: violet;
   }
   100% {
-    color: rgb(0, 14, 96);
+    color: red;
   }
 }
+
+

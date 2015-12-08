@@ -1,4 +1,3 @@
-import $ from "jquery";
 import Backbone from "backbone";
 import Router from "./router";
 import BackgroundView from "./components/background";
@@ -6,7 +5,7 @@ import BlogView from "./components/blog/view";
 
 var Wookie = Backbone.View.extend({
 
-  el: $('body'),
+  el: document.body,
 
   initialize: function(){
     var injector = { app: this };
@@ -20,8 +19,8 @@ var Wookie = Backbone.View.extend({
   },
 
   showView: function(view){
-    this.$el.removeClass();
-    this.$el.addClass(`show-${view}`);
+    this.el.className = "";
+    this.el.classList.add(`show-${view}`);
     if( this.views[view] ){
       this.views[view].show();
     }

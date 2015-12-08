@@ -1,10 +1,15 @@
-import $ from "jquery";
 import Backbone from "backbone";
 import Wookie from "./wookie";
 
-Backbone.$ = $
+function ready(fn) {
+  if (document.readyState != 'loading'){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
 
-$(function(){
+ready(function(){
   window.wookie = new Wookie();
   Backbone.history.start();
-});
+})

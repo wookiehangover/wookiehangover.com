@@ -1,8 +1,7 @@
 import Backbone from "backbone";
-import $ from "jquery";
 
 var BlogView = Backbone.View.extend({
-  el: $('#blog'),
+  el: document.getElementById('blog'),
 
   initialize: function(options){
     if( !options.app ){

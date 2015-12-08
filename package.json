@@ -6,7 +6,7 @@
   "scripts": {
     "build": "browserify app/main.js -dv | exorcist dist/wookie.js.map > dist/wookie.js",
     "watch": "watchify app/main.js -o 'exorcist dist/wookie.js.map > dist/wookie.js' -dv",
-    "release": "NODE_ENV=productiong browserify app/main.js | uglifyjs --compress > dist/wookie.js"
+    "release": "NODE_ENV=production browserify app/main.js | uglifyjs --compress > dist/wookie.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   "devDependencies": {
     "babelify": "^6.1.3",
     "browserify": "^10.2.6",
+    "exorcist": "^0.4.0",
     "uglifyjs": "^2.4.10",
     "watchify": "^3.2.3"
   },

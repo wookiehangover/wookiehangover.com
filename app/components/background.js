@@ -1,5 +1,4 @@
-import $ from "jquery";
-import _ from "lodash";
+import bindAll from "lodash/function/bindall";
 import {View} from "backbone";
 
 function Rect(x, y, w, h, color, angle, radius, angularSpeed) {
@@ -23,7 +22,7 @@ let requestAnimFrame = (function() {
 })();
 
 let BackgroundView = View.extend({
-  el: $('canvas'),
+  el: document.getElementById('bg'),
 
   initialize: function(options){
     if( !options.app ){
@@ -31,7 +30,7 @@ let BackgroundView = View.extend({
     }
     this.app = options.app;
 
-    _.bindAll(this, 'scene', 'nextTick');
+    bindAll(this, 'scene', 'nextTick');
 
     this.canvas = this.el;
     this.ctx = this.canvas.getContext('2d');
@@ -51,7 +50,7 @@ let BackgroundView = View.extend({
     this.previousTick = 0;
     this.nextTick();
 
-    $(window).resize(() => {
+    window.addEventListener('resize', () => {
       this.setDimensions();
       this.cells = [];
       this.buildCells();
@@ -132,8 +131,8 @@ let BackgroundView = View.extend({
   },
 
   setDimensions: function(){
-    this.height = $(window).height();
-    this.width = $(window).width();
+    this.height = window.outerHeight;
+    this.width = window.outerWidth;
     if( this.canvas ){
       this.canvas.height = this.height;
       this.canvas.width = this.width;
