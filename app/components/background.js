@@ -79,9 +79,10 @@ let BackgroundView = View.extend({
   },
 
   buildParticles() {
+    let x = this.width / 2;
+    let y = this.height / 2;
+
     for(var i = 0; i < this.PARTICLE_COUNT; i++) {
-      let x = this.width / 2;
-      let y = this.height / 2;
       let w = Math.random() * 60;
       let h = w;
 
