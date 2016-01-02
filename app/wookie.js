@@ -13,6 +13,8 @@ var Wookie = Backbone.View.extend({
     this.router = new Router(injector);
     this.background = new BackgroundView(injector);
 
+    this.$el.append(this.background.el)
+
     this.views = {
       blog: new BlogView(injector)
     };

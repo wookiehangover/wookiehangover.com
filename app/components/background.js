@@ -12,7 +12,7 @@ function Rect(x, y, w, h, color, angle, radius, angularSpeed) {
   this.angularSpeed = angularSpeed;
 }
 
-let requestAnimFrame = (function() {
+const requestAnimFrame = (function() {
   return window.requestAnimationFrame ||
      window.webkitRequestAnimationFrame ||
      window.mozRequestAnimationFrame ||
@@ -21,8 +21,10 @@ let requestAnimFrame = (function() {
      };
 })();
 
-let BackgroundView = View.extend({
-  el: document.getElementById('bg'),
+const BackgroundView = View.extend({
+  tagName: 'canvas',
+
+  className: 'bg',
 
   initialize: function(options){
     if( !options.app ){
