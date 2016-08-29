@@ -22,6 +22,23 @@ li {
   padding-bottom: 0.5rem;
 }
 
+hr {
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+del:hover {
+  text-decoration: none;
+}
+
+fieldset {
+  font-size: 85%;
+  float: right;
+  color: #ababab;
+  border: 1px solid #ababab;
+  padding: 0.5rem 1rem;
+}
+
 a {
   color: #444;
   text-decoration: none;
