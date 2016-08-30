@@ -1,0 +1,28 @@
+{
+  "name": "wookiehangover.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss --use autoprefixer --use postcss-csso style.css -d dist",
+    "build": "npm run build:css && ./build/html.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wookiehangover/wookiehangover.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wookiehangover/wookiehangover.com/issues"
+  },
+  "homepage": "https://github.com/wookiehangover/wookiehangover.com#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "inliner": "^1.9.5",
+    "postcss": "^5.1.2",
+    "postcss-cli": "^2.6.0",
+    "postcss-csso": "^1.1.2"
+  }
+}
