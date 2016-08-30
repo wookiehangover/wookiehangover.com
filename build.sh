@@ -7,7 +7,9 @@ postcss \
   style.css -d docs
 
 # Copy all other assets to docs/
-cp *.gif *.jpg *.png favicon.ico docs
+cp *.gif favicon.ico docs
+
+imagemin *.jpg *.png -o docs
 
 # Minify and inline all of the HTML files into docs/
 for file in $(ls *.html); do
