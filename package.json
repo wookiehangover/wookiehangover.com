@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss --use autoprefixer --use postcss-csso style.css -d docs",
-    "build": "npm run build:css && ./build/html.sh"
+    "build": "./build.sh"
   },
   "repository": {
     "type": "git",
