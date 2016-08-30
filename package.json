@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./build.sh"
+    "build": "./build/all.sh",
+    "build:html": "./build/htmlmin.sh",
+    "copy-assets": "cp *.gif favicon.ico docs && imagemin *.jpg *.png -o docs"
   },
   "repository": {
     "type": "git",

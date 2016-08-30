@@ -76,11 +76,12 @@ del:hover {
 }
 
 fieldset {
-  font-size: 85%;
   float: right;
+  font-size: 85%;
   color: #ababab;
   border: 1px solid #ababab;
   padding: 0.5rem 1rem;
+  min-width: 6rem;
 }
 
 fieldset ul {
