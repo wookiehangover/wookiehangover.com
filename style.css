@@ -14,10 +14,6 @@ body {
   font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
 
-cite {
-  float: right;
-}
-
 ol, ul {
   padding-left: 0;
   list-style-position: inside;
@@ -33,8 +29,47 @@ li {
 
 hr {
   border: none;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
+
+sup {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+  border-bottom: 2px solid #b3e5fc;
+  box-shadow: inset 0 -4px 0 #b3e5fc;
+  transition: background .1s ease-out;
+  cursor: url(avatar-pointer.png) 10 10, auto;
+}
+
+a:hover {
+  background: #b3e5fc;
+}
+
+/*
+  Responsize Overrides
+*/
+
+@media (min-width: 32rem) {
+    ol, ul {
+      padding-left: 1rem;
+      list-style-position: outside;
+    }
+}
+
+@media (min-width: 50rem) {
+    body {
+      max-width: 50rem;
+    }
+}
+
+/*
+  index.html
+*/
 
 del:hover {
   text-decoration: none;
@@ -48,19 +83,17 @@ fieldset {
   padding: 0.5rem 1rem;
 }
 
-a {
-  color: #444;
-  text-decoration: none;
-  border-bottom: 2px solid #b3e5fc;
-  box-shadow: inset 0 -4px 0 #b3e5fc;
-  transition: background .1s ease-out;
-  cursor: url(avatar-pointer.png) 10 10, auto;
+fieldset ul {
+  margin: 0;
 }
 
-sup {
-  font-size: 0.75rem;
-  font-weight: normal;
+fieldset ul li {
+  padding: 0;
 }
+
+/*
+  cv.html
+*/
 
 h1 > sup {
   position: relative;
@@ -74,23 +107,10 @@ sup > a {
   background: none;
 }
 
-a:hover {
-  background: #b3e5fc;
+cite {
+  float: right;
 }
 
 section:last-of-type {
   font-size: 85%;
-}
-
-@media (min-width: 32rem) {
-    ol, ul {
-      padding-left: 1rem;
-      list-style-position: outside;
-    }
-}
-
-@media (min-width: 50rem) {
-    body {
-      max-width: 50rem;
-    }
 }
