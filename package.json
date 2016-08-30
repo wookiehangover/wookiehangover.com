@@ -23,7 +23,8 @@
     "inliner": "^1.9.5",
     "postcss": "^5.1.2",
     "postcss-cli": "^2.6.0",
-    "postcss-csso": "^1.1.2"
+    "postcss-csso": "^1.1.2",
+    "uncss": "^0.14.1"
   },
   "dependencies": {}
 }
