@@ -1,6 +1,15 @@
+html, body {
+  height: auto;
+  min-height: 100%;
+}
+
+html {
+  cursor: url(avatar-sm.png) 10 10, auto;
+}
+
 body {
   max-width: 32rem;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   padding: 0 1rem;
   font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
@@ -45,6 +54,7 @@ a {
   border-bottom: 2px solid #b3e5fc;
   box-shadow: inset 0 -4px 0 #b3e5fc;
   transition: background .1s ease-out;
+  cursor: url(avatar-pointer.png) 10 10, auto;
 }
 
 sup {
