@@ -13,6 +13,7 @@
   var cursor = {x: width/2, y: width/2};
   var particles = [];
   var dust = document.querySelector('.dust')
+  var IS_IPHONE = /iPhone|iPad/.test(navigator.platform)
 
   function init() {
     bindEvents();
@@ -21,10 +22,11 @@
 
   // Bind events that are needed
   function bindEvents() {
-    document.addEventListener('mousemove', onMouseMove);
+    if (!IS_IPHONE) {
+      document.addEventListener('mousemove', onMouseMove);
+    }
     document.addEventListener('touchmove', onTouchMove);
     document.addEventListener('touchstart', onTouchMove);
-
     window.addEventListener('resize', onWindowResize);
   }
 

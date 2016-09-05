@@ -137,5 +137,5 @@ footer li {
 }
 
 footer li:target, footer li:active {
-  color: salmon;
+  color: red;
 }
