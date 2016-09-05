@@ -49,6 +49,14 @@ a:hover {
   background: #b3e5fc;
 }
 
+a:focus {
+  background: #b3e5fc;
+  outline-color: rgba(185, 179, 252, 0.5);
+  outline-style: solid;
+  outline-offset: 0.5em;
+  outline-width: 666vw;
+}
+
 /*
   Responsize Overrides
 */
@@ -111,6 +119,14 @@ cite {
   float: right;
 }
 
-section:last-of-type {
+footer {
   font-size: 85%;
+}
+
+footer li {
+  transition: color 200ms ease-in;
+}
+
+footer li:target, footer li:active {
+  color: salmon;
 }
