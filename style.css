@@ -7,6 +7,15 @@ html {
   cursor: url(avatar-sm.png) 10 10, auto;
 }
 
+.dust {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
 body {
   max-width: 32rem;
   padding: 0 1rem;

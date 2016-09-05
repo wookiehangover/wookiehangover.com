@@ -6,7 +6,7 @@
   "scripts": {
     "build": "./build/all.sh",
     "build:html": "./build/htmlmin.sh",
-    "copy-assets": "cp *.gif favicon.ico docs && imagemin *.jpg *.png -o docs"
+    "copy-assets": "cp *.js *.gif favicon.ico docs && imagemin *.jpg *.png -o docs"
   },
   "repository": {
     "type": "git",
