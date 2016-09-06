@@ -20,6 +20,7 @@ function postTemplate(context) {
         <time>Last updated on ${context.updatedAt}</time>
         <a href="/${context.permalink}">Link</a>
         <a href="https://github.com/wookiehangover/wookiehangover.com/edit/master/writing/${context.filename}">Edit</a>
+        <a href="https://github.com/wookiehangover/wookiehangover.com/commits/master/writing/${context.filename}">History</a>
       </footer>
     </article>
   `

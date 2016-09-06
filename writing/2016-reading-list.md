@@ -36,6 +36,7 @@
 17. ~~_The Ascent of Money_ – Niall Feguson~~
 18. ~~_Burr_ – Gore Vidal~~
 19. ~~_Daemon_ — Daniel Suarez<sup>&dagger;</sup>~~
+20. ~~_How to Make Sense of Any Mess_ — Abby Covert~~
 
 Related: [2015 reading list][1]
 
