@@ -1,20 +1,24 @@
 #!/bin/bash -e
 
 file=$1
+output_path=${2:-docs}
 
-rm docs/$file || true
+filename=${file##*/}
+uncss_css=${filename%.html}-uncss.css
+uncss_html=${uncss_css%.css}.html
+inline_html=${filename%.html}-inline.html
 
-echo "Removing unused css from $file..."
+mkdir -p $output_path
+
+echo "Removing unused css, inlining and minfying $file..."
 # Swap the stylesheet for the minified version and run uncss to capture the page's unique styles
-sed 's/style.css/.\/docs\/style.css/g' $file | uncss > docs/$file.css
-
-echo "Inlining and Minifying $file..."
+uncss $file > "$output_path/$uncss_css"
 # Swap the stylesheet for the new uncss'ed version
-sed 's/style.css/.\/'"$file"'.css/g' $file > docs/inline-$file
+sed "s,[^\"']*\.css,$uncss_css,1" $file > $output_path/$uncss_html
 
 # Create a version with everything inlined
-inliner docs/inline-$file > docs/$file
-echo "🆗 — docs/$file written"
+inliner $output_path/$uncss_html > $output_path/$filename
+echo
+echo "$output_path/$filename written"
 
-# Cleanup
-rm docs/$file.css docs/inline-$file || true
+rm $output_path/*-uncss.*

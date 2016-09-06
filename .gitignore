@@ -32,5 +32,4 @@ config.d*
 bin/*.pid
 log/*.log
 
-js/vendor
-dist/wookie.js.map
+writing/*.html

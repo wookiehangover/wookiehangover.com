@@ -6,55 +6,104 @@
     <meta name="author" content="Samuel Breed">
     <meta name="description" content="sort of like a geocities page">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <h1>Samuel Breed</h1>
       <ul>
-        <li><a href="/cv.html">cv</a>
-        <li><a href="https://github.com/wookiehangover/wookiehangover.com">code</a>
-        <li><a href="https://twitter.com/sambreed">guest book</a>
+        <li><a href="/cv.html">cv</a></li>
+        <li><a href="https://github.com/wookiehangover/wookiehangover.com">code</a></li>
+        <li><a href="https://twitter.com/sambreed">guest book</a></li>
       </ul>
     </header>
 
-    <hr/>
+    <hr>
 
-    <section>
-      <article>
-        <h2>2016 Reading List</h2>
-        <fieldset>
-          <legend>Key</legend>
-          <ul>
-            <li>&dagger; – Audible</li>
-            <li><i>In Progress</i></li>
-            <li><del><i>Completed</i></del></li>
-          </ul>
-        </fieldset>
-        <ol>
-          <li><i>The Three-Body Problem</i> — Cixin Liu
-          <li><i>Brian Eno: Visual Music</i> — Christopher Scoates
-          <li><i>Kissinger: 1923-1969 The Idealist</i> — Niall Ferguson
-          <li><i>The Illuminatus! Trilogy</i> — Robert Shea and Robert Anton Wilson
-          <li><i>Influx</i> — Daniel Suarez<sup>&dagger;</sup>
-          <li><del><i>American Gods</i> – Neil Gaiman
-          <li><del><i>Cat's Cradle</i> – Kurt Vonnegut
-          <li><del><i>Flow My Tears, the Policeman Said</i> – Philip K. Dick
-          <li><del><i>Dirk Gently's Holistic Detective Agency</i> – Douglas Adams
-          <li><del><i>The Killing Moon</i> – N.K. Jemisin
-          <li><del><i>Learning to Live Finally: The Last Interview</i> – Jacques Derrida
-          <li><del><i>Sapiens</i> – Yuval Harari
-          <li><del><i>Barbarian Days</i> – William Finnegan
-          <li><del><i>The (Mis)Behavior of Markets</i> – Beniot Mandelbrot
-          <li><del><i>Antifragile</i> – Nassim Nicholas Taleb
-          <li><del><i>Fire in the Valley</i> – Michael Swaine and Paul Freiberger
-          <li><del><i>The Ascent of Money</i> – Niall Feguson
-          <li><del><i>Burr</i> – Gore Vidal
-          <li><del><i>Daemon</i> — Daniel Suarez<sup>&dagger;</sup>
-        </ol>
-        <p>Related: <a href="https://medium.com/@sambreed/2015-books-504cb79ac5c0#.f8izs5mpq">2015 reading list</a></p>
-      </article>
-    </section>
+    <section class="posts">
+    <article id="making-things-for-fun.">
+      <h2 id="making-things-for-fun">Making things for fun</h2>
+<p>This is not a blog&#x2014;it&apos;s a fun side-project done over a couple weekends. It&apos;s not a blog because it&apos;s not using any blogging software, per se, just some elbow grease and <a href="https://github.com/wookiehangover/wookiehangover.com/tree/master/build">a few bash scripts</a> that I&apos;ve managed to string together into a mostly-working state.</p>
+<p>Simple products are fashionable, especially when it comes to media consumption, and even I&apos;ve been known to write a Medium post every now and again, but I didn&apos;t set out to build this as a monument to simplicity. This isn&apos;t that type of place and I&apos;m not that type of fella.</p>
+<p>This is just a barely functioning, loosely coherent website with weird cursor effects<sup><a href="#making-things-for-fun_footnote-01">1</a></sup> (unless I&apos;ve gotten bored and removed them) and footnotes<sup><a href="#making-things-for-fun_footnote-02">2</a></sup> (I probably haven&apos;t removed these.)</p>
+<p>So why go through all the trouble to build this in the first place?</p>
+<p>Isn&apos;t this what all developers inevitably do anyway? Build some crappy knock-off of good software because they&apos;re ego is too big to use anything that&apos;s not been graced to have sprung unbidden from their god-like cheeto-covered fingertips? Yes, let&apos;s all create something second rate instead of using something off-the-shelf in order to scratch the proverbial itch? Why, yes. Yes, it&apos;s probably something like that.</p>
+<p>The question might as well then become, &quot;why build anything at all?&quot;</p>
+<p>I made this because it was fun. It was more fun figuring out how to <a href="https://github.com/remy/inliner">easily inline all the assets</a> and <a href="https://github.com/giakki/uncss">strip out unused css</a> on this page than it would have been to set up Wordpress again. But the first time I set up Wordpress was a magical and transcendent experience the first time I did it in 2008, so why am I seemingly so quick to shun it now?</p>
+<p><em>Doing something from scratch, even if it&apos;s not polished, doesn&apos;t deny or invalidate what you&apos;ve done in the past.</em></p>
+<p>For a long time I refused to do any writing on my website because I felt like I didn&apos;t have the time. I was afraid that anything I wrote would be bad and then I&apos;d be committed to it forever, comma splices and all. Paranoia that I would look back on it later with utter embarrassment kept me from committing to much writing since I killed my <a href="http://samuelbreed.blogspot.com/">first blog</a> in 2008. What I guess I means is I&apos;m over that now? <a href="https://www.jwz.org/doc/worse-is-better.html">Worse is better</a> after all, so why not let the shitposts start flowing!</p>
+<p>In keeping with that spirit, I&apos;ve shoddily rebuild Jekyll so I can have reasonable writing experience for myself, which means markdown and not much else to fuss over. I&apos;m unburdened by the need for SEO or any other unspeakable non-sense, but I care about mobile web and I care about pagespeed so I&apos;ve gone and done the aforementioned asset inlining, which I think has come out quite nicely.</p>
+<p>Go out and make something, even if it&apos;s a shoddy facsimile of something else.</p>
+<p>(And, yes, I do plan on building an HTML guest book some day. But for now a link to twitter will have to suffice ;)</p>
+<footer>
+  <ol>
+    <li id="making-things-for-fun_footnote-01">
+      The custom cursors (provided they&apos;re still here, if not, I&apos;ll include a gif) were a fun idea I gleaned from <a href="https://twitter.com/kwuchu">@kwuchu</a> tweeting about redesigning his portfolio site, which featured a similarly cropped picture of him. I already had the avatar and had been using it for a few years, but when I threw it on the static, it was static and unmoving and no fun whatsoever. I don&apos;t know how I looked into the custom CSS cursor, but I definitely used <a href="https://davidwalsh.name/css-custom-cursor">David Walsh&apos;s blog post</a> to see it in action and grok how it should work. Then <a href="https://twitter.com/ohhoe">@ohhoe</a> asked my to make sparkle trails and I couldn&apos;t say &quot;no&quot; to that.
+    </li>
+    <li id="making-things-for-fun_footnote-02">
+      Who doesn&apos;t love a good footnote? If you know someone, submit their names to me in writing and I&apos;ll add them to my list.
+    </li>
+  </ol>
+</footer>
+
+
+      <footer>
+        <time>Last updated on Tue Sep 06 2016 00:34:21 GMT-0700 (PDT)</time>
+        <a href="/writing/making-things-for-fun.html">Link</a>
+        <a href="https://github.com/wookiehangover/wookiehangover.com/edit/master/writing/making-things-for-fun.md">Edit</a>
+      </footer>
+    </article>
+  
+
+    <article id="2016-reading-list.">
+      <h2 id="2016-reading-list">2016 Reading List</h2>
+<fieldset>
+  <legend>Key</legend>
+  <ul>
+    <li>&#x2020; &#x2013; Audible</li>
+    <li><em>In Progress</em></li>
+    <li><del><em>Completed</em></del></li>
+  </ul>
+</fieldset>
+
+<ol>
+<li><em>The Three-Body Problem</em> &#x2014; Cixin Liu</li>
+<li><em>Brian Eno: Visual Music</em> &#x2014; Christopher Scoates</li>
+<li><em>Kissinger: 1923-1969 The Idealist</em> &#x2014; Niall Ferguson</li>
+<li><details>
+  <summary><em>The Illuminatus! Trilogy</em> &#x2014; Robert Shea and Robert Anton Wilson</summary>
+
+  <p>I&apos;ve read this before and I absolutely love it. Pure sci-fi zanyness with enough acid trips, talking dolphins, and fractal structure make it prime re-reading material, allowing for the slow jokes to play out with more more anticipation and certainly with more perspective to better take in the instant shifts betweens characters and timelines.</p>
+
+</details></li>
+<li><em>Influx</em> &#x2014; Daniel Suarez<sup>&#x2020;</sup></li>
+<li><details>
+  <summary><del><em>American Gods</em> &#x2013; Neil Gaiman</del></summary>
+  <p>Finally, finally got around to reading this after letting it languish on my Kindle for several years. Recommended by both my wife and best friend, I&apos;m glad to say that it read fast and well worth the effort.</p>
+</details></li>
+<li><del><em>Cat&apos;s Cradle</em> &#x2013; Kurt Vonnegut</del></li>
+<li><del><em>Flow My Tears, the Policeman Said</em> &#x2013; Philip K. Dick</del></li>
+<li><del><em>Dirk Gently&apos;s Holistic Detective Agency</em> &#x2013; Douglas Adams</del></li>
+<li><del><em>The Killing Moon</em> &#x2013; N.K. Jemisin</del></li>
+<li><del><em>Learning to Live Finally: The Last Interview</em> &#x2013; Jacques Derrida</del></li>
+<li><del><em>Sapiens</em> &#x2013; Yuval Harari</del></li>
+<li><del><em>Barbarian Days</em> &#x2013; William Finnegan</del></li>
+<li><del><em>The (Mis)Behavior of Markets</em> &#x2013; Beniot Mandelbrot</del></li>
+<li><del><em>Antifragile</em> &#x2013; Nassim Nicholas Taleb</del></li>
+<li><del><em>Fire in the Valley</em> &#x2013; Michael Swaine and Paul Freiberger</del></li>
+<li><del><em>The Ascent of Money</em> &#x2013; Niall Feguson</del></li>
+<li><del><em>Burr</em> &#x2013; Gore Vidal</del></li>
+<li><del><em>Daemon</em> &#x2014; Daniel Suarez<sup>&#x2020;</sup></del></li>
+</ol>
+<p>Related: <a href="https://medium.com/@sambreed/2015-books-504cb79ac5c0#.f8izs5mpq">2015 reading list</a></p>
+
+      <footer>
+        <time>Last updated on Mon Sep 05 2016 20:58:47 GMT-0700 (PDT)</time>
+        <a href="/writing/2016-reading-list.html">Link</a>
+        <a href="https://github.com/wookiehangover/wookiehangover.com/edit/master/writing/2016-reading-list.md">Edit</a>
+      </footer>
+    </article>
+  </section>
 
     <div class="dust"></div>
 

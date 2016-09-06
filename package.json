@@ -6,6 +6,7 @@
   "scripts": {
     "build": "./build/all.sh",
     "build:html": "./build/htmlmin.sh",
+    "build:posts": "./build/markdown.js",
     "copy-assets": "cp *.js *.gif favicon.ico docs && imagemin *.jpg *.png -o docs"
   },
   "repository": {
@@ -21,12 +22,16 @@
   "homepage": "https://github.com/wookiehangover/wookiehangover.com#readme",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
+    "cheerio": "^0.22.0",
     "imagemin-cli": "^3.0.0",
     "inliner": "^1.9.5",
+    "marked": "^0.3.6",
     "postcss": "^5.1.2",
     "postcss-cli": "^2.6.0",
     "postcss-csso": "^1.1.2",
     "uncss": "^0.14.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "async": "^2.0.1"
+  }
 }

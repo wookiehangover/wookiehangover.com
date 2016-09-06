@@ -18,8 +18,10 @@ html {
 
 body {
   max-width: 32rem;
+  margin: 2rem auto 1rem;
   padding: 0 1rem;
   font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  background: #fff;
 }
 
 ol, ul {
@@ -67,23 +69,6 @@ a:focus {
 }
 
 /*
-  Responsize Overrides
-*/
-
-@media (min-width: 32rem) {
-    ol, ul {
-      padding-left: 1rem;
-      list-style-position: outside;
-    }
-}
-
-@media (min-width: 50rem) {
-    body {
-      max-width: 50rem;
-    }
-}
-
-/*
   index.html
 */
 
@@ -106,6 +91,43 @@ fieldset ul {
 
 fieldset ul li {
   padding: 0;
+}
+
+summary:focus,
+summary:active {
+  outline: none;
+}
+
+details[open] > summary {
+  outline: none;
+  text-decoration: underline;
+}
+
+details[open] > summary del {
+  text-decoration: none;
+}
+
+details > p {
+  max-width: 36rem;
+  text-align: justify;
+}
+
+article {
+  max-width: 35rem;
+}
+
+article p {
+  line-height: 1.5;
+  font-size: 1.125rem;
+  font-family: Georgia, serif;
+}
+
+article + article:before {
+  content: "∴";
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0;
 }
 
 /*
@@ -138,4 +160,21 @@ footer li {
 
 footer li:target, footer li:active {
   color: red;
+}
+
+/*
+  Responsize Overrides
+*/
+
+@media (min-width: 32rem) {
+    ol, ul {
+      padding-left: 1rem;
+      list-style-position: outside;
+    }
+}
+
+@media (min-width: 50rem) {
+    body {
+      max-width: 50rem;
+    }
 }
