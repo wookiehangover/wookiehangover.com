@@ -8,7 +8,7 @@ This is just a barely functioning, loosely coherent website with weird cursor ef
 
 So why go through all the trouble to build this in the first place?
 
-Isn't this what all developers inevitably do anyway? Build some crappy knock-off of good software because they're ego is too big to use anything that's not been graced to have sprung unbidden from their god-like cheeto-covered fingertips? Yes, let's all create something second rate instead of using something off-the-shelf in order to scratch the proverbial itch? Why, yes. Yes, it's probably something like that.
+Isn't this what all developers inevitably do anyway? Build some crappy knock-off of good software because they're ego is too big to use anything that's not been graced to have sprung unbidden from their god-like cheeto-covered fingertips? Yes, let's all create something second rate instead of using something off-the-shelf in order to scratch the proverbial itch? Why, yes. Yes, it's probably something like that then.
 
 The question might as well then become, "why build anything at all?"
 

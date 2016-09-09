@@ -1,15 +1,12 @@
 #!/bin/bash -e
 
-# Prefix and compress css into docs/
-postcss \
-  --use autoprefixer \
-  --use postcss-csso \
-  style.css -d docs
+npm run build:css
 
 # Build markdown posts into HTML
 npm run build:posts
 
 # Copy all other assets to docs/
+mkdir -p docs/img
 npm run copy-assets
 
 declare -a build_files=("cv.html" "index.html")
