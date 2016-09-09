@@ -6,7 +6,7 @@ Simple products are fashionable these days, especially when it comes to media co
 
 This is just a barely functioning, loosely coherent website with weird cursor effects<sup>[1][footnote1]</sup> (unless I've gotten bored and removed them) and footnotes<sup>[2][footnote2]</sup> (I probably haven't removed these.)
 
-So why go through all the trouble to build this in the first place?
+> So why go through all the trouble to build this in the first place?
 
 Isn't this what all developers inevitably do anyway? Build some crappy knock-off of good software because they're ego is too big to use anything that's not been graced to have sprung unbidden from their god-like cheeto-covered fingertips? Yes, let's all create something second rate instead of using something off-the-shelf in order to scratch the proverbial itch? Why, yes. Yes, it's probably something like that then.
 
@@ -14,7 +14,7 @@ The question might as well then become, "why build anything at all?"
 
 I made this because it was fun. It was more fun figuring out how to [easily inline all the assets][2] and [strip out unused css][3] on this page than it would have been to set up Wordpress again. The first time I ever set up Wordpress in 2008 was a magical and transcendent experience, so why am I so quick to shun it now? Wordpress is great software and I can't make anything that comes close to it in a weekend.
 
-_Doing something from scratch, even if it's not polished, doesn't deny or invalidate what you've done in the past._
+> Doing something from scratch, even if it's not polished, doesn't deny or invalidate what you've done in the past.
 
 For a long time I refused to do any writing on my website because I felt like I didn't have the time. I was afraid that anything I wrote would be bad and then I'd be committed to it forever, comma splices and all. Paranoia that I would look back on it later with utter embarrassment kept me from committing to much writing since I killed my [first blog][5] in 2008. What I guess I means is I'm over that now? [Worse is better][4] after all, so why not let the shitposts start flowing!
 

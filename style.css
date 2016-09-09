@@ -1,50 +1,19 @@
-html, body {
-  height: auto;
-  min-height: 100%;
-}
-
-html {
-  cursor: url(img/avatar-sm.png) 10 10, auto;
-}
-
-.dust {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -2;
-}
+@import './node_modules/tachyons/css/tachyons.css';
 
 body {
-  max-width: 32rem;
-  margin: 2rem auto 1rem;
-  padding: 0 1rem;
-  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  background: #fff;
+  @extend .mw7;
+  @extend .ma4;
+  @extend .sans-serif;
+  cursor: url(img/avatar-sm.png) 10 10, auto;
+  background: white;
 }
 
-ol, ul {
-  padding-left: 0;
-  list-style-position: inside;
+h1 {
+  @extend .f1;
 }
 
-ul {
-  list-style-type: circle;
-}
-
-li {
-  padding-bottom: 0.5rem;
-}
-
-hr {
-  border: none;
-  border-bottom: 1px solid #ccc;
-}
-
-sup {
-  font-size: 0.75rem;
-  font-weight: normal;
+h2 {
+  @extend .f2;
 }
 
 a {
@@ -60,121 +29,96 @@ a:hover {
   background: #b3e5fc;
 }
 
-a:focus {
-  background: #b3e5fc;
-  outline-color: rgba(185, 179, 252, 0.5);
-  outline-style: solid;
-  outline-offset: 0.5em;
-  outline-width: 666vw;
-}
 
-/*
-  index.html
-*/
-
-del:hover {
-  text-decoration: none;
-}
-
-fieldset {
-  float: right;
-  font-size: 85%;
-  color: #ababab;
-  border: 1px solid #ababab;
-  padding: 0.5rem 1rem;
-  min-width: 6rem;
-}
-
-fieldset ul {
-  margin: 0;
-}
-
-fieldset ul li {
-  padding: 0;
-}
-
-summary:focus,
-summary:active {
-  outline: none;
-}
-
-details[open] > summary {
-  outline: none;
-  text-decoration: underline;
-}
-
-details[open] > summary del {
-  text-decoration: none;
-}
-
-details > p {
-  max-width: 36rem;
-  text-align: justify;
-}
-
-article {
-  max-width: 35rem;
-}
-
-article p {
-  line-height: 1.5;
-  font-size: 1.125rem;
-  font-family: Georgia, serif;
-}
-
-article + article:before {
-  content: "∴";
-  display: block;
-  text-align: center;
-  width: 100%;
-  margin: 2rem 0;
-}
-
-/*
-  cv.html
-*/
-
-h1 > sup {
-  position: relative;
-  top: -10px;
+sup {
+  font-size: 0.75rem;
+  font-weight: normal;
 }
 
 sup > a {
   text-decoration: underline;
   border: none;
-  box-shadow: none;
-  background: none;
+  box-shadow: none
 }
 
-cite {
-  float: right;
+
+body > header li {
+  @extend .mv1;
 }
 
-footer {
-  font-size: 85%;
+section > ul > li {
+  @extend .measure;
+  @extend .mv2;
 }
 
-footer li {
-  transition: color 200ms ease-in;
+section > ol > li {
+  @extend .measure;
+  @extend .mv3;
 }
 
-footer li:target, footer li:active {
-  color: red;
+section cite {
+  @extend .fr;
 }
 
-/*
-  Responsize Overrides
-*/
-
-@media (min-width: 32rem) {
-    ol, ul {
-      padding-left: 1rem;
-      list-style-position: outside;
-    }
+body > footer {
+  @extend .f6;
 }
 
-@media (min-width: 50rem) {
-    body {
-      max-width: 50rem;
-    }
+body > footer > ol > li {
+  @extend .measure;
+  @extend .mv1;
+}
+
+article {
+  @extend .f5;
+  @extend .mv4;
+}
+
+article > p {
+  @extend .serif;
+  @extend .measure;
+  @extend .lh-copy;
+}
+
+article li {
+  @extend .measure;
+  @extend .mv2;
+  @extend .lh-copy;
+}
+
+article footer {
+  @extend .f6;
+}
+
+article blockquote {
+  @extend .f3;
+  @extend .fw6;
+  @extend .mv3;
+  @extend .measure;
+  @extend .lh-title;
+}
+
+article:before {
+  content: "∴";
+  display: block;
+  text-align: center;
+}
+
+article fieldset {
+  @extend .w-100;
+  @extend .w5-ns;
+  @extend .fr;
+  @extend .mv4;
+  @extend .mv0-ns;
+}
+
+article fieldset ul,
+article fieldset li {
+  margin: 0;
+}
+
+.dust {
+  position: fixed;
+  @extend .absolute--fill;
+  z-index: -2;
 }

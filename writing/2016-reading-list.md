@@ -3,9 +3,9 @@
 <fieldset>
   <legend>Key</legend>
   <ul>
-    <li>&dagger; – Audible</li>
     <li>_In Progress_</li>
     <li>~~_Completed_~~</li>
+    <li>&dagger; – Audible</li>
     <li>▶ Notes</li>
   </ul>
 </fieldset>
