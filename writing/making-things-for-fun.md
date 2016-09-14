@@ -24,7 +24,7 @@ Go out and make something, even if it's a shoddy facsimile of something else.
 
 (And, yes, I do plan on building an HTML guest book some day. But for now a link to twitter will have to suffice ;)
 
-<footer>
+<aside>
   <ol>
     <li id="making-things-for-fun_footnote-01">
       The custom cursors (provided they're still here, if not, I'll include a gif) were a fun idea I gleaned from [@kwuchu][6] tweeting about redesigning his portfolio site, which featured a similarly cropped picture of him. Since I already had the avatar of my face cropped out, I threw it on the header to see how it would look. It was static and unmoving and no fun whatsoever. I don't know how I stumbled into the custom cursor CSS, but I definitely used [David Walsh's blog post][7] to see it in action and grok how it should work. Then [@ohhoe][8] asked my to make sparkle trails and I couldn't say "no" to that.
@@ -33,7 +33,7 @@ Go out and make something, even if it's a shoddy facsimile of something else.
       Who doesn't love a good footnote? If you know someone, submit their names to me in writing and I'll add them to my list.
     </li>
   </ol>
-</footer>
+</aside>
 
 [1]: https://github.com/wookiehangover/wookiehangover.com/tree/master/build
 [2]: https://github.com/remy/inliner

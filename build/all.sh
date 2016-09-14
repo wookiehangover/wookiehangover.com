@@ -9,10 +9,8 @@ npm run build:posts
 mkdir -p docs/img
 npm run copy-assets
 
-declare -a build_files=("cv.html" "index.html")
-
 # Minify and inline all of the HTML files into docs/
-for file in ${build_files[@]}; do
+for file in $(ls *.html); do
   npm run build:html -- $file
 done;
 
@@ -20,4 +18,5 @@ for file in $(ls writing/*.html); do
   npm run build:html -- $file docs/writing
 done;
 
-echo "Build Complete."
+echo
+echo "💯  Build Complete."

@@ -8,6 +8,8 @@
     "build:css": "./build/postcss.sh",
     "build:html": "./build/htmlmin.sh",
     "build:posts": "./build/markdown.js",
+    "watch:css": "gazer -p style.css npm run build:css",
+    "watch:posts": "gazer -p 'writing/*.md' npm run build:posts",
     "copy-assets": "cp *.js docs && cp img/*.gif img/favicon.ico docs/img && imagemin img/*.jpg img/*.png -o docs/img"
   },
   "repository": {
@@ -24,6 +26,8 @@
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "cheerio": "^0.22.0",
+    "ejs": "^2.5.2",
+    "emojify.js": "^1.1.0",
     "imagemin-cli": "^3.0.0",
     "inliner": "^1.9.5",
     "marked": "^0.3.6",
@@ -36,6 +40,7 @@
   },
   "dependencies": {
     "async": "^2.0.1",
+    "gazer": "^1.0.0",
     "tachyons": "^4.2.1"
   }
 }

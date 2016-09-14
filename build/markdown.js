@@ -6,55 +6,72 @@ const cheerio = require('cheerio')
 const async = require('async')
 const marked = require('marked')
 const fs = require('fs')
+const ejs = require('ejs')
 
 const posts = [
+  'picking-up-the-pieces.md',
   'making-things-for-fun.md',
   '2016-reading-list.md'
 ]
 
-function postTemplate(context) {
-  return `
-    <article id="${context.filename.replace('md', '')}">
-      ${context.body}
-      <footer>
-        <time>Last updated on ${context.updatedAt}</time>
-        <a href="/${context.permalink}">Link</a>
-        <a href="https://github.com/wookiehangover/wookiehangover.com/edit/master/writing/${context.filename}">Edit</a>
-        <a href="https://github.com/wookiehangover/wookiehangover.com/commits/master/writing/${context.filename}">History</a>
-      </footer>
-    </article>
-  `
+async.map(posts, renderPost, (err, posts) => {
+  if (err) throw err
+
+  writeTemplate(posts, 'index.html', (err) => {
+    console.log('✅  index.html updated')
+  })
+})
+
+function renderPost(path, done) {
+  const filename = `writing/${path}`
+
+  async.parallel({
+    stats: done => fs.stat(filename, done),
+    post: done => fs.readFile(filename, 'utf8', done)
+  }, (err, results) => {
+    if (err) return done(err)
+
+    const body      = marked(results.post, { smartypants: true })
+    const permalink = filename.replace(/md$/, 'html')
+    const slug      = path.replace('.md', '')
+    const title     = (results.post.split('\n')[0] || 'Untitled 👻').replace('##', '')
+    const updatedAt = results.stats.mtime
+
+    const context = {
+      body,
+      filename,
+      permalink,
+      slug,
+      title,
+      updatedAt
+    }
+
+    ejs.renderFile('./templates/post.html', context, (err, data) => {
+      fs.writeFile(permalink, data, (err) => {
+        done(err, context)
+        console.log(`✅  writing/${filename} -> ${permalink}`)
+      })
+    })
+
+  })
 }
 
-function writeTemplate(template, post, target, done) {
-  fs.readFile(template, 'utf8', (err, contents) => {
-    if (err) throw err
-    const $ = cheerio.load(contents)
-    $('.posts').html(post)
+function writeTemplate(posts, target, done) {
+  async.parallel({
+    index: done => fs.readFile('index.html', 'utf8', done),
+    template: done => fs.readFile('templates/post_body.html', 'utf8', done)
+  }, (err, results) => {
+    if (err) return done(err)
+
+    const $ = cheerio.load(results.index)
+    // const body = posts.map(post => ejs.render(results.template, post)).join('\n')
+    const links = posts.map(post => `<li><a href=${post.permalink}>${post.title}</a></li>`).join('\n')
+    $('.posts').html(`<ol>${links}</ol>`)
+
+    // $('article > h2:first-child').each(function(i, elem) {
+    //   $(elem).html(`<a href=${posts[i].permalink}>${posts[i].title}</a>`)
+    // })
+
     fs.writeFile(target, $.html(), done)
   })
 }
-
-function processMarkdown(filename, done) {
-  fs.stat(`writing/${filename}`, (err, stats) => {
-    if (err) return done(err)
-
-    fs.readFile(`writing/${filename}`, 'utf8', (err, contents) => {
-      if (err) return done(err)
-      const permalink = `writing/${filename.replace(/md$/, 'html')}`
-      const post = postTemplate({
-        filename, permalink,
-        body: marked(contents),
-        updatedAt: stats.mtime
-      })
-      writeTemplate('post.html', post, permalink, err => done(err, post))
-    })
-  })
-}
-
-async.map(posts, processMarkdown, (err, markdown) => {
-  if (err) throw err
-  writeTemplate('index.html', markdown.join('\n'), 'index.html', (err) => {
-
-  })
-})
