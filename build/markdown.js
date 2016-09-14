@@ -14,12 +14,30 @@ const posts = [
   '2016-reading-list.md'
 ]
 
+console.log('Building Markdown 📑')
 async.map(posts, renderPost, (err, posts) => {
   if (err) throw err
 
-  writeTemplate(posts, 'index.html', (err) => {
-    console.log('✅  index.html updated')
+  async.parallel([
+    function(done) {
+      writeTemplate(posts, 'index.html', (err) => {
+        if (!err) console.log('✅  index.html updated')
+        done(err)
+      })
+    },
+    function(done) {
+      ejs.renderFile('./templates/posts.html', { posts }, (err, data) => {
+        fs.writeFile('writing/index.html', data, (err) => {
+          if (!err) console.log(`✅  writing/index.html created`)
+          done(err)
+        })
+      })
+    }
+  ], (err) => {
+    if (err) throw err
+    console.log('Markdown build complete.')
   })
+
 })
 
 function renderPost(path, done) {
@@ -52,7 +70,6 @@ function renderPost(path, done) {
         console.log(`✅  writing/${filename} -> ${permalink}`)
       })
     })
-
   })
 }
 
@@ -64,13 +81,8 @@ function writeTemplate(posts, target, done) {
     if (err) return done(err)
 
     const $ = cheerio.load(results.index)
-    // const body = posts.map(post => ejs.render(results.template, post)).join('\n')
     const links = posts.map(post => `<li><a href=${post.permalink}>${post.title}</a></li>`).join('\n')
     $('.posts').html(`<ol>${links}</ol>`)
-
-    // $('article > h2:first-child').each(function(i, elem) {
-    //   $(elem).html(`<a href=${posts[i].permalink}>${posts[i].title}</a>`)
-    // })
 
     fs.writeFile(target, $.html(), done)
   })
