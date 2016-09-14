@@ -1,11 +1,11 @@
 ## 2016 Reading List
 
-<fieldset>
+<fieldset class="bg-near-white">
   <legend>Key</legend>
   <ul>
     <li>_In Progress_</li>
-    <li>~~_Completed_~~</li>
-    <li>&dagger; – Audible</li>
+    <li>~~_Finished~~</li>
+    <li>&dagger; Audible</li>
     <li>▶ Notes</li>
   </ul>
 </fieldset>
@@ -24,7 +24,9 @@
   <li>
     <details>
       <summary>~~_American Gods_ – Neil Gaiman~~</summary>
-      <p>Finally, finally got around to reading this after letting it languish on my Kindle for several years. Recommended by both my wife and best friend, I'm glad to say that it read fast and well worth the effort.</p>
+      <p>Finally, finally got around to reading this after letting it languish on my Kindle for several years. Recommended by both my wife and best friend, I was pleased to so quickly become completely immersed in it. Gaiman creates moody settings that feel rich without going into Stephen King–levels of hyper-detail.</p>
+
+      <p>I did have a funny note about Laura, though. Is it just me does she mostly serve as a corpse-ified version a manic pixie dreamgirl?</p>
     </details>
   </li>
   <li>~~_Cat's Cradle_ – Kurt Vonnegut~~</li>
@@ -33,7 +35,9 @@
   <li>
      <details>
        <summary>~~_The Killing Moon_ – N.K. Jemisin~~</summary>
-       <p>I bought this based on an enthusiastic employee recommendation placard at Borderlands Books in San Francisco but set it down less than a quarter of the way into it for reasons I can no longer recall. I decided to pick it up again this year and loved it. Jemisin is a creator of vivid universes: they pull you into their orbit until they envelop you completely, at which point you'll find yourself thumbing back to previous chapters scanning for the precious and minute x devices that do so well to establish an _exact_ tone and setting. There's just enough narrative white space to contrast with the hyper-detailed emotional awareness of the characters and settings so that the story is framed with elaborate societal backstory that has clear eye-line to the sequel(s). Great sci-fi recommendation.</p>
+       <p>I bought this based on an enthusiastic employee recommendation placard at Borderlands Books in San Francisco but set it down less than a quarter of the way into it for reasons I can no longer recall. I decided to pick it up again this year and loved it.</p>
+
+       <p>Jemisin is a creator of vivid universes: they pull you into their orbit until they envelop you completely, at which point you'll find yourself thumbing back to previous chapters scanning for the precious and minute x devices that do so well to establish an _exact_ tone and setting. There's just enough narrative white space to contrast with the hyper-detailed emotional awareness of the characters and settings so that the story is framed with elaborate societal backstory that has clear eye-line to the sequel(s). Great sci-fi recommendation.</p>
      </details>
    </li>
    <li>~~_Learning to Live Finally: The Last Interview_ – Jacques Derrida~~</li>
