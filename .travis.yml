@@ -1,10 +1,12 @@
-lang: node_js
+language: node_js
 node_js:
-- "6"
+  - "6"
+install:
+  - npm install
 script:
-- "npm run build"
+  - npm run build
 after_success:
-- "./build/push.sh"
+  - ./build/push.sh
 env:
   global:
     secure: QVjf9glYmcXi9QIx31WkudhN0tNErogU02P+7Kir412X3OGVWI9letHSbLjSRNbrNtwl1rWxYheeZjTL6CrQtqcqeA/ywNjvx1z1jq3tBdDJPix1Rum8b7SUFHYsbCMbB735zE9wrC37AFZAN7FOvP/zrSMya67dMy63nAxodFY=
