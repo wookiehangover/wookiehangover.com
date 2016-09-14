@@ -33,6 +33,50 @@ a {
   transition: all .1s ease-out;
 }
 
+details[open] summary:active,
+details summary:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary:before {
+  content: '▶';
+  display: inline-block;
+  transform-origin: 7px 12px;
+  @extend .pr2;
+  animation: closeDetails 200ms;
+  animation-fill-mode: both;
+}
+
+@keyframes closeDetails {
+  from { transform: rotate(90deg); }
+  to { transform: rotate(0); }
+}
+
+@keyframes openDetails {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(45deg) scale(1.25);
+  }
+
+  100% {
+    transform: rotate(90deg) scale(1);
+  }
+}
+
+details[open] summary:before {
+  animation: openDetails 200ms;
+  animation-fill-mode: forwards;
+  @extend .red;
+}
+
 a, details > summary {
   cursor: url(./img/avatar-pointer.png) 10 10, auto;
 }

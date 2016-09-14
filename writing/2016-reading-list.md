@@ -20,7 +20,12 @@
       <p>I've read this before and I absolutely love it. Pure sci-fi zanyness with enough acid trips, talking dolphins, and fractal structure make it prime re-reading material, allowing for the slow jokes to play out with more more anticipation and certainly with more perspective to better take in the instant shifts betweens characters and timelines.</p>
     </details>
   </li>
-  <li>_Influx_ — Daniel Suarez<sup>&dagger;</sup></li>
+  <li>
+    <details>
+      <summary>~~_Influx_ — Daniel Suarez<sup>&dagger;</sup>~~</summary>
+      <p>Yet another Daniel Suarez tech thriller that I liked. I listened to this one instead of reading it, and as if this is any sort of compliment, but it made doing the dishes and assembling IKEA furniture thoroughly enjoyable.</p>
+    </details>
+  </li>
   <li>
     <details>
       <summary>~~_American Gods_ – Neil Gaiman~~</summary>
