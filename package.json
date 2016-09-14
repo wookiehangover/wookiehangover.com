@@ -36,6 +36,7 @@
     "postcss-csso": "^1.1.2",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^8.1.2",
+    "postcss-url": "^5.1.2",
     "uncss": "^0.14.1"
   },
   "dependencies": {

@@ -5,7 +5,7 @@ body {
   @extend .ma3;
   @extend .ma4-ns;
   @extend .sans-serif;
-  cursor: url(img/avatar-sm.png) 10 10, auto;
+  cursor: url(./img/avatar-sm.png) 10 10, auto;
   background: white;
 }
 
@@ -34,7 +34,7 @@ a {
 }
 
 a, details > summary {
-  cursor: url(img/avatar-pointer.png) 10 10, auto;
+  cursor: url(./img/avatar-pointer.png) 10 10, auto;
 }
 
 a:hover {
@@ -109,7 +109,7 @@ article li {
 }
 
 
-article aside,  
+article aside,
 article footer {
   @extend .f6;
   @extend .gray;
