@@ -1,10 +1,12 @@
 ## Making things for fun
 
-This is not a blog—it's a fun side-project done over a couple weekends. It's not a blog because it's not using any blogging software, per se, just some elbow grease and [a few scripts][1] that I've managed to string together into a mostly-working state.
+This isn’t a blog. It's a fun side-project done over a couple weekends. There’s a big difference.
 
-Simple products are fashionable these days, especially when it comes to media consumption. Even I've been known to write a Medium post every now and again, but I didn't set out to build this as a monument to simplicity. This isn't that type of place and I'm not that type of fella.
+It's not a blog because it's not using any blogging software, per-se, just some elbow grease and [a few scripts][1] that I've to cobbled together into a mostly-working, glue–and–popsicle-sticks publishing platform.
 
-This is just a barely functioning, loosely coherent website with weird cursor effects<sup>[1][footnote1]</sup> (unless I've gotten bored and removed them) and footnotes<sup>[2][footnote2]</sup> (I probably haven't removed these.)
+Simple products are fashionable these days, especially when it comes to media consumption. Even I've been known to write a Medium post upon occasion, but I didn't set out to build this as a monument to simplicity. This isn't that type of place and I'm not that type of fella; things are always a bit messier than that in real life.
+
+So as it stands, this is just a barely functioning, loosely coherent website with weird cursor effects<sup>[1][footnote1]</sup> (unless I've gotten bored and removed them) and superfluous footnotes<sup>[2][footnote2]</sup> (I probably haven't removed these.)
 
 > So why go through all the trouble to build this in the first place? Why not just use Medium?
 
@@ -12,17 +14,21 @@ Isn't this what all developers inevitably do anyway? Build some crappy knock-off
 
 The question might as well then become, "why build anything at all?"
 
-I made this because it was fun. It was more fun figuring out how to [easily inline all the assets][2] and [strip out unused css][3] on this page than it would have been to set up Wordpress again. The first time I ever set up Wordpress in 2008 was a magical and transcendent experience, so why am I so quick to shun it now? Wordpress is great software and I can't make anything that comes close to it in a weekend.
+**I made this because it was fun.**
+
+It was more fun figuring out how to [easily inline all the assets][2] and [strip out unused css][3] on this page than it would have been to set up Wordpress again. The first time I ever set up Wordpress in 2008 was a magical and transformative experience, so why am I so quick to shun it now? Am I really that self-important? Wordpress is great software and I can't make anything that comes close to it in a weekend.
 
 > Doing something from scratch, even if it's not polished, doesn't deny or invalidate what you've done in the past.
 
-For a long time I refused to do any writing on my website because I felt like I didn't have the time. I was afraid that anything I wrote would be bad and then I'd be committed to it forever, comma splices and all. Paranoia that I would look back on it later with utter embarrassment kept me from committing to much writing since I killed my [first blog][5] in 2008. What I guess I means is I'm over that now? [Worse is better][4] after all, so why not let the shitposts start flowing!
+For a long time I refused to do any writing on my website because I felt like I didn't have the time. I was afraid that anything I wrote would be bad and then I'd be committed to it forever, comma splices and all. Paranoia that I would look back on it later with utter embarrassment kept me from committing to much writing since I killed my [first blog][5] in 2008. What I guess I means is I'm over that now? [Worse is better][4] after all, so why not let the tap start flowing!
 
-In keeping with that spirit, I've shoddily rebuild Jekyll so that I can have reasonable writing experience for myself, which means markdown and not much else to fuss over. I'm unburdened by the need for SEO or any other unspeakable non-sense, but I care about mobile web and I care about pagespeed so I've gone and done the aforementioned asset inlining, which I think has come out quite nicely.
+In keeping with that spirit, I've shoddily rebuild an ode to Jekyll so that I can have reasonable writing experience for myself, which means markdown and not much else to fuss over. I'm unburdened by the need for SEO or any other unspeakable non-sense, but I care about mobile web and I care about pagespeed so I've gone and done the aforementioned asset inlining, which I think has come out quite nicely.
 
-Go out and make something, even if it's a shoddy facsimile of something else.
+**Go out and make something, even if it's a shoddy facsimile of something else.**
 
-(And, yes, I do plan on building an HTML guest book some day. But for now a link to twitter will have to suffice ;)
+What are you going to make for yourself?
+
+p.s. And, yes, I do plan on building an HTML guest book some day. But for now a link to twitter will have to suffice ✍️
 
 <aside>
   <ol>
