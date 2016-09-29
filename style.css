@@ -1,12 +1,16 @@
 @import './node_modules/tachyons/css/tachyons.css';
 
+html, body {
+  min-height: 100%;
+}
+
 body {
   @extend .mw7;
   @extend .ma3;
   @extend .ma4-ns;
   @extend .sans-serif;
+  @extend .black;
   cursor: url(./img/avatar-sm.png) 10 10, auto;
-  background: white;
 }
 
 h1 {
@@ -26,11 +30,15 @@ ul {
 }
 
 a {
-  color: #444;
+  @extend .near-black;
   text-decoration: none;
-  border-bottom: 0.125em solid #CDECFF;
-  box-shadow: inset 0 -0.25em 0 #CDECFF;
+  border-bottom: 0.125em solid rgba(0,0,0,0.2);
+  box-shadow: inset 0 -0.25em 0 rgba(0,0,0,0.2);
   transition: all .1s ease-out;
+}
+
+a:hover {
+  background: rgba(0,0,0,0.2);
 }
 
 details[open] summary:active,
@@ -81,9 +89,7 @@ a, details > summary {
   cursor: url(./img/avatar-pointer.png) 10 10, auto;
 }
 
-a:hover {
-  background: #CDECFF;
-}
+
 
 sup {
   font-size: 0.75rem;
@@ -137,7 +143,7 @@ article {
 }
 
 article > h2 {
-  @extend .red;
+  @extend .washed-yellow;
 }
 
 article p {

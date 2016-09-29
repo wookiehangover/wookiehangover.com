@@ -42,6 +42,6 @@
   "dependencies": {
     "async": "^2.0.1",
     "gazer": "^1.0.0",
-    "tachyons": "^4.2.1"
+    "tachyons": "^4.4.3"
   }
 }

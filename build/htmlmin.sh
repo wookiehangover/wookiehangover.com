@@ -12,7 +12,7 @@ mkdir -p $output_path
 
 echo "Removing unused css, inlining and minfying $file..."
 # Swap the stylesheet for the minified version and run uncss to capture the page's unique styles
-uncss $file > "$output_path/$uncss_css"
+uncss -i 'details[open] *' $file > "$output_path/$uncss_css"
 # Swap the stylesheet for the new uncss'ed version
 sed "s,[^\"']*\.css,$uncss_css,1" $file > $output_path/$uncss_html
 
