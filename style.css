@@ -13,17 +13,9 @@ body {
   cursor: url(./img/avatar-sm.png) 10 10, auto;
 }
 
-h1 {
-  @extend .f1;
-}
-
-h2 {
-  @extend .f2;
-}
-
-h3 {
-  @extend .f3;
-}
+h1 { @extend .f1; }
+h2 { @extend .f2; }
+h3 { @extend .f3; }
 
 ul {
   list-style: circle;
@@ -32,13 +24,13 @@ ul {
 a {
   @extend .near-black;
   text-decoration: none;
-  border-bottom: 0.125em solid rgba(0,0,0,0.2);
-  box-shadow: inset 0 -0.25em 0 rgba(0,0,0,0.2);
+  border-bottom: 0.125em solid #cdecff;
+  box-shadow: inset 0 -0.25em 0 #cdecff;
   transition: all .1s ease-out;
 }
 
 a:hover {
-  background: rgba(0,0,0,0.2);
+  background: #cdecff;
 }
 
 details[open] summary:active,
@@ -143,7 +135,7 @@ article {
 }
 
 article > h2 {
-  @extend .washed-yellow;
+  @extend .red;
 }
 
 article p {

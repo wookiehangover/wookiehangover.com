@@ -14,7 +14,7 @@ const posts = [
   '2016-reading-list.md'
 ]
 
-console.log('Building Markdown 📑')
+console.log('Building Markdown \n')
 async.map(posts, renderPost, (err, posts) => {
   if (err) throw err
 
@@ -35,7 +35,7 @@ async.map(posts, renderPost, (err, posts) => {
     }
   ], (err) => {
     if (err) throw err
-    console.log('Markdown build complete.')
+    console.log('\nMarkdown build complete.')
   })
 
 })
