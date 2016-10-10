@@ -11,8 +11,9 @@
 </fieldset>
 
 <ol>
-  <li>_The Three-Body Problem_ — Cixin Liu</li>
-  <li>_Brian Eno: Visual Music_ — Christopher Scoates</li>
+  <li>Civilization — Niall Ferguson</li>
+  <li>~~_The Three-Body Problem_ — Cixin Liu~~</li>
+  <li>~~_Brian Eno: Visual Music_ — Christopher Scoates~~</li>
   <li>_Kissinger: 1923-1969 The Idealist_ — Niall Ferguson</li>
   <li>
     <details>
