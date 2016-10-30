@@ -8,6 +8,7 @@
     "build:css": "./build/postcss.sh",
     "build:html": "./build/htmlmin.sh",
     "build:posts": "./build/markdown.js",
+    "build:sw": "sw-precache --root=docs",
     "watch:css": "gazer -p style.css npm run build:css",
     "watch:posts": "gazer -p 'writing/*.md' npm run build:posts",
     "copy-assets": "cp *.js docs && cp img/*.gif img/favicon.ico docs/img && imagemin img/*.jpg img/*.png -o docs/img"
@@ -37,6 +38,7 @@
     "postcss-extend": "^1.0.5",
     "postcss-import": "^8.1.2",
     "postcss-url": "^5.1.2",
+    "sw-precache": "^4.2.1",
     "uncss": "^0.14.1"
   },
   "dependencies": {

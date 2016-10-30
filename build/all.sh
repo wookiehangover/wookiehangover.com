@@ -18,5 +18,7 @@ for file in $(ls writing/*.html); do
   npm run build:html -- $file docs/writing
 done;
 
+npm run build:sw
+
 echo
 echo "💯  Build Complete."
