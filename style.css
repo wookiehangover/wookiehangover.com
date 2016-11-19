@@ -48,7 +48,7 @@ details summary:before {
   display: inline-block;
   transform-origin: 7px 12px;
   @extend .pr2;
-  animation: closeDetails 200ms;
+  animation: closeDetails 400ms;
   animation-fill-mode: both;
 }
 
@@ -63,7 +63,7 @@ details summary:before {
   }
 
   50% {
-    transform: rotate(45deg) scale(1.25);
+    transform: scale(1.4);
   }
 
   100% {
@@ -72,7 +72,7 @@ details summary:before {
 }
 
 details[open] summary:before {
-  animation: openDetails 200ms;
+  animation: openDetails 400ms;
   animation-fill-mode: forwards;
   @extend .red;
 }

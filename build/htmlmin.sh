@@ -10,15 +10,17 @@ inline_html=${filename%.html}-inline.html
 
 mkdir -p $output_path
 
-echo "Removing unused css, inlining and minfying $file..."
+# echo "Removing unused css, inlining and minfying $file..."
+
 # Swap the stylesheet for the minified version and run uncss to capture the page's unique styles
-uncss -i 'details[open] *' $file > "$output_path/$uncss_css"
+# uncss -i 'details[open] summary:before' $file > "$output_path/$uncss_css"
+
 # Swap the stylesheet for the new uncss'ed version
-sed "s,[^\"']*\.css,$uncss_css,1" $file > $output_path/$uncss_html
+# sed "s,[^\"']*\.css,$uncss_css,1" $file > $output_path/$uncss_html
 
 # Create a version with everything inlined
-inliner $output_path/$uncss_html > $output_path/$filename
+inliner $file > $output_path/$filename
 echo
 echo "$output_path/$filename written"
 
-rm $output_path/*-uncss.*
+# rm $output_path/*-uncss.*
