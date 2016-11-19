@@ -11,7 +11,9 @@
 </fieldset>
 
 <ol>
-  <li>Civilization — Niall Ferguson</li>
+  <li>The Sovereign Individual — James Dale Davidson and Lord William Rees-Mogg</li>
+  <li>Against the Gods: The Remarkable Story of Risk — Peter L. Bernstein</li>
+  <li>~~Civilization — Niall Ferguson~~</li>
   <li>~~_The Three-Body Problem_ — Cixin Liu~~</li>
   <li>~~_Brian Eno: Visual Music_ — Christopher Scoates~~</li>
   <li>_Kissinger: 1923-1969 The Idealist_ — Niall Ferguson</li>
