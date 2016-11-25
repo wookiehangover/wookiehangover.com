@@ -14,6 +14,8 @@
   <li>Fooled By Randomness — Nassim Nicholas Taleb</li>
   <li>The Sovereign Individual — James Dale Davidson and Lord William Rees-Mogg</li>
   <li>Against the Gods: The Remarkable Story of Risk — Peter L. Bernstein</li>
+  <li>Time Travel — James Gleick</li>
+  <li>~~7 Days In Ohio — Nathan Rabin~~</li>
   <li>~~Inherent Vice — Thomas Pynchon~~<sup>&dagger;</sup></li>
   <li>~~Civilization — Niall Ferguson~~</li>
   <li>~~_The Three-Body Problem_ — Cixin Liu~~</li>
@@ -60,11 +62,19 @@
    <li>
       <details>
         <summary>~~_Fire in the Valley_ – Michael Swaine and Paul Freiberger~~</summary>
-        <p>I often think about what I missed by not being “in tech” (or rather “in the Bay Area”) in those days. I graduated high school in 2004, meaning that if I had my shit together I could have gotten the fuck out of Tampa and high-tailed it to the west coast just in time to be on the ground floor to something cool.</p>
+        <p>I often think about what I missed by not being “in tech” (or rather “in the Bay Area”) when I was a bit younger. I graduated high school in 2004, meaning that if I had my shit together I could have gotten the fuck out of Tampa and high-tailed it to the west coast just in time to be on the ground floor to something cool. I had very little idea how much location factors in to participating in the digital economy.</p>
 
         <p>Instead I went to college and said “fuck computers."</p>
 
-        <p>I knew, however, I was still “good” with computers, whatever that means, I just lacked the vision and drive to understand that I could effectively hustle my way into tech if I wanted to. I didn’t manage to _really_ do that until 2009, after really _deciding_ to at the end of 2008. I read the New Yorker piece about Sam Altman and couldn’t help but feel the hot sting of envy reading about him at Stanford in 2005. Right place at the right time, I guess. Like Steve at the Homebrew Computing Club. I can’t read about that and not wish for that type of kismet in my life.</p>
+        <p>This book isn't about the years following the first dotcom bubble—it's about an earlier time, when fortunes were made just as quickly, but there was no internet to fuel the personal computer revolution. Just a bunch of hard working, often scheming, nerds and true believers making the hardware and the fabulists selling a dream of a digital future. They created a scene where there was none, and seemed to have fun doing it.</p>
+
+        <p>I rarely admire or envy baby boomers, but the people and events described in this book make a clear exception to that policy.</p>
+
+        <p>Even after I left high school I knew I was “good” with computers, whatever that means, I just lacked the vision and drive to understand that I could truly hustle my way into tech if I wanted to. I didn’t manage to _really_ do that until 2009, after really _deciding_ to at the end of 2008.
+
+        <p>Recently I read the [New Yorker profile about Sam Altman][newyorker] and couldn’t help but feel the familiar hot sting of envy even thinking about the _scene_ at Stanford in 2005. Right place at the right time, I guess.</p>
+
+        <p>Like Steve Jobs and Steve Wozniack at the Homebrew Computing Club—I can’t read about that and not wish for that type of kismet in my life.</p>
    </li>
    <li>~~_The Ascent of Money_ – Niall Feguson~~</li>
    <li>~~_Burr_ – Gore Vidal~~</li>
@@ -75,3 +85,4 @@
 Related: [2015 reading list][1]
 
 [1]: https://medium.com/@sambreed/2015-books-504cb79ac5c0#.f8izs5mpq
+[newyorker]: http://www.newyorker.com/magazine/2016/10/10/sam-altmans-manifest-destiny
