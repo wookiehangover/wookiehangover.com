@@ -14,7 +14,7 @@
   <li>Fooled By Randomness — Nassim Nicholas Taleb</li>
   <li>The Sovereign Individual — James Dale Davidson and Lord William Rees-Mogg</li>
   <li>Against the Gods: The Remarkable Story of Risk — Peter L. Bernstein</li>
-  <li>~~Inherent Vice — Thomas Pynchon<sup>&dagger;</sup>~~</li>
+  <li>~~Inherent Vice — Thomas Pynchon~~<sup>&dagger;</sup></li>
   <li>~~Civilization — Niall Ferguson~~</li>
   <li>~~_The Three-Body Problem_ — Cixin Liu~~</li>
   <li>~~_Brian Eno: Visual Music_ — Christopher Scoates~~</li>
@@ -27,7 +27,7 @@
   </li>
   <li>
     <details>
-      <summary>~~_Influx_ — Daniel Suarez<sup>&dagger;</sup>~~</summary>
+      <summary>~~_Influx_ — Daniel Suarez~~<sup>&dagger;</sup></summary>
       <p>Yet another Daniel Suarez tech thriller that I liked. I listened to this one instead of reading it, and as if this is any sort of compliment, but it made doing the dishes and assembling IKEA furniture thoroughly enjoyable.</p>
     </details>
   </li>
@@ -48,6 +48,8 @@
        <p>I bought this based on an enthusiastic employee recommendation placard at Borderlands Books in San Francisco but set it down less than a quarter of the way into it for reasons I can no longer recall. I decided to pick it up again this year and loved it.</p>
 
        <p>Jemisin is a creator of vivid universes: they pull you into their orbit until they envelop you completely, at which point you'll find yourself thumbing back to previous chapters scanning for the precious and minute x devices that do so well to establish an _exact_ tone and setting. There's just enough narrative white space to contrast with the hyper-detailed emotional awareness of the characters and settings so that the story is framed with elaborate societal backstory that has clear eye-line to the sequel(s). Great sci-fi recommendation.</p>
+
+       <p>Update: also going back and listening to this now on on Audible</p>
      </details>
    </li>
    <li>~~_Learning to Live Finally: The Last Interview_ – Jacques Derrida~~</li>
@@ -55,10 +57,18 @@
    <li>~~_Barbarian Days_ – William Finnegan~~</li>
    <li>~~_The (Mis)Behavior of Markets_ – Beniot Mandelbrot~~</li>
    <li>~~_Antifragile_ – Nassim Nicholas Taleb~~</li>
-   <li>~~_Fire in the Valley_ – Michael Swaine and Paul Freiberger~~</li>
+   <li>
+      <details>
+        <summary>~~_Fire in the Valley_ – Michael Swaine and Paul Freiberger~~</summary>
+        <p>I often think about what I missed by not being “in tech” (or rather “in the Bay Area”) in those days. I graduated high school in 2004, meaning that if I had my shit together I could have gotten the fuck out of Tampa and high-tailed it to the west coast just in time to be on the ground floor to something cool.</p>
+
+        <p>Instead I went to college and said “fuck computers."</p>
+
+        <p>I knew, however, I was still “good” with computers, whatever that means, I just lacked the vision and drive to understand that I could effectively hustle my way into tech if I wanted to. I didn’t manage to _really_ do that until 2009, after really _deciding_ to at the end of 2008. I read the New Yorker piece about Sam Altman and couldn’t help but feel the hot sting of envy reading about him at Stanford in 2005. Right place at the right time, I guess. Like Steve at the Homebrew Computing Club. I can’t read about that and not wish for that type of kismet in my life.</p>
+   </li>
    <li>~~_The Ascent of Money_ – Niall Feguson~~</li>
    <li>~~_Burr_ – Gore Vidal~~</li>
-   <li>~~_Daemon_ — Daniel Suarez<sup>&dagger;</sup>~~</li>
+   <li>~~_Daemon_ — Daniel Suarez~~<sup>&dagger;</sup></li>
    <li>~~_How to Make Sense of Any Mess_ — Abby Covert~~</li>
 </ol>
 
