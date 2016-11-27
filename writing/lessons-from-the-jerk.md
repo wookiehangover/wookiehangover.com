@@ -4,7 +4,7 @@ If you're not familiar with [The Jerk (1978)](imdb) starring Steve Martin, do yo
 
 <img src="../img/the-jerk-1978.jpg" class="pa1 ba b--light-silver" />
 
-Now that you're back, I want to share 3 very important pieces of advice that Maven Johnson, the star of our story, receives from his loving family before he departs on his Hero's Journey:
+Now that you're back, I want to share 3 very important pieces of advice that the star of our story, Maven Johnson, receives from his loving family before he departs on his Hero's Journey:
 
 1. The Lord loves a working man
 2. Don't trust whitey
