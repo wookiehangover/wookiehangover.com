@@ -137,7 +137,9 @@
     }
   }
 
-  init();
+  setTimeout(function() { // be less annoying, gosh
+    init();
+  }, 60e3)
 })();
 
 if ('serviceWorker' in navigator) {
