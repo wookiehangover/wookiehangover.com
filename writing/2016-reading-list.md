@@ -11,75 +11,11 @@
 </fieldset>
 
 <ol>
-  <li>Fooled By Randomness — Nassim Nicholas Taleb</li>
+  <li>~~_How to Make Sense of Any Mess_ — Abby Covert~~</li>
 
-  <li>The Sovereign Individual — James Dale Davidson and Lord William Rees-Mogg</li>
+   <li>~~_Daemon_ — Daniel Suarez~~<sup>&dagger;</sup></li>
 
-  <li>Against the Gods: The Remarkable Story of Risk — Peter L. Bernstein</li>
-
-  <li>Time Travel — James Gleick</li>
-
-  <li>~~7 Days In Ohio — Nathan Rabin~~</li>
-
-  <li>~~Inherent Vice — Thomas Pynchon~~<sup>&dagger;</sup></li>
-
-  <li>~~Civilization — Niall Ferguson~~</li>
-
-  <li>~~_The Three-Body Problem_ — Cixin Liu~~</li>
-
-  <li>~~_Brian Eno: Visual Music_ — Christopher Scoates~~</li>
-
-  <li>_Kissinger: 1923-1969 The Idealist_ — Niall Ferguson</li>
-
-  <li>
-    <details>
-      <summary>_The Illuminatus! Trilogy_ — Robert Shea and Robert Anton Wilson</summary>
-      <p>I've read this before and I absolutely love it. Pure sci-fi zanyness with enough acid trips, talking dolphins, and fractal structure make it prime re-reading material, allowing for the slow jokes to play out with more more anticipation and certainly with more perspective to better take in the instant shifts betweens characters and timelines.</p>
-    </details>
-  </li>
-
-  <li>
-    <details>
-      <summary>~~_Influx_ — Daniel Suarez~~<sup>&dagger;</sup></summary>
-      <p>Yet another Daniel Suarez tech thriller that I liked. I listened to this one instead of reading it, and as if this is any sort of compliment, but it made doing the dishes and assembling IKEA furniture thoroughly enjoyable.</p>
-    </details>
-  </li>
-
-  <li>
-    <details>
-      <summary>~~_American Gods_ – Neil Gaiman~~</summary>
-      <p>Finally, finally got around to reading this after letting it languish on my Kindle for several years. Recommended by both my wife and best friend, I was pleased to so quickly become completely immersed in it. Gaiman creates moody settings that feel rich without going into Stephen King–levels of hyper-detail.</p>
-
-      <p>I did have a funny note about Laura, though. Is it just me does she mostly serve as a corpse-ified version a manic pixie dreamgirl?</p>
-    </details>
-  </li>
-
-  <li>~~_Cat's Cradle_ – Kurt Vonnegut~~</li>
-
-  <li>~~_Flow My Tears, the Policeman Said_ – Philip K. Dick~~</li>
-
-  <li>~~_Dirk Gently's Holistic Detective Agency_ – Douglas Adams~~</li>
-
-  <li>
-     <details>
-       <summary>~~_The Killing Moon_ – N.K. Jemisin~~</summary>
-       <p>I bought this based on an enthusiastic employee recommendation placard at Borderlands Books in San Francisco but set it down less than a quarter of the way into it for reasons I can no longer recall. I decided to pick it up again this year and loved it.</p>
-
-       <p>Jemisin is a creator of vivid universes: they pull you into their orbit until they envelop you completely, at which point you'll find yourself thumbing back to previous chapters scanning for the precious and minute x devices that do so well to establish an _exact_ tone and setting. There's just enough narrative white space to contrast with the hyper-detailed emotional awareness of the characters and settings so that the story is framed with elaborate societal backstory that has clear eye-line to the sequel(s). Great sci-fi recommendation.</p>
-
-       <p>Update: also going back and listening to this now on on Audible</p>
-     </details>
-   </li>
-
-   <li>~~_Learning to Live Finally: The Last Interview_ – Jacques Derrida~~</li>
-
-   <li>~~_Sapiens_ – Yuval Harari~~</li>
-
-   <li>~~_Barbarian Days_ – William Finnegan~~</li>
-
-   <li>~~_The (Mis)Behavior of Markets_ – Beniot Mandelbrot~~</li>
-
-   <li>~~_Antifragile_ – Nassim Nicholas Taleb~~</li>
+   <li>~~_Burr_ – Gore Vidal~~</li>
 
    <li>
       <details>
@@ -102,13 +38,90 @@
         <p>This book stirs up some strong feels.</p>
    </li>
 
+   <li>~~_Antifragile_ – Nassim Nicholas Taleb~~</li>
+
    <li>~~_The Ascent of Money_ – Niall Feguson~~</li>
 
-   <li>~~_Burr_ – Gore Vidal~~</li>
+   <li>~~_The (Mis)Behavior of Markets_ – Beniot Mandelbrot~~</li>
 
-   <li>~~_Daemon_ — Daniel Suarez~~<sup>&dagger;</sup></li>
+   <li>
+      <details>
+        <summary>~~_Barbarian Days_ – William Finnegan~~</summary>
 
-   <li>~~_How to Make Sense of Any Mess_ — Abby Covert~~</li>
+        <p>I didn't grow up around surfing, despite being somewhat near the beach. The Gulf Coast is known for its calm white-sand, warm-water beaches. Not really a place for good waves. The Atlantic coast of Florida is a little better, but this is just the type of thing that's elusive for kids in the suburbs. I was lucky enough to have a mom willing to drive me an hour to the skatepark (and I still skate to this day, so it wasn't for nothing), but driving 2 or 3 hours to the opposite side of the state to try out a new board sport wasn't in the cards. Surfing was something that only happened in the fictional Saved by the Bell universe of Southern California.</p>
+
+        <p>Continuing on a theme, this feels like another nostalgic take on a subject (and time) that passed me by. It's too late for me to commit to another brutal, dangerous hobby. My wife agrees with me.</p>
+
+        <p>Sometimes I'm in awe of what a trip books are: it isn't my expression, but <b>the notion that you stare at a bunch of symbols on a page and experience vivid, emotional, waking hallucinations with zero physical effort or deleterious side-effects is fucking flabbergasting.</b></p>
+
+        <p>This book places you in the water, on the board. It makes me pine for those types of memories, but I'm happy to share a sliver of the experience without getting wet.</p>
+      </details>
+    </li>
+
+   <li>~~_Sapiens_ – Yuval Harari~~</li>
+
+   <li>~~_Learning to Live Finally: The Last Interview_ – Jacques Derrida~~</li>
+
+   <li>
+     <details>
+       <summary>~~_The Killing Moon_ – N.K. Jemisin~~</summary>
+
+       <p>I bought this based on an enthusiastic employee recommendation placard at Borderlands Books in San Francisco but set it down less than a quarter of the way into it for reasons I can no longer recall. I decided to pick it up again this year and loved it.</p>
+
+       <p>Jemisin is a creator of vivid universes: they pull you into their orbit until they envelop you completely, at which point you'll find yourself thumbing back to previous chapters scanning for the precious and minute x devices that do so well to establish an _exact_ tone and setting. There's just enough narrative white space to contrast with the hyper-detailed emotional awareness of the characters and settings so that the story is framed with elaborate societal backstory that has clear eye-line to the sequel(s). Great sci-fi recommendation.</p>
+
+       <p>Update: also going back and listening to this now on on Audible</p>
+     </details>
+   </li>
+
+  <li>~~_Dirk Gently's Holistic Detective Agency_ – Douglas Adams~~</li>
+
+  <li>~~_Flow My Tears, the Policeman Said_ – Philip K. Dick~~</li>
+
+  <li>~~_Cat's Cradle_ – Kurt Vonnegut~~</li>
+
+  <li>
+    <details>
+      <summary>~~_American Gods_ – Neil Gaiman~~</summary>
+      <p>Finally, finally got around to reading this after letting it languish on my Kindle for several years. Recommended by both my wife and best friend, I was pleased to so quickly become completely immersed in it. Gaiman creates moody settings that feel rich without going into Stephen King–levels of hyper-detail.</p>
+
+      <p>I did have a funny note about Laura, though. Is it just me does she mostly serve as a corpse-ified version a manic pixie dreamgirl?</p>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>~~_Influx_ — Daniel Suarez~~<sup>&dagger;</sup></summary>
+      <p>Yet another Daniel Suarez tech thriller that I liked. I listened to this one instead of reading it, and as if this is any sort of compliment, but it made doing the dishes and assembling IKEA furniture thoroughly enjoyable.</p>
+    </details>
+  </li>
+
+  <li>
+    <details>
+      <summary>_The Illuminatus! Trilogy_ — Robert Shea and Robert Anton Wilson</summary>
+      <p>I've read this before and I absolutely love it. Pure sci-fi zanyness with enough acid trips, talking dolphins, and fractal structure make it prime re-reading material, allowing for the slow jokes to play out with more more anticipation and certainly with more perspective to better take in the instant shifts betweens characters and timelines.</p>
+    </details>
+  </li>
+
+  <li>_Kissinger: 1923-1969 The Idealist_ — Niall Ferguson</li>
+
+  <li>~~_Brian Eno: Visual Music_ — Christopher Scoates~~</li>
+
+  <li>~~_The Three-Body Problem_ — Cixin Liu~~</li>
+
+  <li>~~Civilization — Niall Ferguson~~</li>
+
+  <li>~~Inherent Vice — Thomas Pynchon~~<sup>&dagger;</sup></li>
+
+  <li>~~7 Days In Ohio — Nathan Rabin~~</li>
+
+  <li>Time Travel — James Gleick</li>
+
+  <li>Against the Gods: The Remarkable Story of Risk — Peter L. Bernstein</li>
+
+  <li>The Sovereign Individual — James Dale Davidson and Lord William Rees-Mogg</li>
+
+  <li>Fooled By Randomness — Nassim Nicholas Taleb</li>
 </ol>
 
 Related: [2015 reading list][1]
