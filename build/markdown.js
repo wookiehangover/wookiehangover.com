@@ -9,6 +9,7 @@ const fs = require('fs')
 const ejs = require('ejs')
 
 const posts = [
+  'lessons-from-the-jerk.md',
   'picking-up-the-pieces.md',
   'making-things-for-fun.md',
   '2016-reading-list.md'
