@@ -1,4 +1,4 @@
-# Lessons from The Jerk
+## Lessons from The Jerk
 
 If you're not familiar with [The Jerk (1978)](imdb) starring Steve Martin, do yourself (well really, do _me_ a favor) and watch it. It's streaming on Amazon Video. Just go watch it. I'll wait.
 
@@ -19,3 +19,5 @@ I may not be anything other than an average white american man, but I sure as he
 And I may not follow all good advice, but seriously you should see a doctor every once in a while. And call your mom.
 
 I first saw these painted on a plaque in a tattoo shop in Boulder, completely removed from their context in The Jerk, which I had already seen but didn't connect at the time. I had remembered the signage despite missing the connection to the film. I re-watched it last week and finally noticed, and reveled in the warmth of a pop-culture reference coming full circle: it was a moment of life's weird interconnected on full display. I spent a lot of time in that tattoo shop.
+
+What difficult-to-ignore advice has influenced you?
