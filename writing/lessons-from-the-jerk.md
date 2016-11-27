@@ -12,7 +12,7 @@ Now that you're back, I want to share 3 very important pieces of advice that Mav
 
 **This is universally good advice.**
 
-I may not believe in any higher power, but showing up and a willingness to work gives you more advantages than not.
+I may not believe in any higher power, but showing up and being willing to get your hands dirty gives you more advantages than not.
 
 I may not be anything other than an average white american man, but I sure as hell don't trust any authority figure. It's a reasonable precautionary measure.
 
