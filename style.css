@@ -1,15 +1,14 @@
 @import './node_modules/tachyons/css/tachyons.css';
 
 html, body {
+  height: 100%;
   min-height: 100%;
 }
 
 body {
-  @extend .mw7;
-  @extend .ma3;
-  @extend .ma4-ns;
   @extend .sans-serif;
   @extend .black;
+  @extend .bg-white;
   cursor: url(./img/avatar-sm.png) 10 10, auto;
 }
 
@@ -196,4 +195,25 @@ article fieldset li {
     list-style-position: inside;
     padding: 0;
   }
+}
+
+
+main {
+  min-height: 100%;
+  height: auto !important;
+  margin-bottom: -7rem;
+}
+
+main:after {
+  content: '';
+  display: block;
+  height: 7rem;
+}
+
+body > footer:hover {
+  opacity: 100;
+}
+
+body > footer > nav > div:hover .grow {
+  transform: scale(1.6);
 }
