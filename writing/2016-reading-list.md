@@ -117,7 +117,7 @@
 
   <li>Time Travel — James Gleick</li>
 
-  <li>Against the Gods: The Remarkable Story of Risk — Peter L. Bernstein</li>
+  <li>~~Against the Gods: The Remarkable Story of Risk — Peter L. Bernstein~~</li>
 
   <li>The Sovereign Individual — James Dale Davidson and Lord William Rees-Mogg</li>
 
