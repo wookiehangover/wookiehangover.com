@@ -121,7 +121,7 @@
 
   <li>The Sovereign Individual — James Dale Davidson and Lord William Rees-Mogg</li>
 
-  <li>Fooled By Randomness — Nassim Nicholas Taleb</li>
+  <li>~Fooled By Randomness — Nassim Nicholas Taleb~</li>
 </ol>
 
 Related: [2015 reading list][1]
