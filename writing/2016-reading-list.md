@@ -115,13 +115,15 @@
 
   <li>~~7 Days In Ohio — Nathan Rabin~~</li>
 
-  <li>Time Travel — James Gleick</li>
+  <li>_Time Travel_ — James Gleick</li>
 
   <li>~~Against the Gods: The Remarkable Story of Risk — Peter L. Bernstein~~</li>
 
-  <li>The Sovereign Individual — James Dale Davidson and Lord William Rees-Mogg</li>
+  <li>_The Sovereign Individual_ — James Dale Davidson and Lord William Rees-Mogg</li>
 
-  <li>~~Fooled By Randomness — Nassim Nicholas Taleb~~</li>
+  <li>~~_Fooled By Randomness_ — Nassim Nicholas Taleb~~</li>
+  
+  <li>The Black Swan — Nassim Nicholas Taleb</li>
 </ol>
 
 Related: [2015 reading list][1]
