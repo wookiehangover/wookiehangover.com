@@ -124,6 +124,8 @@
   <li>~~_Fooled By Randomness_ — Nassim Nicholas Taleb~~</li>
   
   <li>The Black Swan — Nassim Nicholas Taleb</li>
+  
+  <li>~~_Superforecasting_ – Philip E. Tetlock and Dan Gardner~~</li>
 </ol>
 
 Related: [2015 reading list][1]
