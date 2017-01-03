@@ -118,7 +118,7 @@ body > footer {
 }
 
 body > footer > ol > li {
-  @extend .measure;
+  /*@extend .measure;*/
   @extend .mv1;
 }
 
@@ -139,12 +139,12 @@ article > h2 {
 
 article p {
   /*@extend .serif;*/
-  @extend .measure;
+  /*@extend .measure;*/
   @extend .lh-copy;
 }
 
 article li {
-  @extend .measure;
+  /*@extend .measure;*/
   @extend .mv1;
   @extend .lh-copy;
 }
@@ -154,13 +154,14 @@ article aside,
 article footer {
   @extend .f6;
   @extend .gray;
+  @extend .mv4;
 }
 
 article blockquote {
   @extend .f3;
   @extend .fw6;
   @extend .mv3;
-  @extend .measure;
+  /*@extend .measure;*/
   @extend .lh-title;
 }
 
@@ -168,7 +169,7 @@ article:before {
   content: "∴";
   display: block;
   text-align: center;
-  @extend .measure;
+  /*@extend .measure;*/
 }
 
 article fieldset {
