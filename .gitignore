@@ -33,3 +33,7 @@ bin/*.pid
 log/*.log
 
 writing/*.html
+
+.vscode
+npm-debug*
+src/drafts

@@ -253,7 +253,7 @@ article > pre {
   font-size: 0.8125rem;
   @extend .pa3;
   @extend .pre-code;
-
+  overflow-x: scroll;
 }
 
 @keyframes bg-rainbows {
