@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "./build/all.sh",
-    "build:css": "./build/postcss.sh",
-    "build:html": "./build/htmlmin.sh",
-    "build:posts": "./build/markdown.js",
+    "build:css": "./build/css.sh",
+    "build:html": "./build/html.sh",
+    "build:posts": "./build/posts.js",
     "build:sw": "sw-precache --root=docs",
+    "clean": "rm -rf docs || true",
     "watch:css": "gazer -p style.css npm run build:css",
     "watch:posts": "gazer -p 'writing/*.md' npm run build:posts",
     "copy-assets": "cp *.js docs && cp img/*.gif img/favicon.ico docs/img && imagemin img/*.jpg img/*.png -o docs/img"
@@ -43,8 +44,10 @@
   },
   "dependencies": {
     "async": "^2.0.1",
+    "fs-promise": "^2.0.2",
     "gazer": "^1.0.0",
     "gulp": "^3.9.1",
+    "pify": "^2.3.0",
     "tachyons": "^4.6.1"
   }
 }

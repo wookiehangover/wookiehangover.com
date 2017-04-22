@@ -28,6 +28,13 @@ a {
   transition: all .1s ease-out;
 }
 
+a.none {
+  @extend .near-black;
+  text-decoration: none;
+  border-bottom: none;
+  box-shadow: none;
+}
+
 a:hover {
   background: #cdecff;
 }
@@ -137,6 +144,11 @@ article > h2 {
   @extend .red;
 }
 
+article > h2:hover {
+  animation: rainbows 8s infinite;
+  animation-direction: initial;
+}
+
 article p {
   /*@extend .serif;*/
   /*@extend .measure;*/
@@ -157,11 +169,21 @@ article footer {
   @extend .mv4;
 }
 
+.b--rainbows {
+  animation: border-rainbows 16s infinite;
+  animation-direction: initial;
+}
+
 article blockquote {
   @extend .f3;
-  @extend .fw6;
   @extend .mv3;
+  @extend .i;
+  /*@extend .garamond;*/
   /*@extend .measure;*/
+  @extend .mh0;
+  @extend .pl3;
+  @extend .bl;
+  @extend .b--rainbows;
   @extend .lh-title;
 }
 
@@ -191,14 +213,6 @@ article fieldset li {
   z-index: -2;
 }
 
-@media (max-width: 24rem) {
-  ol, ul {
-    list-style-position: inside;
-    padding: 0;
-  }
-}
-
-
 main {
   min-height: 100%;
   height: auto !important;
@@ -217,4 +231,51 @@ body > footer:hover {
 
 body > footer > nav > div:hover .grow {
   transform: scale(1.6);
+}
+
+.pre-code {
+  animation: bg-rainbows 120s;
+  animation-direction: initial;
+  @extend .ba;
+  @extend .br1;
+  @extend .b--black-10;
+  line-height: 1.1rem;
+  cursor: text;
+}
+
+article > p > code {
+  font-size: 0.8125rem;
+  @extend .pa1;
+  @extend .pre-code;
+}
+
+article > pre {
+  font-size: 0.8125rem;
+  @extend .pa3;
+  @extend .pre-code;
+
+}
+
+@keyframes bg-rainbows {
+  0%    { background-color: #F6FFFE; }
+  20%   { background-color: #E8FDF5; }
+  40%   { background-color: #FFFCEB; }
+  60%   { background-color: #FFDFDF; }
+  80%   { background-color: #EEEEEE; }
+  100%  { background-color: #F6FFFE; }
+}
+
+@keyframes rainbows {
+  0%    { color: #ff4136; }
+  33%   { color: rgb(255, 217, 102); }
+  66%   { color: rgb(0, 240, 77); }
+  100%  { color: #ff4136; }
+}
+
+@keyframes border-rainbows {
+  0%    { border-color: rgba(0, 14, 96, 10); }
+  25%   { border-color: rgb(255, 0, 94); }
+  50%   { border-color: rgb(255, 217, 102); }
+  75%   { border-color: rgb(0, 240, 77); }
+  100%  { border-color: rgba(0, 14, 96, 10); }
 }
