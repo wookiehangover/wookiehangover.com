@@ -2,7 +2,10 @@
 
 If you're not familiar with [The Jerk (1978)](imdb) starring Steve Martin, do yourself (well really, do _me_ a favor) and watch it. It's streaming on Amazon Video. Just go watch it. I'll wait.
 
-<p class="tc"><img src="../img/the-jerk-1978.jpg" class="pa1 ba b--light-silver" /></p>
+<p class="tc">
+  <img src="../img/the-jerk-1978.jpg"
+    class="w-50-ns w-100 ml3-ns fr-ns mt1 mb2 pa1 br1 ba b--rainbows" />
+</p>
 
 Now that you're back, I want to share 3 very important pieces of advice that the star of our story, Maven Johnson, receives from his loving family before he departs on his Hero's Journey:
 
