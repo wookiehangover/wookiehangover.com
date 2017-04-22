@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["aaah.gif","4c711ca5bfbda21ed5a48d0b425283a5"],["cursor-dust.js","94c07c9ddc7f3d42bcbc259946458a93"],["cv.html","68073666b485ea80a05c33bdadd228a1"],["favicon.ico","33b37c295f2c1547d5265441c6eb1fc3"],["img/aaah.gif","4c711ca5bfbda21ed5a48d0b425283a5"],["img/avatar-pointer.png","951984bf925cda4b2dfe5c3dbdf8f3e7"],["img/avatar-sm.png","3f404b87c3eba789f92334bff530b9be"],["img/avatar.png","4288178fa295320b706c00fe51ffd24f"],["img/favicon.ico","33b37c295f2c1547d5265441c6eb1fc3"],["img/the-jerk-1978.jpg","b84cf7db2976f2e9929fb8a0c2969d97"],["index.html","55426956216253c0c206465fb93243dc"],["style.css","fe78603f83075ef19848e9f6000b5f6f"],["wip.gif","a2a88524531ec99b883e7487cd184108"],["writing/2016-reading-list.html","2878e3d7a5c50eea85dd313ef6ba959d"],["writing/index.html","4df7e928e10072094584a6d023502228"],["writing/lessons-from-the-jerk.html","cab0c0ffe7464d8f00a270dcc753eb52"],["writing/making-things-for-fun.html","f5778520651e0fd2f325422d73a5663c"],["writing/picking-up-the-pieces.html","add7a3ea0a18d8219d8abd0a4b8e4713"],["writing/project-management-and-wicked-problems.html","dd9ed914e2e4f1a7c810c3053fee34e2"]];
+var precacheConfig = [["aaah.gif","4c711ca5bfbda21ed5a48d0b425283a5"],["cursor-dust.js","df4eee4de872adda2aa6f5ea59ecd19d"],["cv.html","b2ccedc9706a89dd9cfccdf416062c19"],["favicon.ico","33b37c295f2c1547d5265441c6eb1fc3"],["img/aaah.gif","4c711ca5bfbda21ed5a48d0b425283a5"],["img/avatar-pointer.png","951984bf925cda4b2dfe5c3dbdf8f3e7"],["img/avatar-sm.png","3f404b87c3eba789f92334bff530b9be"],["img/avatar.png","4288178fa295320b706c00fe51ffd24f"],["img/bonzi-buddy.gif","3cd0ab086932e0c9cf47c9b8c776f930"],["img/favicon.ico","33b37c295f2c1547d5265441c6eb1fc3"],["img/kissinger.jpg","dc95806ea0253785c9d49cf842e0aa2e"],["img/the-cyber.jpg","4400b069202d5df330be0679e003248c"],["img/the-jerk-1978.jpg","b84cf7db2976f2e9929fb8a0c2969d97"],["index.html","2934ca66803da9d9b315936993639383"],["style.css","75a8b2a68b6a3480d2d773239ffc287c"],["wip.gif","a2a88524531ec99b883e7487cd184108"],["writing/2016-reading-list.html","de63c8380dbe3852cd05364abf2b6742"],["writing/2017-reading-list.html","66d588dc946e8063c2e9c04f657d0bc2"],["writing/index.html","4df7e928e10072094584a6d023502228"],["writing/lessons-from-the-jerk.html","d2ac431606505844ac7685d870d7b0b4"],["writing/making-things-for-fun.html","f87d4840d556e607c41c9c5142e632eb"],["writing/picking-up-the-pieces.html","cab2067b998bb51a50706aba239f914e"],["writing/project-management-and-wicked-problems.html","dd9ed914e2e4f1a7c810c3053fee34e2"],["writing/protect-your-history.html","e14445677411784f72badd54374e97ea"],["writing/what-I-read-in-2016.html","ffc73eb4a9435cbdfa2b0cea611b711f"]];
 var cacheName = 'sw-precache-v2-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -134,7 +134,10 @@ self.addEventListener('install', function(event) {
           Array.from(urlsToCacheKeys.values()).map(function(cacheKey) {
             // If we don't have a key matching url in the cache already, add it.
             if (!cachedUrls.has(cacheKey)) {
-              return cache.add(new Request(cacheKey, {credentials: 'same-origin'}));
+              return cache.add(new Request(cacheKey, {
+                credentials: 'same-origin',
+                redirect: 'follow'
+              }));
             }
           })
         );
