@@ -6,7 +6,7 @@ In light of the recent rollback(s) of regulations meant to restrict how ISP's sh
 
 Standards for encrypting web traffic have become widely adopted since their introduction in the late 90s. It's not my first day, so I knew that content sent over HTTPS would be difficult (but not impossible) for a third party to do much with, and I already use HTTPS-everywhere and Brave to help keep things on the up-and-up. Unfortunately, even exclusively using HTTPS doesn't mean that 100% of your traffic is encrypted and secure.
 
-A crucially important part of how your computer or phone loads a website is completely unencrypted in practice. The Domain Name System, or DNS, is how your web browser knows how to find the domain "google.com" when you type `https://www.google.com` into your browser's address bar, and DNS normally never encrypted. Anyone who handles the traffic can take a peek if they're so inclined.
+A crucially important part of how your computer or phone loads a website is completely unencrypted in practice. The Domain Name System, or DNS, is how your web browser knows how to find the domain "google.com" when you type `https://www.google.com` into your browser's address bar, and DNS isn't normally encrypted. Anyone who handles the traffic can take a peek if they're so inclined.
 
 > Ability plus incentive makes for easy temptation. DNS is an easy target if your ISP wanted to profit from a complete list of the websites you visited.
 
@@ -21,13 +21,13 @@ Which means that even if I took every reasonable precaution and always made sure
 
 Good thing for me, a bunch of smart folks who are well versed in "the cyber" had already thought this one through enough to write RFC standards for the DNS protocol that can make it much harder for a third party to see the paper trail of domains and URLs left by a furious session of John Tesh related browsing. Even better, these standards have been implemented with open source and are available to use for free, without too much overhead.
 
-Unfortunately, encrypting your DNS as ubiquitous or widely support as HTTPS, so there are still a few hoops to jump through if you want to start obfuscating this aspect of your web traffic.
+Unfortunately, encrypting your DNS isn't yet as ubiquitous or widely support as HTTPS, so there are still a few hoops to jump through if you want to start obfuscating this aspect of your web traffic.
 
 It's also important to note that encrypting your DNS isn't a silver bullet with regards to online privacy. True privacy is a fleeting concept, or at least one that's impossible to make sane guarantees about. Like any encryption technology, it's only as strong as the implementation being used, and in recent years those have been known to be compromised with some degree of regularity. Even when you're encrypting your communications doesn't mean you should automatically trust the person on the other end of the line. Not to sound paranoid, but be careful about who you place blind trust in and always look before you leap.
 
 ### Enter DNSCrypt
 
-DNSCrypt is a great collection of software that let you get up and running with encrypted DNS really quickly. Don't take my word of it. Head over to dnscrypt.org for comprehensive info about what it is and all the ways you can use it.
+DNSCrypt is a great collection of software tools that let you get up and running with encrypted DNS really quickly. Don't take my word of it. Head over to dnscrypt.org for comprehensive info about what it is and all the ways you can use it.
 
 > dnscrypt + httpseverywhere is 9/10s of a vpn imo
 
