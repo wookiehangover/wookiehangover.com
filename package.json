@@ -40,13 +40,10 @@
     "postcss-import": "^8.1.2",
     "postcss-url": "^5.1.2",
     "sw-precache": "^4.2.1",
-    "uncss": "^0.14.1"
-  },
-  "dependencies": {
+    "uncss": "^0.14.1",
     "async": "^2.0.1",
     "fs-promise": "^2.0.2",
     "gazer": "^1.0.0",
-    "gulp": "^3.9.1",
     "pify": "^2.3.0",
     "tachyons": "^4.6.1"
   }
