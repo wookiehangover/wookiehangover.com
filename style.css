@@ -144,6 +144,7 @@ article > h2 {
   @extend .red;
 }
 
+.rainbows,
 article > h2:hover {
   animation: rainbows 8s infinite;
   animation-direction: initial;
@@ -241,6 +242,7 @@ body > footer > nav > div:hover .grow {
   @extend .b--black-10;
   line-height: 1.1rem;
   cursor: text;
+  font-size: 0.8125rem;
 }
 
 article > p > code {

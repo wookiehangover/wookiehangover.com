@@ -14,8 +14,8 @@ Even worse, an ISP could resolve a DNS entry for a different website altogether 
 
 Which means that even if I took every reasonable precaution and always made sure `https` was in the URL when buying John Tesh cd's on Amazon, watching John Tesh videos on Youtube, or posting updates to my John Tesh fanzine, Comcast would still be able to see the URLs of the pages and sell them to anyone who cared. That is unacceptable. My secret love of John Tesh is too precious for a greedy corporate entity to harvest for profits.
 
-<a href="../img/the-cyber.jpg">
-  <img src="../img/the-cyber.jpg"
+<a href="/static/img/the-cyber.jpg">
+  <img src="/static/img/the-cyber.jpg"
     class="w-60-l w-50-m w-100 ml3-ns fr-ns mt1 mb2 pa1 br1 ba b--rainbows" />
 </a>
 
@@ -32,7 +32,7 @@ DNSCrypt is a great collection of software tools that let you get up and running
 > dnscrypt + httpseverywhere is 9/10s of a vpn imo
 
 <p class="w-100 tr">
-_— [Alex Sexton, notable person on the internet](https://twitter.com/SlexAxton/status/853715217058025475)_
+— <a href="https://twitter.com/SlexAxton/status/853715217058025475">Alex Sexton, notable person on the internet</a>
 </p>
 
 DNSCrypt is a way to run an encrypted dns server and clients for every platform to connect with it. There are already plenty of servers around the world that you can connect to out-of-the-box with a gui clients, so getting up and running is super easy. And there are plenty of command line tools, too. Everything is open source and the community seems active, with multiple projects to choose from for most layers of tooling.
@@ -47,7 +47,7 @@ The catch is that ultimately your dns request will be served from an unencrypted
 
 Better instructions here, obvs: https://dnscrypt.org/
 
-Install the [dnscrypt-client](https://github.com/alterstep/dnscrypt-osxclient) and connect to one of the public nodes. I chose [https://nxt.ist]. You can "trust" these because they issue keypairs or something(?) but, caveat emptor.
+Install the [dnscrypt-client](https://github.com/alterstep/dnscrypt-osxclient) and connect to one of the public nodes. I chose https://nxt.ist. You can "trust" these because they issue keypairs or something(?) but, caveat emptor.
 
 But roll with the thick client because it's convenient and you'll get to see what you're in for... which is pretty boring if you're not running `dig` or `nslookup` all the time to see where your DNS entries are coming from. But then again, it's pretty boring. But at least they're encrypted?
 
@@ -111,10 +111,10 @@ Then I switched all the dns settings on my phones and computers to point at the 
 
 ### Conclusion
 
-<div class="fr-ns w-50-ns w-100 ml3-ns tc tl-ns" style="margin-top: -3rem;">
+<div class="fr-ns w-50-ns w-100 ml3-ns tc tl-ns bonzi-buddy">
   <a href="https://en.wikipedia.org/wiki/BonziBuddy"
     target="__blank" class="none">
-    <img src="../img/bonzi-buddy.gif" class="pa1" />
+    <img src="/static/img/bonzi-buddy.gif" class="pa1" />
   </a>
 </div>
 

@@ -48,6 +48,7 @@ async function processPost (filename) {
 }
 
 async function renderIndex (postData) {
+  await fs.writeFile('posts.json', JSON.stringify(postData))
   console.log('\n→ Adding posts to index.html...\n')
   const index = await fs.readFile('index.html', 'utf8')
   const links = postData.map(post => `<li><a href=${post.permalink}>${post.title}</a></li>`).join('\n')

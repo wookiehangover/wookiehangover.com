@@ -7,10 +7,12 @@ I tried to read more this year, I really did. I had serious intentions about it,
 
 > So far this book has no kissing in it at all and is totally boring
 
-<p class="w-100 tr">— [Some idiot on twitter](https://twitter.com/sambreed/status/736443022850719744)</p>
+<p class="w-100 tr">
+— <a href="https://twitter.com/sambreed/status/736443022850719744" target="__blank">Some idiot on twitter</a>
+</p>
 
 <a href="https://twitter.com/sambreed/status/736443022850719744">
-  <img src="../img/kissinger.jpg"
+  <img src="/static/img/kissinger.jpg"
     class="w-60-l w-50-m w-100 ml3-ns fr-ns mt1 mb2 pa1 br1 ba b--rainbows" />
 </a>
 
