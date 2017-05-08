@@ -8,15 +8,22 @@ I tend to find myself re-using the same (usually tired) metaphors in all sorts o
 
 Travel metaphors are always useful, bringing in words like eyeline, takeoff, and landing into conversations makes work feel more like a swashbuckling adventure than a boring slog through a checklist.
 
-Eggs rolling towards the edge of a table is a particularly good image I've borrowed from Matt Work. It's so damn useful when you need show how to deal with decision overload. "There are a dozen eggs rolling toward the edge of the table. You can only catch one."
+Eggs rolling towards the edge of a table is a particularly good image I've borrowed from Matt Work. It's so damn useful when you need show how to deal with decision overload. All management problems work like this:
+
+> There are a dozen eggs rolling toward the edge of the table. You can only catch one.
 
 It's an argument against micromanagement and interventionism, while offering practical advice for most types of people wrangling problems.
 
-<span class="f1 tc dib w-100">🍳</span>
-
 **Unhelpful Metaphors**
 
-Have you ever found yourself saying the back half of a sentence in which you've been using an obtuse or random metaphor to summarize a situation, and you realize that your captive audience is making a face because you are in the middle of a cognitive leap so bizarre it would make an anti-comedian blush? Me too.
+Have you ever found somehwere in the middle of the back half of a sentence when you realize you're using an obtuse or obscure metaphor, and the feeling sinks in that your captive audience is making a face, because you are in the middle of a cognitive leap so bizarre it would make an anti-comedian blush? Me too.
+
+<a href="../img/john-wayne.jpg" class="none">
+  <img src="../img/john-wayne.jpg"
+    class="w-100 mv1 pa1 br1 ba b--rainbows" />
+</a>
+
+> This is not my first rodeo but it is my first day
 
 I call that an "unhelpful metaphor." Even if it does make sense without being a stretch, if it makes the poor audience question the sanity of the speaker it's safe to say it should probably be left out.
 
