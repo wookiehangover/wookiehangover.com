@@ -142,7 +142,7 @@
   }, 60e3)
 })();
 
-/*
+
 if ('serviceWorker' in navigator) {
   // Your service-worker.js *must* be located at the top-level directory relative to your site.
   // It won't be able to control pages unless it's located at the same level or higher than them.
@@ -181,4 +181,3 @@ if ('serviceWorker' in navigator) {
     console.error('Error during service worker registration:', e);
   });
 }
-*/
