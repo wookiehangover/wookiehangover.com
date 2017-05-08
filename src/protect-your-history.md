@@ -14,8 +14,8 @@ Even worse, an ISP could resolve a DNS entry for a different website altogether 
 
 Which means that even if I took every reasonable precaution and always made sure `https` was in the URL when buying John Tesh cd's on Amazon, watching John Tesh videos on Youtube, or posting updates to my John Tesh fanzine, Comcast would still be able to see the URLs of the pages and sell them to anyone who cared. That is unacceptable. My secret love of John Tesh is too precious for a greedy corporate entity to harvest for profits.
 
-<a href="/img/the-cyber.jpg">
-  <img src="/img/the-cyber.jpg"
+<a href="../img/the-cyber.jpg">
+  <img src="../img/the-cyber.jpg"
     class="w-60-l w-50-m w-100 ml3-ns fr-ns mt1 mb2 pa1 br1 ba b--rainbows" />
 </a>
 
@@ -114,7 +114,7 @@ Then I switched all the dns settings on my phones and computers to point at the 
 <div class="fr-ns w-50-ns w-100 ml3-ns tc tl-ns bonzi-buddy">
   <a href="https://en.wikipedia.org/wiki/BonziBuddy"
     target="__blank" class="none">
-    <img src="/static/img/bonzi-buddy.gif" class="pa1" />
+    <img src="/static../img/bonzi-buddy.gif" class="pa1" />
   </a>
 </div>
 
