@@ -217,13 +217,13 @@ article fieldset li {
 main {
   min-height: 100%;
   height: auto !important;
-  margin-bottom: -7rem;
+  margin-bottom: -5rem;
 }
 
 main:after {
   content: '';
   display: block;
-  height: 7rem;
+  height: 5rem;
 }
 
 body > footer:hover {
@@ -232,6 +232,11 @@ body > footer:hover {
 
 body > footer > nav > div:hover .grow {
   transform: scale(1.6);
+}
+
+.bg-rainbows {
+  animation: bg-rainbows 120s;
+  animation-direction: initial;
 }
 
 .pre-code {
