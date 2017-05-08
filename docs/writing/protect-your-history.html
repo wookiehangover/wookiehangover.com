@@ -7,4 +7,194 @@ docker start dnscrypt
   --provider-name=2.dnscrypt-cert.example.com
 </code></pre><p>Now edit your DNS settings to point at your IP. This is actually really convenient if you’re already using dnscrypt-client: in the “Advanced” tab, add your IP to the field labeled “When not using DNSCrypt, use the following static DNS servers”. Now, when you turn off the DNSCrypt thick client, it will try to use the proxy you started from the command line.</p> <p>It’s a pain in the ass that you can’t point to your own server on the client. There, I said it. Pull requests welcome, I guess?</p> <p><b>2 - Run it from one place on your local network</b></p> <p>Run dnscrypt-proxy somewhere on your local network, and tell devices to use that as their source of truth for dns. If you trust your local network (which, depending on how many IOT devices you have running or you don’t control router/modem settings, might not be a good idea,) then you can avoid extra process overhead and it works for phones and tablets.</p> <p>Basically the same steps as above, but make sure that you start the dnscrypt-proxy client with <code>--local-address=0.0.0.0</code> so that it broadcasts to your network.</p> <p>And, uh, make sure your router doesn’t liberally port forward or you’ll live to regret it.</p> <p>I did this on my ubuntu media server and I ran into dnsmasq issues, because ubuntu is stupid and runs a dnsmasq process as part of it’s network stack, but it’s not the “real” dnsmasq so you can’t configure it to broadcast (go figure).</p> <p>To get everything working without just nuking the unconfigurable dnsmasq process, I had to run dnscrypt-proxy on another port, <code>127.0.0.1:40</code> and then install the “real” dnsmasq, <code>sudo apt-get install dnsmasq</code> and tell it to use dnscrypt-proxy as a nameserver. All this is from here, conveniently: <a href="https://wiki.debian.org/HowTo/dnsmasq">https://wiki.debian.org/HowTo/dnsmasq</a></p> <pre><code>no-resolv
 server 127.0.0.1
-</code></pre><p>Then I switched all the dns settings on my phones and computers to point at the local ip of my media server for DNS, falling back to google’s <code>8.8.8.8</code> and <code>8.8.4.4</code> to avoid being inconveninced if the process dies.</p> <h3 id="conclusion">Conclusion</h3> <div class="fr-ns w-50-ns w-100 ml3-ns tc tl-ns bonzi-buddy"> <a href="https://en.wikipedia.org/wiki/BonziBuddy" target="__blank" class="none"> <img src="data:image/gif;base64," class="pa1"> </a> </div> <p>Encrypting DNS is boring, but satisfying.</p> <p>Happy Hacking 🤓</p> <div class="cf"></div> <footer class="mv2"> <time>Last updated on <small><code class="pa1 bg-near-white mid-gray">Mon May 08 2017 04:54:01 GMT+0000 (UTC)</code></small></time> <nav class="mv2 mv0-ns fr-ns"> <a class="mr1" href="/writing/protect-your-history.html">Link</a> <a class="mr1" href="https://github.com/wookiehangover/wookiehangover.com/edit/master/src/protect-your-history.md">Edit</a> <a class="mr1" href="https://github.com/wookiehangover/wookiehangover.com/commits/master/src/protect-your-history.md">History</a> </nav> </footer> </article> </section> </main> <footer class="pv4 ph3 ph5-m ph6-l bg-washed-green o-80"> <small class="f6 db tc"><b class="ttu">This is open source software</b>, Be kind rewind</small> <nav class="tc mt3"> <div class="f6 dib mh2 link mid-gray"> <span class="dib pr2 grow relative">📖 </span> <a href="https://twitter.com/sambreed" title="Follow me on Twitter">Sign my guestbook</a> </div> <div class="f6 dib mh2 link mid-gray"> <span class="dib pr2 grow relative">😡 </span> <a href="https://github.com/wookiehangover/wookiehangover.com/issues/new" title="Complaints">Complaints</a> </div> <div class="f6 dib mh2 link mid-gray"> <span class="dib pr2 grow relative">💁🏻 </span> <a href="mailto:samuel.breed@gmail.com" title="Send me an Email">Suggestions</a> </div> </nav> </footer> <div class="dust"></div> <script>!function(){function e(){t(),a()}function t(){p||document.addEventListener("mousemove",o),document.addEventListener("touchmove",i),document.addEventListener("touchstart",i),window.addEventListener("resize",n)}function n(e){d=window.innerWidth,u=window.innerHeight}function i(e){if(e.touches.length>0)for(var t=0;t<e.touches.length;t++)r(e.touches[t].clientX,e.touches[t].clientY,h[Math.floor(Math.random()*h.length)])}function o(e){f.x=e.clientX,f.y=e.clientY,r(f.x,f.y,h[Math.floor(Math.random()*h.length)])}function r(e,t,n){var i=new c;i.init(e,t,n),v.push(i)}function s(){for(var e=0;e<v.length;e++)v[e].update();for(var e=v.length-1;e>=0;e--)v[e].lifeSpan<0&&(v[e].die(),v.splice(e,1))}function a(){requestAnimationFrame(a),s()}function c(){this.lifeSpan=120,this.initialStyles={position:"fixed",display:"block",pointerEvents:"none","z-index":"10000000",fontSize:"12px",width:"1.2em"},this.init=function(e,t,n){this.velocity={x:(Math.random()<.5?-1:1)*(Math.random()/2),y:1},this.position={x:e-10,y:t-20},this.element=document.createElement("span"),this.element.innerHTML=n,l(this.element,this.initialStyles),this.update(),m.appendChild(this.element)},this.update=function(){this.position.x+=this.velocity.x,this.position.y+=this.velocity.y,this.lifeSpan--,this.element.style.transform="translate3d("+this.position.x+"px,"+this.position.y+"px,0) scale("+this.lifeSpan/120+")"},this.die=function(){this.element.parentNode.removeChild(this.element)}}function l(e,t){for(var n in t)e.style[n]=t[n]}var h=["✨","💖"],d=window.innerWidth,u=window.innerHeight,f={x:d/2,y:d/2},v=[],m=document.querySelector(".dust"),p=/iPhone|iPad/.test(navigator.platform);setTimeout(function(){e()},6e4)}(),"serviceWorker"in navigator&&navigator.serviceWorker.register("/service-worker.js").then(function(e){e.onupdatefound=function(){var t=e.installing;t.onstatechange=function(){switch(t.state){case"installed":navigator.serviceWorker.controller?console.log("New or updated content is available."):console.log("Content is now available offline!");break;case"redundant":console.error("The installing service worker became redundant.")}}}}).catch(function(e){console.error("Error during service worker registration:",e)});</script> </body> </html> 
+</code></pre><p>Then I switched all the dns settings on my phones and computers to point at the local ip of my media server for DNS, falling back to google’s <code>8.8.8.8</code> and <code>8.8.4.4</code> to avoid being inconveninced if the process dies.</p> <h3 id="conclusion">Conclusion</h3> <div class="fr-ns w-50-ns w-100 ml3-ns tc tl-ns bonzi-buddy"> <a href="https://en.wikipedia.org/wiki/BonziBuddy" target="__blank" class="none"> <img src="data:image/gif;base64," class="pa1"> </a> </div> <p>Encrypting DNS is boring, but satisfying.</p> <p>Happy Hacking 🤓</p> <div class="cf"></div> <footer class="mv2"> <time>Last updated on <small><code class="pa1 bg-near-white mid-gray">Mon May 08 2017 05:10:58 GMT+0000 (UTC)</code></small></time> <nav class="mv2 mv0-ns fr-ns"> <a class="mr1" href="/writing/protect-your-history.html">Link</a> <a class="mr1" href="https://github.com/wookiehangover/wookiehangover.com/edit/master/src/protect-your-history.md">Edit</a> <a class="mr1" href="https://github.com/wookiehangover/wookiehangover.com/commits/master/src/protect-your-history.md">History</a> </nav> </footer> </article> </section> </main> <footer class="pv4 ph3 ph5-m ph6-l bg-washed-green o-80"> <small class="f6 db tc"><b class="ttu">This is open source software</b>, Be kind rewind</small> <nav class="tc mt3"> <div class="f6 dib mh2 link mid-gray"> <span class="dib pr2 grow relative">📖 </span> <a href="https://twitter.com/sambreed" title="Follow me on Twitter">Sign my guestbook</a> </div> <div class="f6 dib mh2 link mid-gray"> <span class="dib pr2 grow relative">😡 </span> <a href="https://github.com/wookiehangover/wookiehangover.com/issues/new" title="Complaints">Complaints</a> </div> <div class="f6 dib mh2 link mid-gray"> <span class="dib pr2 grow relative">💁🏻 </span> <a href="mailto:samuel.breed@gmail.com" title="Send me an Email">Suggestions</a> </div> </nav> </footer> <div class="dust"></div> <script>/*!
+ * Emoji Cursor.js
+ * - 90's cursors collection
+ * -- https://github.com/tholman/90s-cursor-effects
+ * -- http://codepen.io/tholman/full/rxJpdQ
+ */
+
+(function emojiCursor() {
+
+  var possibleEmoji = ["✨", "💖"]
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+  var cursor = {x: width/2, y: width/2};
+  var particles = [];
+  var dust = document.querySelector('.dust')
+  var IS_IPHONE = /iPhone|iPad/.test(navigator.platform)
+
+  function init() {
+    bindEvents();
+    loop();
+  }
+
+  // Bind events that are needed
+  function bindEvents() {
+    if (!IS_IPHONE) {
+      document.addEventListener('mousemove', onMouseMove);
+    }
+    document.addEventListener('touchmove', onTouchMove);
+    document.addEventListener('touchstart', onTouchMove);
+    window.addEventListener('resize', onWindowResize);
+  }
+
+  function onWindowResize(e) {
+    width = window.innerWidth;
+    height = window.innerHeight;
+  }
+
+  function onTouchMove(e) {
+    if( e.touches.length > 0 ) {
+      for( var i = 0; i < e.touches.length; i++ ) {
+        addParticle( e.touches[i].clientX, e.touches[i].clientY, possibleEmoji[Math.floor(Math.random()*possibleEmoji.length)]);
+      }
+    }
+  }
+
+  function onMouseMove(e) {
+    cursor.x = e.clientX;
+    cursor.y = e.clientY;
+
+    addParticle( cursor.x, cursor.y, possibleEmoji[Math.floor(Math.random()*possibleEmoji.length)]);
+  }
+
+  function addParticle(x, y, character) {
+    var particle = new Particle();
+    particle.init(x, y, character);
+    particles.push(particle);
+  }
+
+  function updateParticles() {
+
+    // Updated
+    for( var i = 0; i < particles.length; i++ ) {
+      particles[i].update();
+    }
+
+    // Remove dead particles
+    for( var i = particles.length -1; i >= 0; i-- ) {
+      if( particles[i].lifeSpan < 0 ) {
+        particles[i].die();
+        particles.splice(i, 1);
+      }
+    }
+
+  }
+
+  function loop() {
+    requestAnimationFrame(loop);
+    updateParticles();
+  }
+
+  /**
+   * Particles
+   */
+
+  function Particle() {
+
+    this.lifeSpan = 120; //ms
+    this.initialStyles ={
+      "position": "fixed",
+      "display": "block",
+      "pointerEvents": "none",
+      "z-index": "10000000",
+      "fontSize": "12px",
+      "width": "1.2em"
+    };
+
+    // Init, and set properties
+    this.init = function(x, y, character) {
+
+      this.velocity = {
+        x:  (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 2),
+        y: 1
+      };
+
+      this.position = {x: x - 10, y: y - 20};
+
+      this.element = document.createElement('span');
+      this.element.innerHTML = character;
+      applyProperties(this.element, this.initialStyles);
+      this.update();
+
+      dust.appendChild(this.element);
+    };
+
+    this.update = function() {
+      this.position.x += this.velocity.x;
+      this.position.y += this.velocity.y;
+      this.lifeSpan--;
+
+      this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px,0) scale(" + (this.lifeSpan / 120) + ")";
+    }
+
+    this.die = function() {
+      this.element.parentNode.removeChild(this.element);
+    }
+
+  }
+
+  /**
+   * Utils
+   */
+
+  // Applies css `properties` to an element.
+  function applyProperties( target, properties ) {
+    for( var key in properties ) {
+      target.style[ key ] = properties[ key ];
+    }
+  }
+
+  setTimeout(function() { // be less annoying, gosh
+    init();
+  }, 60e3)
+})();
+
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(reg => {
+    for (let registration of reg) {
+      registration.unregister()
+    }
+  })
+  /*
+  // Your service-worker.js *must* be located at the top-level directory relative to your site.
+  // It won't be able to control pages unless it's located at the same level or higher than them.
+  // *Don't* register service worker file in, e.g., a scripts/ sub-directory!
+  // See https://github.com/slightlyoff/ServiceWorker/issues/468
+  navigator.serviceWorker.register('/service-worker.js').then(function(reg) {
+
+    // updatefound is fired if service-worker.js changes.
+    reg.onupdatefound = function() {
+      // The updatefound event implies that reg.installing is set; see
+      // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#service-worker-container-updatefound-event
+      var installingWorker = reg.installing;
+
+      installingWorker.onstatechange = function() {
+        switch (installingWorker.state) {
+          case 'installed':
+            if (navigator.serviceWorker.controller) {
+              // At this point, the old content will have been purged and the fresh content will
+              // have been added to the cache.
+              // It's the perfect time to display a "New content is available; please refresh."
+              // message in the page's interface.
+              console.log('New or updated content is available.');
+            } else {
+              // At this point, everything has been precached.
+              // It's the perfect time to display a "Content is cached for offline use." message.
+              console.log('Content is now available offline!');
+            }
+            break;
+
+          case 'redundant':
+            console.error('The installing service worker became redundant.');
+            break;
+        }
+      }
+    };
+  }).catch(function(e) {
+    console.error('Error during service worker registration:', e);
+  });
+  */
+}</script> </body> </html> 
