@@ -2,6 +2,8 @@
 
 In light of the recent rollback(s) of regulations meant to restrict how ISP's share and sell the data they gather about you, I started wondering what I could do to make my internet traffic a bit harder for them to monetize. How would I prevent my ISP from selling details about my shopping habits and personal preferences to the highest bidder?
 
+<i>[Or skip straight to how to do it.](#first-steps)</i>
+
 ### Why DNS and why should you care?
 
 Standards for encrypting web traffic have become widely adopted since their introduction in the late 90s. It's not my first day, so I knew that content sent over HTTPS would be difficult (but not impossible) for a third party to do much with, and I already use HTTPS-everywhere and Brave to help keep things on the up-and-up. Unfortunately, even exclusively using HTTPS doesn't mean that 100% of your traffic is encrypted and secure.
@@ -43,6 +45,7 @@ The client apps work by changing your network settings to use a dns server runni
 
 The catch is that ultimately your dns request will be served from an unencrypted (but authenticated) channel because the global network of DNS servers does not implement the DNSCrypt protocol.
 
+<a id="first-steps" />
 ### First steps
 
 Better instructions here, obvs: https://dnscrypt.org/
