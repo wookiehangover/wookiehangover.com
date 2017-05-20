@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+mkdir -p writing
+
 npm run build:css
 
 # Build markdown posts into HTML
