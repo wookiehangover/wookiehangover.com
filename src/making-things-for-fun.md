@@ -1,34 +1,45 @@
 ## Making things for fun
 
-This isn’t a blog. It's a fun side-project done over a couple weekends. There’s a big difference.
+<div class="w-60-l w-50-m w-100 mb2 fr-ns tc">
+  <img src="../img/head-in-a-jar.png" alt="it me" /><br/>
+  <small><i>"some idiot"</i></small>
+</div>
 
-It's not a blog because it's not using any blogging software, per-se, just some elbow grease and [a few scripts][1] that I've to cobbled together into a mostly-working, glue–and–popsicle-sticks publishing platform.
+This isn’t a blog. It’s a fun side project done over a couple weekends. There’s a big difference.
 
-Simple products are fashionable these days, especially when it comes to media consumption. Even I've been known to write a Medium post upon occasion, but I didn't set out to build this as a monument to simplicity. This isn't that type of place and I'm not that type of fella; things are always a bit messier than that in real life.
+It's not a blog because it's not using any blogging software, per-se, just some elbow grease and [a few scripts][1] that I’ve to cobbled together into a mostly-working, typo-laden, glue–and–popsicle-sticks publishing platform to unleash upon the world like some Lovecraftian horror. Or not. I may be busy.
+
+Simple products are fashionable these days, especially when it comes to media consumption. Even I’ve been known to write a post on Medium dot com upon occasion, but I didn’t set out to build this as a monument to simplicity. No, this just isn’t that type of place and I’m not that type of fella; things are always a bit messier than that in real life.
 
 So as it stands, this is just a barely functioning, loosely coherent website with weird cursor effects<sup>[1][footnote1]</sup> (unless I've gotten bored and removed them) and superfluous footnotes<sup>[2][footnote2]</sup> (I probably haven't removed these.)
 
 > So why go through all the trouble to build this in the first place? Why not just use Medium?
 
-Isn't this what all developers inevitably do anyway? Build some crappy knock-off of good software because they're ego is too big to use anything that's not been graced to have sprung unbidden from their god-like cheeto-covered fingertips? Yes, let's all create something second rate instead of using something off-the-shelf in order to scratch the proverbial itch? Why, yes. Yes, it's probably something like that then.
+Isn’t this what all software developers inevitably do anyway? Yes, that and add layers to things. You mean you'd really rather build some crappy knock-off of good software because your ego is too big to use anything that hasn't gracefully sprung as an unbidden gift to the world from your god-like cheeto-covered fingertips? Yes. A common thought among all software devs have goes something like, "let’s all create something second-rate instead of using this perfectly good off-the-shelf in order to scratch the proverbial itch? Yes, indeed!" Ok, it’s probably (definitely) something like that then.
 
 The question might as well then become, "why build anything at all?"
 
 **I made this because it was fun.**
 
-It was more fun figuring out how to [easily inline all the assets][2] and [strip out unused css][3] on this page than it would have been to set up Wordpress again. The first time I ever set up Wordpress in 2008 was a magical and transformative experience, so why am I so quick to shun it now? Am I really that self-important? Wordpress is great software and I can't make anything that comes close to it in a weekend.
+It was more fun figuring out how to [easily inline all the assets][2] and [strip out unused css][3] on this page than it would have been to set up Wordpress again. The first time I ever set up Wordpress in 2008 was a magical and transformative experience, so why am I so quick to shun it now? Am I really that self-important? (Yes, duh.) Wordpress is great software and I can’t make anything that comes close to it in a weekend.
 
 > Doing something from scratch, even if it's not polished, doesn't deny or invalidate what you've done in the past.
 
-For a long time I refused to do any writing on my website because I felt like I didn't have the time. I was afraid that anything I wrote would be bad and then I'd be committed to it forever, comma splices and all. Paranoia that I would look back on it later with utter embarrassment kept me from committing to much writing since I killed my [first blog][5] in 2008. What I guess I means is I'm over that now? [Worse is better][4] after all, so why not let the tap start flowing!
+For a long time I refused to do any writing on my website because I felt like I didn't have the time. I was afraid that anything I wrote would be bad and then I'd be committed to it forever, comma splices and all. Paranoid that I would look back on it later with utter embarrassment kept me from committing to much writing since I killed my [first blog][5] in 2008. What I guess I means is I'm over that now?
 
-In keeping with that spirit, I've shoddily rebuild an ode to Jekyll so that I can have reasonable writing experience for myself, which means markdown and not much else to fuss over. I'm unburdened by the need for SEO or any other unspeakable non-sense, but I care about mobile web and I care about pagespeed so I've gone and done the aforementioned asset inlining, which I think has come out quite nicely.
+[Worse is better][4] after all, so why not let the tap start flowing!
+
+In keeping with that spirit, I’ve shoddily rebuild an ode-to-a-Jekyll-site so that I can have reasonable writing experience for myself, which means markdown and not much else to fuss over (except custom tags and CSS and doing everything for myself). I’m unburdened by the need for SEO or any other such unspeakable non-sense, but I care about mobile web and I care about pagespeed so I’ve gone and done the aforementioned asset inlining, which I think has come out quite nicely. I also had service workers for no reason but then took those out.
+
+**You may never see this because I didn't know how Service Workers work.**
+
+I hope this is your first visit. If this page never changes, it might be because you have a fubar'ed Service Worker I installed and I'm not entirely sure how to purge and don't really care to test it extensively. So good luck! This might be fun!
 
 **Go out and make something, even if it's a shoddy facsimile of something else.**
 
-What are you going to make for yourself?
+> Now what are you going to make for yourself?
 
-p.s. And, yes, I do plan on building an HTML guest book some day. But for now a link to twitter will have to suffice ✍️
+_p.s._ And, yes, I do plan on building an HTML guest book some day. But for now a link to twitter will have to suffice ✍️
 
 <aside>
   <ol>
