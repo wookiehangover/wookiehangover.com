@@ -10,6 +10,7 @@ const pify = require('pify')
 const renderTemplate = pify(ejs.renderFile)
 
 const posts = [
+  'tragic-design-is.md',
   '2017-reading-list.md',
   'protect-your-history.md',
   'what-I-read-in-2016.md',
