@@ -32,7 +32,8 @@ config.d*
 bin/*.pid
 log/*.log
 
-writing
+writing/
+!docs/writing
 
 .vscode
 npm-debug*
