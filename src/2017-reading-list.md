@@ -21,3 +21,4 @@
 19. ~~Real Estate Investing Loopholes – Diane Kennedy and Garret Sutton~~
 20. A Random Walk Down Wall Street — Burton G. Malkiel
 21. Antifragile – Nassim Taleb (re-read from 2016's list)
+22. ~~Debugging Teams — Brian W. Fitzpatrick and Ben Collins-Sussman~~
