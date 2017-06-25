@@ -17,8 +17,10 @@
 15. Time Travel — James Gleick
 16. Hallucinations — Oliver Sacks
 17. The Handmaid’s Tale — Margaret Atwood
-18. The Origin of Wealth – Eric D. Beinhocker
+18. ~~The Origin of Wealth – Eric D. Beinhocker~~
 19. ~~Real Estate Investing Loopholes – Diane Kennedy and Garret Sutton~~
 20. A Random Walk Down Wall Street — Burton G. Malkiel
 21. Antifragile – Nassim Taleb (re-read from 2016's list)
 22. ~~Debugging Teams — Brian W. Fitzpatrick and Ben Collins-Sussman~~
+23. Hands-On Machine Learning with Scikit-Learn & TensorFlow — Aurélien Géron
+24. Tragic Design — Jonathan Shariat & Cynthia Savard Saucier
