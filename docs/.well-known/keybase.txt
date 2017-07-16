@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/sambreed
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://wookiehangover.com
+  * I am sambreed (https://keybase.io/sambreed) on keybase.
+  * I have a public key with fingerprint 6461 3818 B282 1034 BC96  E5F9 D6B1 6FE4 4DDF 6046
+
+To do so, I am signing this object:
+
+{
+    &quot;body&quot;: {
+        &quot;key&quot;: {
+            &quot;eldest_kid&quot;: &quot;01019861f277b3feff011d5e80c97792dcca17e1776a24aee26f97a0aa3f2be866f00a&quot;,
+            &quot;fingerprint&quot;: &quot;64613818b2821034bc96e5f9d6b16fe44ddf6046&quot;,
+            &quot;host&quot;: &quot;keybase.io&quot;,
+            &quot;key_id&quot;: &quot;d6b16fe44ddf6046&quot;,
+            &quot;kid&quot;: &quot;01019861f277b3feff011d5e80c97792dcca17e1776a24aee26f97a0aa3f2be866f00a&quot;,
+            &quot;uid&quot;: &quot;daccef46923e4dc58f73e58d09614d00&quot;,
+            &quot;username&quot;: &quot;sambreed&quot;
+        },
+        &quot;service&quot;: {
+            &quot;hostname&quot;: &quot;wookiehangover.com&quot;,
+            &quot;protocol&quot;: &quot;https:&quot;
+        },
+        &quot;type&quot;: &quot;web_service_binding&quot;,
+        &quot;version&quot;: 1
+    },
+    &quot;ctime&quot;: 1500167187,
+    &quot;expire_in&quot;: 157680000,
+    &quot;prev&quot;: &quot;9dfb72101cd35ce26c5a733bb9819e5c32fb085232f2a18c4ad3cf0e318b57f0&quot;,
+    &quot;seqno&quot;: 2,
+    &quot;tag&quot;: &quot;signature&quot;
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMIpAnicrVJbbA1BGD6nqrShdYmKByFboWiY2cvM7qlbXEMEkQhtxDE7l55VPXu6
+u6ftUURcIu6pRCQaLX0QCamIoFKJW11CeBARRKJNG8Q1qXu8mC3ePJqXP/PP933/
+9//zdwzuF8mLXmhu3ry/elEmeu/a0XSkbN3l4fWK7bKMEqtXKnlf4OsZ94N4pcOU
+mAIggJaJoFAxtjXBhQAQMoObgFoYWyqjlEDMIcaIqDrhXEXCwgQQognV5iZCAgCi
+lCjCSVZwL+U5yUDKIh1BzYSmrZoqBJpuUwtxQ1gM2RAJruuMCQR0JIkJ1w8Z0pxN
+fD7FcWVOXuJ99v6B/8++07/rEEq50JGlalxn1DAF1rhhMmAhqDMAQqDPvSSp4hLt
+kyrb45wpm0oUma1xKA8HG3byB1HrupUOT5BkhVvDvSnUrZIKKc8NXOqul++JIEj5
+sZAfZFJ9BG7H/0jFbSfJ5DQlQ3J9x00qMSiRNHBCbWgAABGGJi5ReF3K8XjcCREG
+RiaQJ6zDa6SkxYSN5fQhZZpB5QCoQbCm2bZlQosbVFOFDUxDlVEl0KQ6YRoVgGvy
+2wwswp59Xp10lZgqbZKKsHGnIkmCtMeVTdevrs6ORPMiOf2zwi2L5OUO+bt7VtHA
+SMtDPCHLWtjV2zZ5W2HHkKUFywtmfYjVfhnWeyqY/WNH66imPY1TL66YVb8qd3Bv
+JvHVOVa0wS3fN6OQHbg9PXfjy5nsftb3H6edMcULGq/Mn7erR9SuWDu3blfZ2zl3
+t5a2/yz14+dyo92IOisfjc8fenyA/0bLaTo9rLdraGPXdpxTRxe0jLx34vOk0Ymv
+a5xlN6bf6n6Rf7bzcboguyHYuejDmZ77Eyc/bS3qVLMHnIfs1KuJTxr2Rj+xgTc7
+Bi0+Gq8b/qX1we7Ck2hjW3rJu2VHqi9lNBcdHPvRnNo+7hnKzx+7N13++GbD85Zi
+707ptPcXvrWN+Fyw5VD3666yRP81/uFfvSI9BQ==
+=l1Wh
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sambreed
+
+==================================================================
