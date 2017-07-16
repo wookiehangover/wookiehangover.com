@@ -47,5 +47,6 @@
     "sw-precache": "^4.2.1",
     "tachyons": "^4.6.1",
     "uncss": "^0.14.1"
-  }
+  },
+  "dependencies": {}
 }
