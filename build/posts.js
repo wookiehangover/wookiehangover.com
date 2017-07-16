@@ -4,9 +4,11 @@
 
 const marked = require('marked')
 const cheerio = require('cheerio')
+const execa = require('execa')
 const fs = require('fs-promise')
 const ejs = require('ejs')
 const pify = require('pify')
+const { resolve } = require('path')
 const renderTemplate = pify(ejs.renderFile)
 
 const posts = [
@@ -22,7 +24,7 @@ const posts = [
 
 async function preparePost (filename) {
   const path = `src/${filename}`
-  const stats = await fs.stat(path)
+  const stats = await execa('git', ['log', '-n=1', '--pretty=format:%ad', '--', resolve(`${__dirname}/../${path}`)])
   const post = await fs.readFile(path, 'utf8')
   const slug = filename.replace('.md', '')
   return {
@@ -31,7 +33,7 @@ async function preparePost (filename) {
     body: marked(post, { smartypants: true }),
     permalink: `writing/${slug}.html`,
     title: (post.split('\n')[0] || 'Untitled 👻').replace('##', ''),
-    updatedAt: stats.mtime
+    updatedAt: stats
   }
 }
 

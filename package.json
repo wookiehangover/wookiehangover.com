@@ -26,13 +26,18 @@
   },
   "homepage": "https://github.com/wookiehangover/wookiehangover.com#readme",
   "devDependencies": {
+    "async": "^2.0.1",
     "autoprefixer": "^6.4.0",
     "cheerio": "^0.22.0",
     "ejs": "^2.5.2",
     "emojify.js": "^1.1.0",
+    "execa": "^0.7.0",
+    "fs-promise": "^2.0.2",
+    "gazer": "^1.0.0",
     "imagemin-cli": "^3.0.0",
     "inliner": "^1.9.5",
     "marked": "^0.3.6",
+    "pify": "^2.3.0",
     "postcss": "^5.1.2",
     "postcss-cli": "^2.6.0",
     "postcss-csso": "^1.1.2",
@@ -40,11 +45,7 @@
     "postcss-import": "^8.1.2",
     "postcss-url": "^5.1.2",
     "sw-precache": "^4.2.1",
-    "uncss": "^0.14.1",
-    "async": "^2.0.1",
-    "fs-promise": "^2.0.2",
-    "gazer": "^1.0.0",
-    "pify": "^2.3.0",
-    "tachyons": "^4.6.1"
+    "tachyons": "^4.6.1",
+    "uncss": "^0.14.1"
   }
 }
