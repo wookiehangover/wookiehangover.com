@@ -109,7 +109,6 @@ body > header li {
 
 section > ol > li,
 section > ul > li {
-  @extend .measure;
   @extend .mv2;
 }
 
