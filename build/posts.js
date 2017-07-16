@@ -24,7 +24,7 @@ const posts = [
 
 async function preparePost (filename) {
   const path = `src/${filename}`
-  const stats = await execa('git', ['log', '-n=1', '--pretty=format:%ad', '--', resolve(`${__dirname}/../${path}`)])
+  const stats = await execa('git', ['log', '-n', '1', '--pretty=format:%ad', '--', resolve(`${__dirname}/../${path}`)])
   const post = await fs.readFile(path, 'utf8')
   const slug = filename.replace('.md', '')
   return {
@@ -33,7 +33,7 @@ async function preparePost (filename) {
     body: marked(post, { smartypants: true }),
     permalink: `writing/${slug}.html`,
     title: (post.split('\n')[0] || 'Untitled 👻').replace('##', ''),
-    updatedAt: stats
+    updatedAt: stats.stdout
   }
 }
 
