@@ -17,19 +17,17 @@ Why do twitter &amp; instagram go out of their way to make it impossible to eith
 
 Twitter stop spending time fucking up built in features. The contents of an &lt;img&gt; tags aren't DRM'ed (yet), here's to hoping they never are.<sup>[[3](https://twitter.com/sambreed/status/885341066592870400)]</sup> I should not have to do this to save silly images, you shitheels!<sup>[[4](https://twitter.com/sambreed/status/885341803079016448)]</sup>
 
-<video src="https://video.twimg.com/tweet_video/DEldfZEU0AAVt8N.mp4" autoplay="" loop="" class="w-100 mv3"></video>
+<a href="/img/twitter-images2.gif" class="none"><img src="../img/twitter-images.gif" alt="twitter obscures image urls" /></a>
 
 > oh shit I made a dope new feature tho — that image is now _every_ image. twitter, if you hire me I will gladly ruin this product with you...<sup>[[5](https://twitter.com/sambreed/status/885341803079016448)]</sup>
 
-<video src="https://video.twimg.com/tweet_video/DElenQOVYAAPUGA.mp4" autoplay="" loop="" class="w-100 mv3"></video>
+<a href="/img/twitter-images2.gif" class="none"><img src="../img/twitter-images2.gif" alt="wherein I ruin the product" /></a>
 
 ### Why is this tragic?
 
 In the case of _Uber_, it's just stupid that it let me complete an order without confirming the address. The checkout flow on web seems to have changed since I recorded that screenshot.
 
 For _Twitter_, this is a case of wanting to optimize sharing over saving and reposting. The only problem is that taints an essential underpinning of the world wide web: URIs are the lowest common denomonator of sharing. It's excessively inefficient to embed media _without_ having it hosted somewhere that you can identify with a publicly readable URI. Using DOM and CSS to try to prevent users from discovering the _resource idenfiers_ for media you just served them is antithetical to building an open web. The irony is that Twitter is that it's biggest redeeming quality is that it's not an _entirely closed_ walled garden, like Facebook or Snapchat. Working against a platform feature that's a core property of something you benefit from seems doubly wasteful.
-
-And for that reason I'm hotlinking to the videos twitter made of [my](/img/twitter-images.gif) [gifs](/img/twitter-images2.gif), even though I don't need to.
 
 ### What is _Tragic Design_
 
