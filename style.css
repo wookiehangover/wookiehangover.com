@@ -34,6 +34,13 @@ a.none {
   border-bottom: none;
   box-shadow: none;
 }
+
+h1 a {
+  text-decoration: underline;
+  border-bottom: none;
+  box-shadow: none;
+}
+
 a.none:hover {
   background: none;
 }
