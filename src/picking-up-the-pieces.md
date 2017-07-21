@@ -2,11 +2,18 @@
 
 Metaphors are fractals of language: once you start to examine them closely, you end up seeing the same pattern over and over and over again.
 
-I tend to find myself re-using the same (usually tired) metaphors in all sorts of different situations. But let's not chalk it up to laziness right away. Once I start seeing a particular pattern that's useful for solving problems, well, as they (I) say, I've found my hammer, and everything becomes a nail.<sup>[1](#picking-up-the-pieces-01)</sup>
+<a href="../img/john-wayne.jpg" class="none">
+  <img src="../img/john-wayne.jpg"
+    class="w-100 mv1 pa1 br1 ba b--rainbows" />
+</a>
 
-**Helpful Metaphors**
+> This is not my first rodeo but it is my first day
 
-Travel metaphors are always useful, bringing in words like eyeline, takeoff, and landing into conversations makes work feel more like a swashbuckling adventure than a boring slog through a checklist.
+I tend to find myself re-using the same (usually tired) metaphors in all sorts of different situations. But let's not _chalk it up_ to laziness right away. I can't turn a blind eye once I start seeing a particular pattern that's useful for solving problems and, well, as they (I) say, _I've found my hammer and everything becomes a nail_.<sup>[1](#picking-up-the-pieces-01)</sup>
+
+### Helpful Metaphors
+
+Travel metaphors are always useful, bringing in words like _eyeline_, _takeoff_, and _landing_ into conversations makes work feel more like a swashbuckling adventure than a boring slog through a checklist.
 
 Eggs rolling towards the edge of a table is a particularly good image I've borrowed from Matt Work. It's so damn useful when you need show how to deal with decision overload. All management problems work like this:
 
@@ -14,16 +21,9 @@ Eggs rolling towards the edge of a table is a particularly good image I've borro
 
 It's an argument against micromanagement and interventionism, while offering practical advice for most types of people wrangling problems.
 
-**Unhelpful Metaphors**
+### Unhelpful Metaphors
 
 Have you ever found somehwere in the middle of the back half of a sentence when you realize you're using an obtuse or obscure metaphor, and the feeling sinks in that your captive audience is making a face, because you are in the middle of a cognitive leap so bizarre it would make an anti-comedian blush? Me too.
-
-<a href="../img/john-wayne.jpg" class="none">
-  <img src="../img/john-wayne.jpg"
-    class="w-100 mv1 pa1 br1 ba b--rainbows" />
-</a>
-
-> This is not my first rodeo but it is my first day
 
 I call that an "unhelpful metaphor." Even if it does make sense without being a stretch, if it makes the poor audience question the sanity of the speaker it's safe to say it should probably be left out.
 

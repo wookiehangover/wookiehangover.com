@@ -26,7 +26,7 @@ Last year’s was a Medium post. Medium is great. I’m mad jellz of what they b
 
 So I once again went through the act of translating my reading history from Wunderlist into a more sharable format. Hence the list you’ll find archived at the bottom of this post.<sup>2</sup>
 
-## How to read this list:
+### How to read this list:
 
 Because decisions are hard, I’ve gone through the trouble of preparing a few variations:
 
@@ -36,7 +36,7 @@ Because decisions are hard, I’ve gone through the trouble of preparing a few v
 
 I now present these, out of order:
 
-## So you like books, huh?
+### So you like books, huh?
 
 Fuck man, this was a hell of a year, wasn’t it? I’ve probably said that exact phrase a couple of dozen times in the waning days of 2016. But, fuck, man, wasn’t it tho?
 
@@ -91,7 +91,7 @@ Around that same time I started following Nassim Taleb on twitter (worth it) and
 
 Presented as a series of essays, anecdotes, and diatribes, with copious footnotes and even a technical essay or two, _Fooled By Randomness_, _The Black Swan_, and _Antifragile_ just about made my anti-academic year, and are now prized possessions on my bookshelf. I look forward to finishing _Bed of Procrustes_ this year and to re-reading the series again in the future. I’ve never encountered so many powerful and challenging ideas all in one place. It’s a piece of non-fiction that begs to be read for pleasure over and over again, just like a good sci-fi or fantasy series would. Amazing.
 
-## Up / Down
+### Up / Down
 
 Cold, meaningless ratings.
 

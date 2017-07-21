@@ -13,8 +13,15 @@ body {
 }
 
 h1 { @extend .f1; }
-h2 { @extend .f2; }
-h3 { @extend .f3; }
+h2,
+h3 {
+  @extend .f2;
+  @extend .mv5;
+  text-align: center;
+  font-family: athelas,
+               georgia,
+               serif;
+}
 
 ul {
   list-style: circle;
@@ -162,6 +169,7 @@ article p {
   /*@extend .serif;*/
   /*@extend .measure;*/
   @extend .lh-copy;
+  @extend .mv4;
 }
 
 article li {
