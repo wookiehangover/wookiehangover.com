@@ -13,14 +13,10 @@ body {
 }
 
 h1 { @extend .f1; }
-h2,
+h2 { @extend .f2; }
 h3 {
-  @extend .f2;
-  @extend .mv5;
-  text-align: center;
-  font-family: athelas,
-               georgia,
-               serif;
+  @extend .f3;
+  @extend .dark-gray;
 }
 
 ul {
