@@ -2,6 +2,7 @@
 title: Why I Read What I Read in 2016
 slug: why-I-read-what-I-read-in-2016.html
 ---
+
 ## Why I Read What I Read in 2016
 
 January 1, 2017

@@ -7,4 +7,4 @@ postcss \
   --use autoprefixer    \
   --use postcss-csso    \
   --use postcss-url     \
-  style.css -d docs
+  src/style.css -d static

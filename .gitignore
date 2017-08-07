@@ -38,3 +38,4 @@ writing/
 .vscode
 npm-debug*
 src/drafts
+.next

@@ -3,26 +3,13 @@
 mkdir -p writing
 
 npm run build:css
-
-# Build markdown posts into HTML
-npm run build:posts
-
-# Copy all other assets to docs/
+npm run build:next
+rm -rf docs/_next docs/static docs/writing docs/cv.html docs/index.html || true
+mv out/* docs
+rm -rf out
 mkdir -p docs/img
-npm run copy-assets
-
-# Minify and inline all of the HTML files into docs/
-for file in *.html; do
-  npm run build:html -- $file
-done;
-
-pushd writing
-for file in *.html; do
-  npm run build:html -- writing/$file docs/writing
-done;
-popd
-
-npm run build:sw
+cp -r docs/static/img/* docs/img
+npm run build:img
 
 echo
 echo "💯  Build Complete."

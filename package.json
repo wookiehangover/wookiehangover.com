@@ -5,14 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "./build/all.sh",
+    "build:next": "next build && next export",
     "build:css": "./build/css.sh",
-    "build:html": "./build/html.sh",
-    "build:posts": "./build/posts.js",
-    "build:sw": "sw-precache --root=docs",
-    "clean": "rm -rf docs || true",
-    "watch:css": "gazer -p style.css npm run build:css",
-    "watch:posts": "gazer -p 'writing/*.md' npm run build:posts",
-    "copy-assets": "cp *.js docs && cp img/*.gif img/favicon.ico docs/img && imagemin img/*.jpg img/*.png -o docs/img"
+    "build:img": "imagemin static/img/*.jpg static/img/*.png -o docs/static/img",
+    "dev": "next"
   },
   "repository": {
     "type": "git",
@@ -26,27 +22,28 @@
   },
   "homepage": "https://github.com/wookiehangover/wookiehangover.com#readme",
   "devDependencies": {
-    "async": "^2.0.1",
     "autoprefixer": "^6.4.0",
-    "cheerio": "^0.22.0",
-    "ejs": "^2.5.2",
-    "emojify.js": "^1.1.0",
-    "execa": "^0.7.0",
-    "fs-promise": "^2.0.2",
-    "gazer": "^1.0.0",
     "imagemin-cli": "^3.0.0",
-    "inliner": "^1.9.5",
-    "marked": "^0.3.6",
-    "pify": "^2.3.0",
     "postcss": "^5.1.2",
     "postcss-cli": "^2.6.0",
     "postcss-csso": "^1.1.2",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^8.1.2",
     "postcss-url": "^5.1.2",
-    "sw-precache": "^4.2.1",
-    "tachyons": "^4.6.1",
-    "uncss": "^0.14.1"
+    "tachyons": "^4.7.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "execa": "^0.7.0",
+    "classnames": "^2.2.5",
+    "next": "^3.0.1-beta.20",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "rehype-raw": "^2.0.0",
+    "rehype-react": "^3.0.0",
+    "remark-frontmatter": "^1.1.0",
+    "remark-parse": "^4.0.0",
+    "remark-rehype": "^2.0.1",
+    "unified": "^6.1.5",
+    "unist-util-visit": "^1.1.3"
+  }
 }

@@ -49,10 +49,11 @@ The client apps work by changing your network settings to use a dns server runni
 
 The catch is that ultimately your dns request will be served from an unencrypted (but authenticated) channel because the global network of DNS servers does not implement the DNSCrypt protocol.
 
-<a id="first-steps" />
+<a id="first-steps"></a>
+
 ### First steps
 
-Better instructions here, obvs: https://dnscrypt.org/
+Better instructions here: https://dnscrypt.org/
 
 Install the [dnscrypt-client](https://github.com/alterstep/dnscrypt-osxclient) and connect to one of the public nodes. I chose https://nxt.ist. You can "trust" these because they issue keypairs or something(?) but, caveat emptor.
 
