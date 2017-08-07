@@ -28,13 +28,17 @@ slug: 2017-reading-list.html
 1. [x] Antifragile – Nassim Taleb (re-read from 2016's list)
 1. [x] Debugging Teams – Brian W. Fitzpatrick and Ben Collins-Sussman
 1. [ ] Hands-On Machine Learning with Scikit-Learn & TensorFlow – Aurélien Géron
-1. [ ] Tragic Design – Jonathan Shariat & Cynthia Savard Saucier
+1. [x] Tragic Design – Jonathan Shariat & Cynthia Savard Saucier
 1. [ ] Barbarians at the Gate – Bryan Burrough & John Helyar
 1. [ ] How Money Got Free – Brian Patrick Eha
 1. [x] Why Information Grows – César Hildago
+1. [ ] hackers: heroes of the computer revolution – Steven Levy
+1. [ ] Gödel, Escher, Bach: an Eternal Golden Braid – Douglas R. Hofstadter
 
 <small>
-* ~~Strikethrough~~ _Abandoned and back on the shelf_ 🙅‍
-* <input type="checkbox" /> In Progress 🙇
-* <input type="checkbox" checked="checked" disabled /> Finished! 💁‍
+
+- ~~Strikethrough~~ _Abandoned and back on the shelf_ 🙅‍
+- <input type="checkbox" /> In Progress 🙇
+- <input type="checkbox" checked="checked" disabled /> Finished! 💁‍
+
 </small>
