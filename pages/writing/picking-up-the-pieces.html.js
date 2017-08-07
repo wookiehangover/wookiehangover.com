@@ -1,9 +1,14 @@
+---
+title: Picking up the pieces
+slug: picking-up-the-pieces.html
+---
+
 ## Picking up the pieces; or How I learned to stop worrying and embrace weird metaphors
 
 Metaphors are fractals of language: once you start to examine them closely, you end up seeing the same pattern over and over and over again.
 
 <a href="../img/john-wayne.jpg" class="none">
-  <img src="../img/john-wayne.jpg"
+  <img src="/static/img/john-wayne.jpg"
     class="w-100 mv1 pa1 br1 ba b--rainbows" />
 </a>
 

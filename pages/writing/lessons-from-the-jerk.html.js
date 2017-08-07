@@ -1,9 +1,14 @@
-## Lessons from The Jerk
+---
+title: Lessons from The Jerk (1978)
+slug: lessons-from-the-jerk.html
+---
+
+## Lessons from The Jerk (1978)
 
 If you're not familiar with [The Jerk (1978)][imdb] starring Steve Martin, do yourself (well really, do _me_ a favor) and watch it. It's streaming on Amazon Video. Just go watch it. I'll wait.
 
 <p class="tc">
-  <img src="../img/the-jerk-1978.jpg"
+  <img src="/static/img/the-jerk-1978.jpg"
     class="w-50-ns w-100 ml3-ns fr-ns mt1 mb2 pa1 br1 ba b--rainbows" />
 </p>
 

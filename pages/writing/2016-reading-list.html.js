@@ -1,15 +1,9 @@
+---
+title: 2016 Reading List
+slug: 2016-reading-list.html
+---
+
 ## 2016 Reading List
-
-<fieldset class="bg-near-white">
-  <legend>Key</legend>
-  <ul>
-    <li><i>In Progress</i></li>
-    <li><del><i>Finished</i></del></li>
-    <li>&dagger; Audible</li>
-    <li>▶ Notes</li>
-  </ul>
-</fieldset>
-
 <ol>
   <li><del><i>How to Make Sense of Any Mess</i> — Abby Covert</del></li>
 
@@ -130,6 +124,16 @@
 
   <li><i>Digital Gold</i> – Nathaniel Popper</li>
 </ol>
+
+<fieldset class="small bg-near-white">
+  <legend>Key</legend>
+  <ul>
+    <li><i>In Progress</i></li>
+    <li><del><i>Finished</i></del></li>
+    <li>&dagger; Audible</li>
+    <li>▶ Notes</li>
+  </ul>
+</fieldset>
 
 Related: [2015 reading list][1]
 

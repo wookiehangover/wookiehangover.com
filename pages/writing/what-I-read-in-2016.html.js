@@ -1,5 +1,8 @@
+---
+title: Why I Read What I Read in 2016
+slug: why-I-read-what-I-read-in-2016.html
+---
 ## Why I Read What I Read in 2016
-
 
 January 1, 2017
 
@@ -12,7 +15,7 @@ I tried to read more this year, I really did. I had serious intentions about it,
 </p>
 
 <a href="https://twitter.com/sambreed/status/736443022850719744">
-  <img src="../img/kissinger.jpg"
+  <img src="/static/img/kissinger.jpg"
     class="w-60-l w-50-m w-100 ml3-ns fr-ns mt1 mb2 pa1 br1 ba b--rainbows" />
 </a>
 

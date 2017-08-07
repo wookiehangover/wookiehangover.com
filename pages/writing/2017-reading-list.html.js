@@ -1,3 +1,8 @@
+---
+title: 2017 Reading List
+slug: 2017-reading-list.html
+---
+
 ## 2017 Reading List
 
 1. <input type="checkbox" checked="checked" disabled /> Digital Gold – Nathaniel Popper
