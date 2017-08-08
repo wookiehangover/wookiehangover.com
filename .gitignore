@@ -32,9 +32,7 @@ config.d*
 bin/*.pid
 log/*.log
 
-writing/
-!docs/writing
-
+pages/writing/drafts
 .vscode
 npm-debug*
 src/drafts
