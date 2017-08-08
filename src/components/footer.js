@@ -2,7 +2,7 @@ import cx from 'classnames'
 
 export default () =>
   <footer className={cx(`pv4 ph3 ph5-m ph6-l o-80 bt b--red bg-rainbows`)}>
-    <small className={cx(`f6 db tc`)}><b className={cx(`ttu`)}>This is open source software</b>, Be kind rewind</small>
+    <small className={`f6 db tc`}><i><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">creative commons</a> &times; open source</i>, so be kind rewind</small>
     <nav className={cx(`tc mt3`)}>
       <div className={cx(`f6 dib mh2 pb2 pb0-ns link mid-gray`)}>
         <span className={cx(`dib pr2 grow relative`)}>&#x1F4D6; </span>

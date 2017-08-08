@@ -39,7 +39,7 @@ export default () => {
         <section className={cx(`mv2`)}>
           <p className={cx(`mv4 lh-copy`)}>If you dig any of that, then you might also enjoy:</p>
           <ul>
-            <li><a href="/cv.html">Perusing my C.V.</a></li>
+            <li><Link href="/cv.html">Perusing my C.V.</Link></li>
             <li><a href="https://obliquestrategies.website/">Oblique Strategies website</a> and <a href="https://chrome.google.com/webstore/detail/oblique-strategies-tab/mgmdhihgmkhangpfokjdhfhjaiadpopd">Chrome Plugin</a> and <a href="https://twitter.com/ObliqueBot/status/886236405118062592">Twitter bot</a></li>
             <li><a href="https://github.com/wookiehangover?tab=repositories">Checking out some of my projects</a> (including the very <a href="https://github.com/wookiehangover/wookiehangover.com">web page you&apos;re reading right now</a>!)</li>
             <li><a href="https://twitter.com/sambreed">Following me on Twitter!</a></li>
