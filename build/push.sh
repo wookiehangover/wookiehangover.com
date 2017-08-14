@@ -7,8 +7,8 @@ setup_git() {
 }
 
 commit_website_files() {
-  git add -a docs static
-  git commit --message "[skip ci] Travis build: $TRAVIS_BUILD_NUMBER"
+  git add docs static
+  git commit -a --message "[skip ci] Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
 upload_files() {
