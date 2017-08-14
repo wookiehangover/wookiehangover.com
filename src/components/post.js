@@ -10,10 +10,12 @@ export default (props) =>
 
     <main className={cx(`mw7 pa3 pa4-ns center min-vh-100`)}>
       <header>
-        <Link href="/">
-          Back
+        <Link>
+          <a href="/">Back</a>
         </Link>
-        <h1 className="fw2"><Link href="https://wookiehangover.com/">Samuel Breed</Link> made this website.</h1>
+        <h1 className="fw2">
+          <Link><a href="/">Samuel Breed</a></Link> made this website.
+        </h1>
       </header>
 
       <section className={cx(`posts pb4`)}>

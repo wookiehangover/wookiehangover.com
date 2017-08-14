@@ -6,8 +6,8 @@ const classes = {
   h2: `red f2`,
   li: `mv1 lh-copy`,
   blockquote: `f3 mv3 i mh0 pl3 bl lh-title b--rainbows`,
-  pre: `f7 ba br1 b--black-10 pa3 pre-code overflow-x-scroll`,
-  code: `f7 ba br1 b--black-10 pa1`
+  pre: `f7 ba br1 b--black-10 pa3 pre-code overflow-x-scroll bg-near-white`,
+  code: `f7 `
 }
 
 const components = {
@@ -15,7 +15,7 @@ const components = {
     <p className={cx(classes.p, props.className)}>{props.children}</p>,
 
   h2: props =>
-    <h2 className={cx(classes.h2, props.className)}>{props.children}</h2>,
+    <h2 className={cx(classes.h2, props.className)} id={props.id}>{props.children}</h2>,
 
   li: props =>
     <li className={cx(classes.li, props.className)}>{props.children}</li>,
@@ -31,7 +31,10 @@ const components = {
     </pre>,
 
   code: props =>
-    <code className={cx(classes.code, props.className)}>{props.children}</code>
+    <code className={cx(classes.code, props.className)}>{props.children}</code>,
+
+  cite: props =>
+    <div className="tr"><span className="measure dib">{props.children}</span></div>
 
 }
 

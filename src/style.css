@@ -1,4 +1,5 @@
 @import 'tachyons';
+@import './hljs';
 
 html, body {
   height: 100%;
@@ -26,8 +27,8 @@ ul {
 a {
   @extend .near-black;
   text-decoration: none;
-  border-bottom: 0.125em solid #EEEEEE;
-  box-shadow: inset 0 -0.25em 0 #EEEEEE;
+  border-bottom: 0.125em solid #96CCFF;
+  box-shadow: inset 0 -0.25em 0 #96CCFF;
   transition: all .1s ease-out;
 }
 
@@ -46,9 +47,10 @@ h1 a {
 
 a.none:hover {
   background: none;
+  text-decoration: underline;
 }
 a:hover {
-  background: #EEEEEE;
+  background: #96CCFF;
 }
 
 details[open] summary:active,
@@ -164,16 +166,13 @@ article > h2:hover {
 article p {
   /*@extend .serif;*/
   /*@extend .measure;*/
-  @extend .lh-copy;
+  /* @extend .lh-copy; */
   @extend .mv4;
 }
 
-article li {
-  /*@extend .measure;*/
-  @extend .mv1;
-  @extend .lh-copy;
+article li > p {
+  margin-bottom: 0;
 }
-
 
 article aside,
 article footer {
@@ -218,6 +217,13 @@ article fieldset {
 article fieldset ul,
 article fieldset li {
   margin: 0;
+}
+
+article p > code {
+  @extend .ba;
+  @extend .br1;
+  @extend .b--black-10;
+  @extend .pa1;
 }
 
 .dust {

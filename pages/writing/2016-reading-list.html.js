@@ -7,11 +7,11 @@ slug: 2016-reading-list.html
 <ol>
   <li><del><i>How to Make Sense of Any Mess</i> — Abby Covert</del></li>
 
-   <li><del><i>Daemon</i> — Daniel Suarez</del><sup>&dagger;</sup></li>
+  <li><del><i>Daemon</i> — Daniel Suarez</del><sup>&dagger;</sup></li>
 
-   <li><del><i>Burr</i> – Gore Vidal</del></li>
+  <li><del><i>Burr</i> – Gore Vidal</del></li>
 
-   <li><details open>
+  <li><details open>
 <summary><del><i>Fire in the Valley</i> – Michael Swaine and Paul Freiberger</del></summary>
 <a name="fire-in-the-valley"></a>
 
@@ -33,13 +33,13 @@ slug: 2016-reading-list.html
 </details>
    </li>
 
-   <li><del><i>Antifragile</i> – Nassim Nicholas Taleb</del></li>
+  <li><del><i>Antifragile</i> – Nassim Nicholas Taleb</del></li>
 
-   <li><del><i>The Ascent of Money</i> – Niall Feguson</del></li>
+  <li><del><i>The Ascent of Money</i> – Niall Feguson</del></li>
 
-   <li><del><i>The (Mis)Behavior of Markets</i> – Beniot Mandelbrot</del></li>
+  <li><del><i>The (Mis)Behavior of Markets</i> – Beniot Mandelbrot</del></li>
 
-   <li>
+  <li>
 <details open>
 <summary><del><i>Barbarian Days</i> – William Finnegan</del></summary>
 
@@ -53,9 +53,9 @@ slug: 2016-reading-list.html
 </details>
 </li>
 
-   <li><del><i>Sapiens</i> – Yuval Harari</del></li>
+  <li><del><i>Sapiens</i> – Yuval Harari</del></li>
 
-   <li><del><i>Learning to Live Finally: The Last Interview</i> – Jacques Derrida</del></li>
+  <li><del><i>Learning to Live Finally: The Last Interview</i> – Jacques Derrida</del></li>
 
 <li>
 <details open>
@@ -125,17 +125,47 @@ slug: 2016-reading-list.html
   <li><i>Digital Gold</i> – Nathaniel Popper</li>
 </ol>
 
-<fieldset class="small bg-near-white">
-  <legend>Key</legend>
-  <ul>
-    <li><i>In Progress</i></li>
-    <li><del><i>Finished</i></del></li>
-    <li>&dagger; Audible</li>
-    <li>▶ Notes</li>
-  </ul>
-</fieldset>
+<small>
+
+- <i>In Progress</i>
+- <del><i>Finished</i></del>
+- &dagger; Audible
+- ▶ Notes
+
+</small>
 
 Related: [2015 reading list][1]
+
+<ul class="flex list flex-wrap justify-between pa0">
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/1500615994" class="none f7 code">ISBN-10: 1500615994</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/1524741892" class="none f7 code">ISBN-10: 1524741892</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0375708731" class="none f7 code">ISBN-10: 0375708731</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/1937785769" class="none f7 code">ISBN-10: 1937785769</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0812979680" class="none f7 code">ISBN-10: 0812979680</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0143116177" class="none f7 code">ISBN-10: 0143116177</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/1846682622" class="none f7 code">ISBN-10: 1846682622</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0143109391" class="none f7 code">ISBN-10: 0143109391</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0062316095" class="none f7 code">ISBN-10: 0062316095</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/1612190944" class="none f7 code">ISBN-10: 1612190944</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0316187283" class="none f7 code">ISBN-10: 0316187283</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/1476782997" class="none f7 code">ISBN-10: 1476782997</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0547572255" class="none f7 code">ISBN-10: 0547572255</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/038533348X" class="none f7 code">ISBN-10: 038533348X</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0062059882" class="none f7 code">ISBN-10: 0062059882</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0451469445" class="none f7 code">ISBN-10: 0451469445</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0440539811" class="none f7 code">ISBN-10: 0440539811</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/1594206538" class="none f7 code">ISBN-10: 1594206538</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/1452108498" class="none f7 code">ISBN-10: 1452108498</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0765382032" class="none f7 code">ISBN-10: 0765382032</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0143122061" class="none f7 code">ISBN-10: 0143122061</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0143117564" class="none f7 code">ISBN-10: 0143117564</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0307908798" class="none f7 code">ISBN-10: 0307908798</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0471295639" class="none f7 code">ISBN-10: 0471295639</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0684832720" class="none f7 code">ISBN-10: 0684832720</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0399590455" class="none f7 code">ISBN-10: 0399590455</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/0804136718" class="none f7 code">ISBN-10: 0804136718</a></li>
+<li class="mh2 mv0"><a href="https://isbnsearch.org/isbn/006236250X" class="none f7 code">ISBN-10: 006236250X</a></li>
+</ul>
 
 [1]: https://medium.com/@sambreed/2015-books-504cb79ac5c0#.f8izs5mpq
 [newyorker]: http://www.newyorker.com/magazine/2016/10/10/sam-altmans-manifest-destiny
