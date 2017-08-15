@@ -1,6 +1,7 @@
 ---
 title: How to Make a Static Blow with Next.js 3
 slug: static-sites-with-next-js
+description: I recently used Next.js 3 to make a static blog. Learn how I did it!
 ---
 
 # How to Make a Static Blog with Next.js 3
@@ -47,7 +48,7 @@ With most of the site working, I ported over the css and other static assets, bu
 — <i>The Cathedral and the Bazaar</i>, Eric Raymond
 </cite>
 
-### 🐰 Rabbit Hole: HTML Markdown ➡️ React
+### 🐰 Rabbit Hole: React from HTML Markdown
 
 One of the itches I _really_ wanted to scratch was the minor annoyance of having to use `__dangerouslySetInnerHtml` to use most off-the-shelf markdown libraries with React. I even made it a bit harder on myself by lazily abusing markdown and sprikling bits of markup in many of my posts, since most React components that render markdown tend to fall back to to _dangerouslySet_ instead of parsing the markdown to generate a valid React component for the entire markdown document. This isn't a new or unsolved problem, so I did some research and ended up geeking out on text processing and abstract syntax trees. Turns out that there are already a bunch of well documented AST parser/compilers that support markdown on npm!
 
@@ -93,13 +94,15 @@ From there, I made a [simple component]() to transform the result from [`rehype-
 ```
 </details>
 
-## Markdown ➡️ Next.js
+## Markdown ➡️ Webpack ➡️ Next.js
 
-What I really wanted was to write in Markdown and have Next.js pick up the changes automattically. By default, next will use any JavaScript modules that export a React compontent in your `pages/` directory. Writing markdown inline in a file with code in it is possible, but gross; same for duplicating the same boilerplate file for each post and importing the markdown source from some other directory. I wanted to skip all that an go straight from Markdown directly into Next's build and compile pipeline.
+What I really wanted was to write in Markdown posts and have Next.js pick up the changes automatically.
+
+By default, next will use any JavaScript modules that export a React compontent in your `pages/` directory. Writing markdown inline in a file with code in it is possible, but gross; same for duplicating the same boilerplate file for each post and importing the markdown source from some other directory. I wanted to skip all that an go straight from Markdown directly into Next's build and compile pipeline.
 
 💡 The lightbulb moment came when I realized the power of Next's support for custom Webpack configuration.
 
-With a custom Webpack config, I could use a [custom Loader](https://webpack.js.org/concepts/loaders/) compile my markdown source files into modules on the spot! And better yet, I already had a build script from my prototype that was doing most of what I needed to do in the webpack plugin. All I needed to change was how my build script found out about files (reading them from disk vs. passed in by webpack) and how it output the results (again, writing to disk vs. passing the result back to webpack). 
+With a custom Webpack config, I could write my own [Webpack Loader](https://webpack.js.org/concepts/loaders/) to compile my markdown source files into modules on the spot! And better yet, I already had a build script from my prototype that was doing most of what I needed to do in the webpack plugin. I needed to change was how my build script found out about files (reading them from disk vs. passed in by webpack) and how it output the results (again, writing to disk vs. passing the result back to webpack). The loader plugin interface was dead simple:
 
 ```js
 module.exports = function(source) {
@@ -110,7 +113,9 @@ module.exports = function(source) {
 }
 ```
 
-Where `renderPost(source, resourcePath)` was the middle bit of my prototyped static rendering pipeline, which now only needs a string of the file content and the path of the file being rendered. The last step was to add it to the webpack extension point in `next.config.js`:
+Where `renderPost(source, resourcePath)` was the middle bit of my prototyped static rendering pipeline, refactored to only need a string of the file content and the path of the file being rendered. This is one of the easiest changes to make, since it took a method formerly reliant on _side effects_, namely reading and writing to disk, and made it a pure function. Any time you can make a method that's passed an input and return a result, you should. Decomposing your assumptions about side effects will almost always save time. My favorite (longish) primer on this concept is still Gary Bernhardt's talk _[Boundaries](https://www.destroyallsoftware.com/talks/boundaries)_.
+
+The last step was to add it to the webpack extension point in `next.config.js`:
 
 ```js
 module.exports = {
@@ -143,14 +148,30 @@ module.exports = {
 }
 ```
 
-Then I changed my build step to run `next build && next export --docs` and I with surprisingly little drama was ready to deploy to Github pages! Normally I'd be worried that I'd have missed some minor detail in a major change like swapping out the entire backend of a website, but in essense what I was doing was pretty simple: my static HTML, JavaScript, and CSS in the `docs/` directory was still there, but was just built by a different tool chain. I pushed the first commit with the switch to Next.js and waited patiently while the build ran on Travis CI.
+Then I changed my build step to run `next build && next export --docs` and I with surprisingly little drama was ready to deploy to Github pages!
+
+Normally I'd be worried that I'd have missed some minor detail in a major change like swapping out the entire backend of a website, but in essense what I was doing here wasn't all that big of a change: my static HTML, JavaScript, and CSS in the `docs/` directory was still there, but was being built by a different tool chain. I pushed the first commit with the switch to Next.js and waited patiently while the build ran on Travis CI.
+
+...And that was it. I had more or less completely moved my static site into a totally modern React app with Next.js. The whole thing is [open source](), so feel free to kick the tires and ask questions if you have any 😊
+
+Here are the relevant pieces of code:
+
+* **post-loader.js** – [webpack loader](https://github.com/wookiehangover/wookiehangover.com/blob/master/src/post-loader.js)
+* **static-sites-with-next-js.html.js** – [a markdown post with embedded HTML](https://github.com/wookiehangover/wookiehangover.com/blob/master/pages/writing/static-sites-with-next-js.html.js)
+* **react-to-hast.js** – [markdown compiler with Unified.js](https://github.com/wookiehangover/wookiehangover.com/blob/master/src/react-to-hast.js)
+* **component-tree.js** – [React component for rendering JSON AST](https://github.com/wookiehangover/wookiehangover.com/blob/master/src/components/component-tree.js)
+
 
 ### Gotcha's!
 
 A few snags I ran into:
 
 * Github pages still perversely retains some of it's Jekyll roots, and ignores file and directory names that start with and underscore 🙄
-  * **Fix:** add `.nojekyll` to your `docs/` directory (or whatever is configured in the "Pages" portion of your repo config in Github) 
+  * **Fix:** add `.nojekyll` to your `docs/` directory (or whatever is configured in the "Pages" portion of your repo config in Github)
+* The `.html.js` file extension on the posts was because I wanted backwards compatabilty with my static html version, which used plain old html files
+  * _Minor annoyance:_ `next export` adds directories for every static file to avoid the .html extension showing up in the path, but now I have urls with trailing slashes
+
+<marquee>And here's that `<marquee>` tag to prove I wasn't joking about supporting arbitraty HTML in posts</marquee>
 
 [unified]: https://unifiedjs.github.io/
 [next]: https://github.com/zeit/next.js

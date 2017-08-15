@@ -6,7 +6,7 @@ import Footer from './footer'
 
 export default (props) =>
   <div>
-    <Head title={props.title} />
+    <Head title={props.title} description={props.description} />
 
     <main className={cx(`mw7 pa3 pa4-ns center min-vh-100`)}>
       <header>

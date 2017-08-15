@@ -32,14 +32,12 @@ const renderPost = (source, resourcePath) => {
     execa('git', ['log', '-n', '1', '--pretty=format:%ad', '--', resourcePath])
   ]).then((output) => {
     const [ postHast, stats ] = output
-    const { title, slug } = postHast.data
-    const props = {
-      slug,
-      title,
+    const { slug } = postHast.data
+    const props = Object.assign({}, postHast.data, {
       path: `pages/writing/${slug}.js`,
       permalink: `writing/${slug}`,
       updatedAt: stats.stdout
-    }
+    })
     return postTemplate(props, postHast.contents)
   })
 }

@@ -25,14 +25,15 @@ export default () => {
 
         <section className={cx(`posts`)}>
           <ol>
-          <li><Link href="writing/tragic-design-is.html"> Tragic Design is...</Link></li>
-          <li><Link href="writing/2017-reading-list.html"> 2017 Reading List</Link></li>
-          <li><Link href="writing/protect-your-history.html"> Protect Your Browsing History with DNSCrypt</Link></li>
-          <li><Link href="writing/what-I-read-in-2016.html"> Why I Read What I Read in 2016</Link></li>
-          <li><Link href="writing/lessons-from-the-jerk.html"> Lessons from The Jerk</Link></li>
-          <li><Link href="writing/picking-up-the-pieces.html"> Picking up the pieces; or How I learned to stop worrying and embrace weird metaphors</Link></li>
-          <li><Link href="writing/making-things-for-fun.html"> Making things for fun</Link></li>
-          <li><Link href="writing/2016-reading-list.html"> 2016 Reading List</Link></li>
+          <li><Link href="/writing/static-sites-with-next-js.html"><a>How to make a static blog with Next.js 3</a></Link></li>
+          <li><Link href="/writing/tragic-design-is.html"><a>Tragic Design is...</a></Link></li>
+          <li><Link href="/writing/2017-reading-list.html"><a>2017 Reading List</a></Link></li>
+          <li><Link href="/writing/protect-your-history.html"><a>Protect Your Browsing History with DNSCrypt</a></Link></li>
+          <li><Link href="/writing/what-I-read-in-2016.html"><a>Why I Read What I Read in 2016</a></Link></li>
+          <li><Link href="/writing/lessons-from-the-jerk.html"><a>Lessons from The Jerk</a></Link></li>
+          <li><Link href="/writing/picking-up-the-pieces.html"><a>Picking up the pieces; or How I learned to stop worrying and embrace weird metaphors</a></Link></li>
+          <li><Link href="/writing/making-things-for-fun.html"><a>Making things for fun</a></Link></li>
+          <li><Link href="/writing/2016-reading-list.html"><a>2016 Reading List</a></Link></li>
           </ol>
         </section>
 

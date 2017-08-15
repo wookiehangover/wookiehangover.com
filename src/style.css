@@ -170,8 +170,8 @@ article p {
   @extend .mv4;
 }
 
-article li > p {
-  margin-bottom: 0;
+article li p {
+  margin: 0;
 }
 
 article aside,
@@ -219,11 +219,16 @@ article fieldset li {
   margin: 0;
 }
 
-article p > code {
+article code {
   @extend .ba;
   @extend .br1;
   @extend .b--black-10;
   @extend .pa1;
+}
+
+article pre code {
+  border: none;
+  padding: 0;
 }
 
 .dust {
