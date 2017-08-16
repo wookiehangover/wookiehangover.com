@@ -8,13 +8,13 @@ description: I recently used Next.js 3 to make a static blog. Learn how I did it
 
 ![make a static next.js blog](/static/img/next-blog-1.gif)
 
-👋  Hey, so I recently finished converting this very website from a weird cobbled together mess of shell scripts and node into a fully-fledged modern JavaScript app with [Next.js 3][next]!
+👋  Hey, so I recently finished upgrading this very website. No longer is my corner of  of the internet a  cobbled-together mess of node and of shell scripts. Now it's a fully-fledged modern JavaScript app with [Next.js 3][next]!
 
-I can write and edit posts entirely in Markdown and can even drop in custom HTML if I really need to (I mean how else am I gonna incorporate `<marquee>` tags into my writing?), but now I have all sorts of fancy features like service worker prefetch, code splitting, and SPA style route changes. _Here's how I did it._
+I can write and edit posts in Markdown and can even drop in custom HTML if I need to (I mean how else am I gonna incorporate `<marquee>` tags into my writing?). With [Next.js][next], I get all sorts of fancy features. Service worker prefetch, code splitting, and SPA style route changes, all for free. _Here's how I did it._
 
-[If you haven't heard of Next.js, it's a pretty cool, live reloading, totally-out-of-your-way tool for building webapps with React. You should use it.](https://zeit.co/blog/next3)
+[If you haven't heard of Next.js it's a pretty cool, live reloading, totally-out-of-your-way tool for building webapps with React. You should use it.](https://zeit.co/blog/next3)
 
-As soon as the Zeit team announced plans to support serverless static exports, I was ready to go. I had already tried out Next.js for a few side projects, but really don't want to worry about running a server (even if it's free and painless) to keep my website running. I had even gone so far as to try scraping a compiled Next.js app with `wget` to see if it was viable without a server, so Next's official support for static sites had me running out of excuses.
+As soon as the Zeit team announced plans to support serverless static exports, I was ready to go. I had already tried out Next.js for a few side projects, but didn't want to worry about running a server (even if it's free and painless) to keep my website up. I even tried scraping a compiled Next.js app with `wget` to make a static site, so Next's official support for static sites had me running out of excuses.
 
 Here were my requirements for this humble website:
 
@@ -23,7 +23,7 @@ Here were my requirements for this humble website:
 * _Fast._ Nobody's got time for slow websites.
 * Support my CSS preferences: [Tachyons](http://tachyons.io/) and some custom CSS compiled with [postcss](http://postcss.org/)
 
-Next.js seemes to have checked off all of my boxes, so I dug in and started prototyping.
+Next.js seems to have checked off all my boxes, so I dug in and started prototyping.
 
 > "Plan to throw one away; you will, anyhow".
 
@@ -31,11 +31,11 @@ Next.js seemes to have checked off all of my boxes, so I dug in and started prot
 — <i>The Mythical Man-Month</i>, Fred Brooks (as popularized in <i>The Cathedral and the Bazaar</i> by Eric Raymond)
 </cite>
 
-To start kicking the tires, [I built a prototype on the Next.js 3 beta a few months back](https://github.com/wookiehangover/wookie-next). I learned a few things but didn't end up with a website I wanted to deploy.
+[I built a prototype on the Next.js 3 beta](https://github.com/wookiehangover/wookie-next) to kick the tires. I learned a few things but didn't end up with a website that was ready to deploy.
 
-Ultimately I wasn't very happy with my first pass because I added a necessary-but-clunky build step to bridge the gap between my old posts and Next's routing model. Next.js creates routes that line up 1:1 with JavaScript files in the `pages/` directory, so my first hacky attempt to get around that was to compile my markdown posts and write out files to the pages directory. I already had the scripts to generate static HTML from those files, so making them write `.js` files that Next.js could consume was easy work.
+I wasn't very happy with my first pass. I added a necessary-but-clunky build step to convert my old posts to Next's routing model. The plan was to compile my markdown posts and write out files to the `pages/` directory. Next.js would pick them up whenever they changed, but I didn't like having to run two build scripts.
 
-With most of the site working, I ported over the css and other static assets, but I couldn't get over the kludginess of having to run a script every time I wanted to see something change. *Next's biggest selling point is having live reloading figured out already!* So I shunted the would-be fork into another repo lacking the resolve to commit to the full re-write if the number of steps I needed in dev wasn't decreasing to one.
+*Next's biggest selling point is having live reloading figured out already!* Having to run more than one script felt wrong, so I abandoned the prototype.
 
 <details class="pa4 ba b--rainbows">
 <summary>
@@ -93,25 +93,24 @@ From there, I made a [simple component](https://github.com/wookiehangover/wookie
 <ComponentTree components={components} />
 ```
 
-Now I have an pipeline where you can put markdown with crazy embedded HTML at one end, and well-formed _serializable_ React components come out of the other end. With that, I can write out JavaScript files containing valid React components without having to reconstruct any JSX literals from the rehype AST. Either way that's a step that I wanted to be totally transparent when I was writing posts. Mission accomplished 😎
+Now I have an pipeline where you can put markdown with crazy embedded HTML in one end, and well-formed _serializable_ React components come out of the other end. With that, I can write out JavaScript files containing valid React components without having to reconstruct any JSX literals from the rehype AST. Either way that's a step that I wanted to be transparent when I was writing posts. Mission accomplished 😎
 
 There are a couple of benefits from going through all that trouble:
 
-* Changing how my markdown is compiled is super easy because there are lots of good [remark plugins](https://github.com/wooorm/remark/blob/master/doc/plugins.md). Seriously. I was able to add code highlighting _while I was writing this post_ with 1 npm install, 1 line of JavaScript, and 1 line of CSS!
-* Unified's [vfile](https://github.com/vfile/vfile) format makes adding post metadata really easy.
+* [remark plugins](https://github.com/wooorm/remark/blob/master/doc/plugins.md) can do just about anything. Seriously. I was able to add code highlighting _while I was writing this post_ with 1 npm install, 1 line of JavaScript, and 1 line of CSS!
+* Unified's [vfile](https://github.com/vfile/vfile) format makes adding post metadata easy.
 * No format lock in. When the wind blows a differnt direction and React falls out of favor, outputting to a different format will be easy.
-
 </details>
 
 ## Markdown ➡️ Webpack ➡️ Next.js
 
-What I really wanted was to write in Markdown posts and have Next.js pick up the changes automatically.
+I wanted to write in Markdown and have Next.js pick up the changes automatically.
 
-By default, next will use any JavaScript modules that export a React component in your `pages/` directory. While writing markdown next to code is possible, it's gross. Same goes for duplicating the same boilerplate file for each post and importing the markdown source from some other directory. I wanted to skip all that an go straight from Markdown directly into Next's build and compile pipeline.
+By default, next will use any JavaScript modules that export a React component in your `pages/` directory. While writing markdown next to code is possible, it's gross. Same goes for duplicating the same boilerplate file for each post and importing the markdown source from some other directory. I wanted to skip all that an go straight from Markdown into Next's build and compile pipeline.
 
 💡 The lightbulb moment came when I realized the power of Next's support for custom Webpack configuration.
 
-With a custom Webpack config, I could write my own [Webpack Loader](https://webpack.js.org/concepts/loaders/) to compile my markdown source files into modules on the spot! And better yet, I already had a build script from my prototype that was doing most of what I needed to do in the webpack plugin. I needed to change was how my build script found out about files (reading them from disk vs. passed in by webpack) and how it output the results (again, writing to disk vs. passing the result back to webpack). The loader plugin interface was dead simple:
+A  [webpack loader](https://webpack.js.org/concepts/loaders/) can transform markdown source files into modules on the spot! And better yet, I already had a build script from my prototype that was doing most of what I needed to do in the loader. I needed to change was how my build script found out about files (reading them from disk vs. passed in by webpack) and how it output the results (again, writing to disk vs. passing the result back to webpack). The loader plugin interface was dead simple:
 
 ```js
 module.exports = function(source) {
@@ -122,7 +121,7 @@ module.exports = function(source) {
 }
 ```
 
-Where `renderPost(source, resourcePath)` was the middle bit of my prototyped static rendering pipeline, refactored to only need a string of the file content and the path of the file being rendered. This is one of the easiest changes to make, since it took a method formerly reliant on _side effects_, namely reading and writing to disk, and made it a pure function. Any time you can make a method that's passed an input and return a result, you should. Decomposing your assumptions about side effects will almost always save time. My favorite (longish) primer on this concept is still Gary Bernhardt's talk _[Boundaries](https://www.destroyallsoftware.com/talks/boundaries)_.
+Where `renderPost(source, resourcePath)` was the middle bit of my prototyped static rendering pipeline, refactored to only need a string of the file content and the path of the file being rendered. This is one of the easiest changes to make, since it took a method formerly reliant on _side effects_, namely reading and writing to disk, and made it a pure function. Any time you can make a method that's passed an input and return a result, you should. Decomposing your assumptions about side effects will almost always save time. I learned this from Gary Bernhardt's talk _[Boundaries](https://www.destroyallsoftware.com/talks/boundaries)_, and I remember it every time I see it.
 
 The last step was to add it to the webpack extension point in `next.config.js`:
 
