@@ -21,6 +21,7 @@ module.exports = {
       "/writing/protect-your-history.html": { page: "/writing/protect-your-history.html" },
       "/writing/tragic-design-is.html": { page: "/writing/tragic-design-is.html" },
       "/writing/what-I-read-in-2016.html": { page: "/writing/what-I-read-in-2016.html" },
+      "/writing/static-sites-with-next-js.html": { page: "/writing/static-sites-with-next-js.html" },
     }
   },
 }
