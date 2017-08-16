@@ -140,7 +140,7 @@ module.exports = {
 
 ## Building and Deploying
 
-Unlike in my early prototype, Next.js 3 supports creating a complete static site from any next app with `next export`. To tell it what routes and pages to export, you need to add some configuration to `next.config.js`. Here's what mine looks like:
+Unlike in my earlier versions, Next.js 3 supports creating a complete static site from any next app with `next export`. To tell it what routes and pages to export, you need to add some configuration to `next.config.js`. Here's what mine looks like:
 
 ```js
 module.exports = {
