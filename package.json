@@ -6,7 +6,7 @@
   "scripts": {
     "build": "./build/all.sh",
     "build:next": "next build && next export",
-    "build:css": "./build/css.sh",
+    "build:css": "postcss -c postcss.config.js src/style.css -d static",
     "build:img": "imagemin static/img/*.jpg static/img/*.png -o docs/static/img",
     "dev": "next"
   },
@@ -22,19 +22,19 @@
   },
   "homepage": "https://github.com/wookiehangover/wookiehangover.com#readme",
   "devDependencies": {
-    "autoprefixer": "^6.4.0",
+    "autoprefixer": "^7.1.2",
     "imagemin-cli": "^3.0.0",
-    "postcss": "^5.1.2",
-    "postcss-cli": "^2.6.0",
-    "postcss-csso": "^1.1.2",
+    "postcss": "^6.0.9",
+    "postcss-cli": "^4.1.0",
+    "postcss-csso": "^2.0.0",
     "postcss-extend": "^1.0.5",
-    "postcss-import": "^8.1.2",
-    "postcss-url": "^5.1.2",
-    "tachyons": "^4.7.4"
+    "postcss-import": "^10.0.0",
+    "postcss-url": "^7.1.2",
+    "tachyons": "^4.8.1"
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "execa": "^0.7.0",
+    "execa": "^0.8.0",
     "next": "^3.0.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

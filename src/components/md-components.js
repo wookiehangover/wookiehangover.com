@@ -6,7 +6,7 @@ const classes = {
   h2: `red f2`,
   li: `mv1 lh-copy`,
   blockquote: `f3 mv3 i mh0 pl3 bl lh-title b--rainbows`,
-  pre: `f7 ba br1 b--black-10 pa3 pre-code overflow-x-scroll bg-near-white`,
+  pre: `f7 ba br1 b--black-90 pre-code overflow-x-scroll`,
   code: `f7 `
 }
 

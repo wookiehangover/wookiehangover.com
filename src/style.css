@@ -1,5 +1,5 @@
 @import 'tachyons';
-@import './hljs';
+@import 'highlight.js/styles/solarized-dark.css';
 
 html, body {
   height: 100%;
@@ -64,44 +64,18 @@ details summary::-webkit-details-marker {
 }
 
 details summary:before {
-  content: '▶';
+  content: '🚀';
   display: inline-block;
-  transform-origin: 7px 12px;
   @extend .pr2;
-  animation: closeDetails 400ms;
-  animation-fill-mode: both;
-}
-
-@keyframes closeDetails {
-  from { transform: rotate(90deg); }
-  to { transform: rotate(0); }
-}
-
-@keyframes openDetails {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-
-  50% {
-    transform: scale(1.4);
-  }
-
-  100% {
-    transform: rotate(90deg) scale(1);
-  }
 }
 
 details[open] summary:before {
-  animation: openDetails 400ms;
-  animation-fill-mode: forwards;
-  @extend .red;
+  content: '💥';
 }
 
 a, details > summary {
   cursor: url(/static/img/avatar-pointer.png) 10 10, auto;
 }
-
-
 
 sup {
   font-size: 0.75rem;
@@ -163,13 +137,6 @@ article > h2:hover {
   animation-direction: initial;
 }
 
-article p {
-  /*@extend .serif;*/
-  /*@extend .measure;*/
-  /* @extend .lh-copy; */
-  @extend .mv4;
-}
-
 article li p {
   margin: 0;
 }
@@ -203,7 +170,6 @@ article:before {
   content: "∴";
   display: block;
   text-align: center;
-  /*@extend .measure;*/
 }
 
 article fieldset {
@@ -226,9 +192,10 @@ article code {
   @extend .pa1;
 }
 
-article pre code {
+article pre code.hljs {
   border: none;
-  padding: 0;
+  @extend .pa3;
+  @extend .br1;
 }
 
 .dust {
@@ -288,10 +255,10 @@ body > footer > nav > div:hover .grow {
   100%  { color: #ff4136; }
 } */
 
-/* @keyframes border-rainbows {
+@keyframes border-rainbows {
   0%    { border-color: rgba(0, 14, 96, 10); }
   25%   { border-color: rgb(255, 0, 94); }
   50%   { border-color: rgb(255, 217, 102); }
   75%   { border-color: rgb(0, 240, 77); }
   100%  { border-color: rgba(0, 14, 96, 10); }
-}   */
+}  
