@@ -1,5 +1,5 @@
 ---
-title: How to Make a Static Blow with Next.js 3
+title: How to Make a Static Blog with Next.js 3
 slug: static-sites-with-next-js
 description: I recently used Next.js 3 to make a static blog. Learn how I did it!
 ---
@@ -31,9 +31,9 @@ Next.js seems to have checked off all my boxes, so I dug in and started prototyp
 — <i>The Mythical Man-Month</i>, Fred Brooks (as popularized in <i>The Cathedral and the Bazaar</i> by Eric Raymond)
 </cite>
 
-[I built a prototype on the Next.js 3 beta](https://github.com/wookiehangover/wookie-next) to kick the tires. I learned a few things but didn't end up with a website that was ready to deploy.
+[I built a prototype on the Next.js 3 beta](https://github.com/wookiehangover/wookie-next) to kick the tires. I learned a few things along the way but didn't end up with a website that was ready to deploy.
 
-I wasn't very happy with my first pass. I added a necessary-but-clunky build step to convert my old posts to Next's routing model. The plan was to compile my markdown posts and write out files to the `pages/` directory. Next.js would pick them up whenever they changed, but I didn't like having to run two build scripts.
+Too bad I wasn't very happy with my first pass. I added a necessary-but-clunky build step to convert my old posts to Next's routing model. The plan was to compile my markdown posts and write out files to the `pages/` directory. Next.js would pick them up whenever they changed, but I didn't like having to run two build scripts.
 
 *Next's biggest selling point is having live reloading figured out already!* Having to run more than one script felt wrong, so I abandoned the prototype.
 
@@ -162,14 +162,14 @@ Normally I'd be worried that I'd have missed some minor detail in a major change
 
 ...And that was it. I had more or less completely moved my static site into a totally modern React app with Next.js. The whole thing is [open source](), so feel free to kick the tires and ask questions if you have any 😊
 
-Here are the relevant pieces of code:
+Here are the relevant parts of the app:
 
 * **post-loader.js** – [webpack loader](https://github.com/wookiehangover/wookiehangover.com/blob/master/src/post-loader.js)
 * **static-sites-with-next-js.html.js** – [a markdown post with embedded HTML](https://github.com/wookiehangover/wookiehangover.com/blob/master/pages/writing/static-sites-with-next-js.html.js)
 * **react-to-hast.js** – [markdown compiler with Unified.js](https://github.com/wookiehangover/wookiehangover.com/blob/master/src/react-to-hast.js)
 * **component-tree.js** – [React component for rendering JSON AST](https://github.com/wookiehangover/wookiehangover.com/blob/master/src/components/component-tree.js)
 
-### Gotcha's!
+### Gotcha's! 😝
 
 A few snags I ran into:
 
