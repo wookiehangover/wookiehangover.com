@@ -23,7 +23,7 @@ Here were my requirements for this humble website:
 * _Fast._ Nobody's got time for slow websites.
 * Support my CSS preferences: [Tachyons](http://tachyons.io/) and some custom CSS compiled with [postcss](http://postcss.org/)
 
-Next.js seemed to have checked off all of those boxes, so I dug in and started prototyping.
+Next.js seemes to have checked off all of my boxes, so I dug in and started prototyping.
 
 > "Plan to throw one away; you will, anyhow".
 
@@ -39,7 +39,7 @@ With most of the site working, I ported over the css and other static assets, bu
 
 <details class="pa4 ba b--rainbows">
 <summary>
-  <i>A brief aside re: a nifty mardown rendering pipeline with Unified and Remark that should probably be in it's own post, but laziness.</i>
+  <i>A brief aside re: a nifty markdown rendering pipeline with Unified and Remark that should probably be in it's own post, but laziness.</i>
 </summary>
 
 > Every good work of software starts by scratching a developer's personal itch.
@@ -98,7 +98,7 @@ From there, I made a [simple component]() to transform the result from [`rehype-
 
 What I really wanted was to write in Markdown posts and have Next.js pick up the changes automatically.
 
-By default, next will use any JavaScript modules that export a React compontent in your `pages/` directory. Writing markdown inline in a file with code in it is possible, but gross; same for duplicating the same boilerplate file for each post and importing the markdown source from some other directory. I wanted to skip all that an go straight from Markdown directly into Next's build and compile pipeline.
+By default, next will use any JavaScript modules that export a React component in your `pages/` directory. While writing markdown next to code is possible, it's gross. Same goes for duplicating the same boilerplate file for each post and importing the markdown source from some other directory. I wanted to skip all that an go straight from Markdown directly into Next's build and compile pipeline.
 
 💡 The lightbulb moment came when I realized the power of Next's support for custom Webpack configuration.
 
@@ -150,7 +150,7 @@ module.exports = {
 
 Then I changed my build step to run `next build && next export --docs` and I with surprisingly little drama was ready to deploy to Github pages!
 
-Normally I'd be worried that I'd have missed some minor detail in a major change like swapping out the entire backend of a website, but in essense what I was doing here wasn't all that big of a change: my static HTML, JavaScript, and CSS in the `docs/` directory was still there, but was being built by a different tool chain. I pushed the first commit with the switch to Next.js and waited patiently while the build ran on Travis CI.
+Normally I'd be worried that I'd have missed some minor detail in a major change like swapping out the entire backend of a website, but in essence what I was doing here wasn't all that big of a change: my static HTML, JavaScript, and CSS in the `docs/` directory was still there, but was being built by a different tool chain. I pushed the first commit with the switch to Next.js and waited patiently while the build ran on Travis CI.
 
 ...And that was it. I had more or less completely moved my static site into a totally modern React app with Next.js. The whole thing is [open source](), so feel free to kick the tires and ask questions if you have any 😊
 
@@ -166,12 +166,14 @@ Here are the relevant pieces of code:
 
 A few snags I ran into:
 
-* Github pages still perversely retains some of it's Jekyll roots, and ignores file and directory names that start with and underscore 🙄
+* Github pages still perversely retains some of it's Jekyll roots, and ignores file and directory names that start with an underscore 🙄
   * **Fix:** add `.nojekyll` to your `docs/` directory (or whatever is configured in the "Pages" portion of your repo config in Github)
 * The `.html.js` file extension on the posts was because I wanted backwards compatabilty with my static html version, which used plain old html files
   * _Minor annoyance:_ `next export` adds directories for every static file to avoid the .html extension showing up in the path, but now I have urls with trailing slashes
+  * If I ever want to change a URL (like to drop the `.html` extension because it's not 1998), I'll need to figure out how to manage the redirects.
+* I need to remember to add new posts to `next.config.js`, which I seem pathologically incapable of. I'll probably make the webpack plugin emit a JSON file with all the post metadata, but I haven't done that yet.
 
-<marquee>And here's that `<marquee>` tag to prove I wasn't joking about supporting arbitraty HTML in posts</marquee>
+<marquee>And here's that `<marquee>` tag to prove I wasn't joking about supporting arbitraty HTML in posts. Thanks [@ddtrejo](https://twitter.com/ddtrejo) for feedback and edits!</marquee>
 
 [unified]: https://unifiedjs.github.io/
 [next]: https://github.com/zeit/next.js
