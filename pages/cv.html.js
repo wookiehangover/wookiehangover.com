@@ -96,7 +96,7 @@ export default () =>
 
         <ol>
           <li id="footnote-01">
-            Hello and welcome to my résumé! Let's get to know each other a little before we get things started. My name is Samuel Breed and I made this website, which is fitting because it's about me. I live north of San Francisco. I started riding motorctyles in <b>2014</b>. My current daily rider is a <a href="./img/ktm_690.jpg">KTM Enduro 690</a>. It's fast and loud, which I enjoy.
+            Hello and welcome to my résumé! Let's get to know each other a little before we get things started. My name is Samuel Breed and I made this website, which is fitting because it's about me. I live north of San Francisco. I started riding motorctyles in <b>2014</b>. My current daily rider is a <a href="/img/ktm_690.jpg">KTM Enduro 690</a>. It's fast and loud, which I enjoy.
           </li>
 
           <li id="footnote-02">
@@ -112,7 +112,7 @@ export default () =>
           </li>
 
           <li id="footnote-05">
-            In 2008 I was the backstock manager of an American Apparel store, which means I counted and folded about 30,000 t-shirts. I had been doing occasional gig work in the Colorado film industry, which means a dozen or so student films, a handful of commercials, and most notably the shoot that produced <a href="./img/aaah.gif">this animated gif</a>. I ended up making a wordpress site for a small company I was working for and got paid for it. That's how I started freelancing. A year later I met Colin and a few months after that, Ingrid, and we started Quick Left. We ran a frantic pace for several years and I learned everything I know on that job, by the seat of my pants.
+            In 2008 I was the backstock manager of an American Apparel store, which means I counted and folded about 30,000 t-shirts. I had been doing occasional gig work in the Colorado film industry, which means a dozen or so student films, a handful of commercials, and most notably the shoot that produced <a href="/img/aaah.gif">this animated gif</a>. I ended up making a wordpress site for a small company I was working for and got paid for it. That's how I started freelancing. A year later I met Colin and a few months after that, Ingrid, and we started Quick Left. We ran a frantic pace for several years and I learned everything I know on that job, by the seat of my pants.
           </li>
 
           <li id="footnote-06">
