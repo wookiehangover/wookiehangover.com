@@ -79,7 +79,7 @@ To my suprise and delight, that process pipeline resulted in a totally usable Re
 
 So how do you _cache_ a React component? Like, a whole component, not just the serialization of it's virtual dom. React provides tools to server render components in multiple ways, but you can't easily generate _jsx_ from a dynamically generated components. But there _is_ a techinique for dealing with a React as a compile output of an AST, evidenced by [react-rehype](https://github.com/rhysd/rehype-react) at the end of that Unified markdown pipeline.
 
-React has a dead simple API for creating components without JSX in `React.createElement()`. Since it's just plain JavaScript and doesn't require any functions or non-serializable data structures, it turns out that you can make a JSON structure that represents a set of React components pretty easily. I had run into a use case for this same trick at work, so I put it to use again here: I modified the last step of my Unified pipeline to return JSON instead of a React component. [`rehype-react`]() made this a cinch, since they allow you to pass a custom method for `createElement`.
+React has a dead simple API for creating components without JSX in `React.createElement()`. Since it's just plain JavaScript and doesn't require any functions or non-serializable data structures, it turns out that you can make a JSON structure that represents a set of React components pretty easily. I had run into a use case for this same trick at work, so I put it to use again here: I modified the last step of my Unified pipeline to return JSON instead of a React component. [`rehype-react`](https://github.com/rhysd/rehype-react) made this a cinch, since they allow you to pass a custom method for `createElement`.
 
 ```js
 remarkPipeline().use(rehypeReact, {
@@ -87,11 +87,20 @@ remarkPipeline().use(rehypeReact, {
 })
 ```
 
-From there, I made a [simple component]() to transform the result from [`rehype-react`]() back into a React component:
+From there, I made a [simple component](https://github.com/wookiehangover/wookiehangover.com/blob/master/src/components/component-tree.js) to transform the result from [`rehype-react`](https://github.com/rhysd/rehype-react) back into a React component:
 
 ```jsx
 <ComponentTree components={components} />
 ```
+
+Now I have an pipeline where you can put markdown with crazy embedded HTML at one end, and well-formed _serializable_ React components come out of the other end. With that, I can write out JavaScript files containing valid React components without having to reconstruct any JSX literals from the rehype AST. Either way that's a step that I wanted to be totally transparent when I was writing posts. Mission accomplished 😎
+
+There are a couple of benefits from going through all that trouble:
+
+* Changing how my markdown is compiled is super easy because there are lots of good [remark plugins](https://github.com/wooorm/remark/blob/master/doc/plugins.md). Seriously. I was able to add code highlighting _while I was writing this post_ with 1 npm install, 1 line of JavaScript, and 1 line of CSS!
+* Unified's [vfile](https://github.com/vfile/vfile) format makes adding post metadata really easy.
+* No format lock in. When the wind blows a differnt direction and React falls out of favor, outputting to a different format will be easy.
+
 </details>
 
 ## Markdown ➡️ Webpack ➡️ Next.js
@@ -161,7 +170,6 @@ Here are the relevant pieces of code:
 * **react-to-hast.js** – [markdown compiler with Unified.js](https://github.com/wookiehangover/wookiehangover.com/blob/master/src/react-to-hast.js)
 * **component-tree.js** – [React component for rendering JSON AST](https://github.com/wookiehangover/wookiehangover.com/blob/master/src/components/component-tree.js)
 
-
 ### Gotcha's!
 
 A few snags I ran into:
@@ -169,11 +177,11 @@ A few snags I ran into:
 * Github pages still perversely retains some of it's Jekyll roots, and ignores file and directory names that start with an underscore 🙄
   * **Fix:** add `.nojekyll` to your `docs/` directory (or whatever is configured in the "Pages" portion of your repo config in Github)
 * The `.html.js` file extension on the posts was because I wanted backwards compatabilty with my static html version, which used plain old html files
-  * _Minor annoyance:_ `next export` adds directories for every static file to avoid the .html extension showing up in the path, but now I have urls with trailing slashes
+  * _Minor annoyance:_ `next export` adds directories for every static file to avoid the .html extension showing up in the path, but now I have urls with trailing slashes.
   * If I ever want to change a URL (like to drop the `.html` extension because it's not 1998), I'll need to figure out how to manage the redirects.
 * I need to remember to add new posts to `next.config.js`, which I seem pathologically incapable of. I'll probably make the webpack plugin emit a JSON file with all the post metadata, but I haven't done that yet.
 
-<marquee>And here's that `<marquee>` tag to prove I wasn't joking about supporting arbitraty HTML in posts. Thanks [@ddtrejo](https://twitter.com/ddtrejo) for feedback and edits!</marquee>
+<marquee>And here's that `<marquee>` tag to prove I wasn't joking about supporting arbitraty HTML in posts. And thanks [@ddtrejo](https://twitter.com/ddtrejo) for feedback and edits!</marquee>
 
 [unified]: https://unifiedjs.github.io/
 [next]: https://github.com/zeit/next.js

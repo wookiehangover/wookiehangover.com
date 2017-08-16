@@ -1,6 +1,7 @@
 ---
 title: Protect Your Browsing History with DNSCrypt
 slug: protect-your-history.html
+description: DNSCrypt is a great way to ensure that your browsing history isn't being spyed on. Learn how to set up DNSCrypt to keep your DNS traffic from prying eyes.
 ---
 ## Protect Your Browsing History with DNSCrypt
 
@@ -88,7 +89,7 @@ Install it for mac with homebrew: `brew install dnscrypt-proxy`
 
 Then connect to your server using the IP and public key:
 
-```
+```bash
 sudo dnscrypt-proxy --provider-key=YOUR_PUBLIC_KEY \
   --resolver-address=YOUR_IPv4_ADDRESS:443 \
   --provider-name=2.dnscrypt-cert.example.com
@@ -110,7 +111,7 @@ I did this on my ubuntu media server and I ran into dnsmasq issues, because ubun
 
 To get everything working without just nuking the unconfigurable dnsmasq process, I had to run dnscrypt-proxy on another port, `127.0.0.1:40` and then install the "real" dnsmasq, `sudo apt-get install dnsmasq` and tell it to use dnscrypt-proxy as a nameserver. All this is from here, conveniently: https://wiki.debian.org/HowTo/dnsmasq
 
-```
+```ini
 no-resolv
 server 127.0.0.1
 ```
