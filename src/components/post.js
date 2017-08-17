@@ -26,9 +26,9 @@ export default (props) =>
           <footer className="mv2">
             <time>Last updated on <small><code className="pa1 bg-near-white mid-gray">{props.updatedAt}</code></small></time>
             <nav className="mv2 mv0-ns fr-ns">
-              <a className="mr1" href="/{props.permalink}">Link</a>
-              <a className="mr1" href={`https://github.com/wookiehangover/wookiehangover.com/edit/master/src/${props.path}`}>Edit</a>
-              <a className="mr1" href={`https://github.com/wookiehangover/wookiehangover.com/commits/master/src/${props.path}`}>History</a>
+              <a className="mr1" href={`/${props.permalink.indexOf('.html') === -1 ? props.permalink + '.html' : props.permalink}`}>Link</a>
+              <a className="mr1" href={`https://github.com/wookiehangover/wookiehangover.com/edit/master/${props.path.replace('.html.html', '.html')}`}>Edit</a>
+              <a className="mr1" href={`https://github.com/wookiehangover/wookiehangover.com/commits/master/${props.path.replace('.html.html', '.html')}`}>History</a>
             </nav>
           </footer>
         </article>
