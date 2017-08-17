@@ -44,7 +44,7 @@ My wife and I adopted a beat up little shelter dog that winter and named him Jac
 
 And 2007 was the year I started to code.
 
-I used the money from selling the car to buy a white plastic MacBook. My PowerBook from college had finally died that fall. I remember tracking the shipment from the pc in the back office at work on my break, and then racing home on my bike during my lunch so the package wouldn't get stolen from my doorstep.
+I used the money from selling the car to buy a white plastic MacBook. My PowerBook from college had finally died that fall. I remember tracking the shipment from the pc in the back office at work and racing home on my bike during my lunch so the package wouldn't get stolen.
 
 > It was the first computer I would get paid to write code on.
 
@@ -54,7 +54,7 @@ That year I listened to MGMT, Peter, Bjorn and John, and Kanye West that year. I
 
 <hr class="mv4" />
 
-Across town, TechStars would host its first class. A year later one of those companies would be acquired AOL for seven figures. I'd find out about this well after it happened, at a tech meetup where the founder, who was only a year or two older than me, ended his presentation by throwing $500 in singles into the air.
+Across town, TechStars would host its first class. A year later one of those companies would be acquired AOL for seven figures. I'd find out about this well after it happened. At a local tech meetup the founder, who was only a year or two older than me, ended his presentation by throwing $500 in singles into the air.
 
 That guy is still around and I still hate him for doing that. It made me feel so worthless. I didn't have a job in tech yet, despite wanting one, and was only slightly better off than I had been a year earlier. And here comes some jerkoff that was first given money for a fucking _idea_ and then fucking _sold_ that idea for even more money!
 
