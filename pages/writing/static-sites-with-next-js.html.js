@@ -160,7 +160,7 @@ Then I changed my build step to run `next build && next export --docs` and I wit
 
 Normally I'd be worried that I'd have missed some minor detail in a major change like swapping out the entire backend of a website, but in essence what I was doing here wasn't all that big of a change: my static HTML, JavaScript, and CSS in the `docs/` directory was still there, but was being built by a different tool chain. I pushed the first commit with the switch to Next.js and waited patiently while the build ran on Travis CI.
 
-...And that was it. I had more or less completely moved my static site into a totally modern React app with Next.js. The whole thing is [open source](), so feel free to kick the tires and ask questions if you have any 😊
+...And that was it. I had more or less completely moved my static site into a totally modern React app with Next.js. The whole thing is [open source](https://github.com/wookiehangover/wookiehangover.com), so feel free to kick the tires and ask questions if you have any 😊
 
 Here are the relevant parts of the app:
 
