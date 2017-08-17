@@ -50,7 +50,7 @@ I used the money from selling the car to buy a white plastic MacBook. My PowerBo
 
 I was so excited to get that computer. I used it to climb out of debt and into a career I love. In 2007 I would write my first website and re-discover the love of building stuff on the internet that I had honed a decade earlier on Geocities and Tripod and Angelfire (and later, MySpace profiles.)
 
-That year I listened to MGMT, Peter, Bjorn and John, and Kanye West that year. I can remember riding my bike to those albums as fall in Boulder started to turn cold.
+That year I listened to MGMT, Peter, Bjorn and John, and Kanye West. I can remember riding my bike to those albums as fall in Boulder started to turn cold.
 
 <hr class="mv4" />
 
