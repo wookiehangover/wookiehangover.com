@@ -34,7 +34,7 @@ But it was also one of the best.
 
 2007 was the year I moved in with my then-girlfriend (and now-wife.)
 
-I got promoted to assistant manager at the retail job. My pay was raised to $11 dollars and hour, and I would get 36 hours a week on the schedule. That extra $108 a week was a lot of money. It meant less math at the grocery store.
+I got promoted to assistant manager at the retail job. My pay was raised to $11 dollars an hour, and I would get 36 hours a week on the schedule. That extra $108 a week was a lot of money. It meant less math at the grocery store.
 
 My wife and I adopted a beat up little shelter dog that winter and named him Jack. He's still here, but now he's old and cranky after 10 years of being doted on and loved unconditionally.
 
