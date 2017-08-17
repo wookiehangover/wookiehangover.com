@@ -21,7 +21,7 @@ function ComponentTree({ type, props, children, components={} }) {
     }
   })
 
-  if (type === 'img' || type === 'br' || type === 'input') {
+  if (type === 'img' || type === 'br' || type === 'input' || type === 'hr') {
     subtree = null
   }
 

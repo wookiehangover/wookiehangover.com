@@ -2,8 +2,8 @@ import React from 'react'
 import cx from 'classnames'
 
 const classes = {
-  p: `lh-copy`,
-  h2: `red f2`,
+  p: `lh-copy mv3`,
+  h2: `dark-gray f3`,
   li: `mv1 lh-copy`,
   blockquote: `f3 mv3 i mh0 pl3 bl lh-title b--rainbows`,
   pre: `f7 ba br1 b--black-90 pre-code overflow-x-scroll`,

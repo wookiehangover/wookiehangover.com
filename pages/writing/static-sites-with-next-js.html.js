@@ -37,7 +37,7 @@ Too bad I wasn't very happy with my first pass. I added a necessary-but-clunky b
 
 *Next's biggest selling point is having live reloading figured out already!* Having to run more than one script felt wrong, so I abandoned the prototype.
 
-<details class="pa4 ba b--rainbows">
+<details class="pa4 ba b--rainbows mv4">
 <summary>
   <i>A brief aside re: a nifty markdown rendering pipeline with Unified and Remark that should probably be in it's own post, but laziness.</i>
 </summary>

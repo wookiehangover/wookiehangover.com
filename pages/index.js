@@ -25,6 +25,7 @@ export default () => {
 
         <section className={cx(`posts`)}>
           <ol>
+          <li><Link href="/writing/2007.html"><a>2007</a></Link></li>
           <li><Link href="/writing/static-sites-with-next-js.html"><a>How to make a static blog with Next.js 3</a></Link></li>
           <li><Link href="/writing/tragic-design-is.html"><a>Tragic Design is...</a></Link></li>
           <li><Link href="/writing/2017-reading-list.html"><a>2017 Reading List</a></Link></li>
