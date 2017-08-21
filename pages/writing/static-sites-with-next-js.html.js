@@ -8,7 +8,7 @@ description: I recently used Next.js 3 to make a static blog. Learn how I did it
 
 ![make a static next.js blog](/static/img/next-blog-1.gif)
 
-👋  Hey, so I recently finished upgrading this very website. No longer is my corner of  of the internet a  cobbled-together mess of node and of shell scripts. Now it's a fully-fledged modern JavaScript app with [Next.js 3][next]!
+👋  Hey, so I recently figured out how to upgrade _this very website_ to use [Next.js 3][next] as a static blog engine. No longer is my corner of the internet a cobbled-together mess of node and of shell scripts. No, now it's a fully-fledged modern JavaScript app with [Next.js 3][next]!
 
 I can write and edit posts in Markdown and can even drop in custom HTML if I need to (I mean how else am I gonna incorporate `<marquee>` tags into my writing?). With [Next.js][next], I get all sorts of fancy features. Service worker prefetch, code splitting, and SPA style route changes, all for free. _Here's how I did it._
 
