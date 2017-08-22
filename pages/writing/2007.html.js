@@ -20,13 +20,13 @@ With no license. And no insurance. And with another car. I had to beg my brother
 
 When I did get a job, it only paid $9 an hour. For 32 hours a week. Technically part time.
 
-I didn't have health insurance. I watched Prince perform the Super Bowl halftime show in the ER waiting room. I had a fever for 3 days and my tonsils were so swollen I could hardly breathe.
+I didn't have health insurance. I watched Prince perform the Super Bowl halftime show in the ER waiting room. I had a fever for 3 days and my tonsils were swollen enough to justify the ER visit.
 
 It would be 3 years before I would pay the bill for the ER visit that night, which would tarnish my credit score for years afterwards.
 
 The $12,000 tuition that I owed the school was sent to collections, which I ignored for 4 years and 20% annual interest in late fees.
 
-My girlfriend and I got good at grocery store math pretty quick, because having to put stuff back after it was rung up was mortifying. A year earlier I had been living off a trust fund. They payments stopped that winter.
+My girlfriend and I became very good at grocery store math, because having to put stuff back after it was rung up was mortifying. A year earlier I had been living off a trust fund. The payments had stopped that winter.
 
 2007 was the worst year of my life.
 
@@ -56,7 +56,7 @@ That year I listened to MGMT, Peter, Bjorn and John, and Kanye West. I can remem
 
 Across town, TechStars would host its first class. A year later one of those companies would be acquired AOL for seven figures. I'd find out about this well after it happened. At a local tech meetup the founder, who was only a year or two older than me, ended his presentation by throwing $500 in singles into the air.
 
-That guy is still around and I still hate him for doing that. It made me feel so worthless. I didn't have a job in tech yet, despite wanting one, and was only slightly better off than I had been a year earlier. And here comes some jerkoff that was first given money for a fucking _idea_ and then fucking _sold_ that idea for even more money!
+That guy is still around and I still hate him for doing that. It made me feel so worthless in that moment. I didn't have a job in tech yet, despite wanting one, and was only slightly better off than I had been a year earlier. And here comes some jerkoff that was first given money for a fucking _idea_ and then fucking _sold_ that idea for even more money!
 
 A year earlier I was excited to get a raise for less money than he just threw on the ground.
 
