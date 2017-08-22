@@ -16,7 +16,7 @@ Then I got a dui.
 
 Then I wrecked my car.
 
-With no license. And no insurance. And in an accident with another car. I had to beg my brother to loan me money to fix the other person's car. Meanwhile my car sat unmoving and wrecked, collecting parking tickets until I sold it as-is for next to nothing.
+With no license. And no insurance. And with another car. I had to beg my brother to loan me money to fix the other person's car. Meanwhile my car sat unmoving and wrecked, collecting parking tickets until I sold it as-is for next to nothing.
 
 When I did get a job, it only paid $9 an hour. For 32 hours a week. Technically part time.
 
