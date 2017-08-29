@@ -72,11 +72,19 @@ And maybe I owe something to the guy who threw the money after all. After that I
 
 <hr class="mv4 bt b--red" />
 
-2007 and 2008 were also the years I read a lot of science fiction. The second retail job had me unpacking boxes, lots of boxes, in the back of an American Apparel. I listened to Isaac Asimov and Robert Heinlein for the first time back there. I found a used bookstore that my girlfriend and I would ride our bikes to, backpacks bulging with paperbacks on the way home. Science Fiction was a great way to escape my broke-and-scared Non Fiction.
+2007 and 2008 were also the years I read a lot of science fiction.
 
-Then I fell hard for the work of Philip K. Dick. _A Scanner Darkly_ had been made into a movie by Richard Linklater the year before. A well-adapted and underrated movie, it's still one of my favorites. I listened to the audiobook version, recorded by Paul Giamatti, and then devoured the paperback. I was so desperate to have a copy I condescended to buy it new from Borders; I couldn't wait for a copy to show up at the used bookstore. The only copy at Borders was the kind with the movie poster on it, they type that _everyone_ hates on because it's the most backwards type of marketing, and never lasts for more than one edition.
+The second retail job had me unpacking boxes, lots of boxes, in the back of an American Apparel. I listened to Isaac Asimov and Robert Heinlein for the first time back there. I would fold t-shirts thinking about Psychohistory and the Seldon Plan.
 
-I still have that copy of _A Scanner Darkly_, which Keanu and Winona and pre-Iron Man Robert Downey Jr. on the cover. I hate the cover, but I love the book so I can't get rid of it. The text inside is too good.
+I found a used bookstore that my girlfriend and I would ride our bikes to, our backpacks bulging with paperbacks on the way home. Science Fiction was a great way to escape my broke-and-scary Non Fiction reality.
+
+Then I fell hard for the work of Philip K. Dick. _A Scanner Darkly_ had been made into a movie by Richard Linklater the year before. A well-adapted and underrated movie, it's still one of my favorites. I listened to the audiobook version, recorded by Paul Giamatti, and then devoured the paperback.
+
+I was so desperate to have a copy I condescended to buy it new from Borders; I couldn't wait for a copy to show up at the used bookstore. The only copy at Borders was the kind with the movie poster on it, the type that _everyone_ hates on because it's the most backwards type of marketing, and never lasts for more than one edition.
+
+The one way you can make a good book less so is by forever shackling it to the most recent film adaptation. If the book has something to gain via association with the movie adaptation, you can safely skip the book.
+
+I still have that copy of _A Scanner Darkly_, with Keanu and Winona and pre-Iron Man Robert Downey Jr. on the cover. I hate the cover, but I love the book so I can't get rid of it. The text inside is too good.
 
 > But in this dark world where he now dwelt, ugly things and surprising things and once in a long while a tiny wondrous thing spilled out at him constantly; he could count on nothing.
 
