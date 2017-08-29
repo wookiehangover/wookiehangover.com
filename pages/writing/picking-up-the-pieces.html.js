@@ -1,6 +1,7 @@
 ---
 title: Picking up the pieces
 slug: picking-up-the-pieces.html
+description: A story about how I've come to embrace odd metaphors to color language
 ---
 
 ## Picking up the pieces; or How I learned to stop worrying and embrace weird metaphors

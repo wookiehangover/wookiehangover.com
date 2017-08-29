@@ -1,6 +1,7 @@
 ---
 title: 2017 Reading List
 slug: 2017-reading-list.html
+description: A non-exhaustive list of the books I'm reading in 2017
 ---
 
 # 2017 Reading List

@@ -10,13 +10,13 @@ description: I recently used Next.js 3 to make a static blog. Learn how I did it
 
 👋  Hey, so I recently figured out how to upgrade _this very website_ to use [Next.js 3][next] as a static blog engine. No longer is my corner of the internet a cobbled-together mess of node and of shell scripts. No, now it's a fully-fledged modern JavaScript app with [Next.js 3][next]!
 
-I can write and edit posts in Markdown and can even drop in custom HTML if I need to (I mean how else am I gonna incorporate `<marquee>` tags into my writing?). With [Next.js][next], I get all sorts of fancy features. Service worker prefetch, code splitting, and SPA style route changes, all for free. _Here's how I did it._
+Now I can write and edit posts in Markdown and can even drop in custom HTML if I need to (I mean how else am I gonna incorporate `<marquee>` tags into my writing?). With [Next.js][next], I get all sorts of fancy features like service worker prefetch, code splitting, and SPA style route changes–all for free. _Here's how I did it._
 
 [If you haven't heard of Next.js it's a pretty cool, live reloading, totally-out-of-your-way tool for building webapps with React. You should use it.](https://zeit.co/blog/next3)
 
-As soon as the Zeit team announced plans to support serverless static exports, I was ready to go. I had already tried out Next.js for a few side projects, but didn't want to worry about running a server (even if it's free and painless) to keep my website up. I even tried scraping a compiled Next.js app with `wget` to make a static site, so Next's official support for static sites had me running out of excuses.
+As soon as the Zeit team announced plans to support serverless static exports, I was ready to go: I had already tried out Next.js for a few side projects, but didn't want to worry about running a server (even if it's free and painless) to keep my website up. I even tried scraping a compiled Next.js 2 app with `wget` to make a static site, so Next's official support for static sites had me running out of excuses.
 
-Here were my requirements for this humble website:
+Here were my requirements for my humble website:
 
 * Fully static and deployable on Github pages.
 * Author posts in Markdown, with support for HTML things like `<details>` tags.
@@ -50,7 +50,7 @@ Too bad I wasn't very happy with my first pass. I added a necessary-but-clunky b
 
 ### 🐰 Rabbit Hole: React from HTML Markdown
 
-One of the itches I _really_ wanted to scratch was the minor annoyance of having to use `__dangerouslySetInnerHtml` to use most off-the-shelf markdown libraries with React. I even made it a bit harder on myself by lazily abusing markdown and sprikling bits of markup in many of my posts, since most React components that render markdown tend to fall back to to _dangerouslySet_ instead of parsing the markdown to generate a valid React component for the entire markdown document. This isn't a new or unsolved problem, so I did some research and ended up geeking out on text processing and abstract syntax trees. Turns out that there are already a bunch of well documented AST parser/compilers that support markdown on npm!
+One of the itches I _really_ wanted to scratch was the minor annoyance of having to use `__dangerouslySetInnerHtml` to use most off-the-shelf markdown libraries with React. I even made it a bit harder on myself by lazily abusing markdown and sprinkling bits of markup in many of my posts, since most React components that render markdown tend to fall back to to _dangerouslySet_ instead of parsing the markdown to generate a valid React component for the entire markdown document. This isn't a new or unsolved problem, so I did some research and ended up geeking out on text processing and abstract syntax trees. Turns out that there are already a bunch of well documented AST parser/compilers that support markdown on npm!
 
 I really didn't want to make clients do any of the parsing work. Even though parsing markdown can be optimized to be fast in modern browsers, making users download additional JavaScript and spend CPU time to convert posts clientside just didn't sit well with me.
 
@@ -75,11 +75,11 @@ unified()
   .use(require('rehype-react'))
 ```
 
-To my suprise and delight, that process pipeline resulted in a totally usable React component! But it still would require some redundant processing on the client since the React component was being generated dynamicaly from a string of markdown. 
+To my surprise and delight, that process pipeline resulted in a totally usable React component! But it still would require some redundant processing on the client since the React component was being generated dynamically from a string of markdown. 
 
-So how do you _cache_ a React component? Like, a whole component, not just the serialization of it's virtual dom. React provides tools to server render components in multiple ways, but you can't easily generate _jsx_ from a dynamically generated components. But there _is_ a techinique for dealing with a React as a compile output of an AST, evidenced by [react-rehype](https://github.com/rhysd/rehype-react) at the end of that Unified markdown pipeline.
+So how do you _cache_ a React component? Like, a whole component, not just the serialization of it's virtual dom. React provides tools to server render components in multiple ways, but you can't easily generate _jsx_ from a dynamically generated components. But there _is_ a technique for dealing with a React as a compile output of an AST, evidenced by [react-rehype](https://github.com/rhysd/rehype-react) at the end of that Unified markdown pipeline.
 
-React has a dead simple API for creating components without JSX in `React.createElement()`. Since it's just plain JavaScript and doesn't require any functions or non-serializable data structures, it turns out that you can make a JSON structure that represents a set of React components pretty easily. I had run into a use case for this same trick at work, so I put it to use again here: I modified the last step of my Unified pipeline to return JSON instead of a React component. [`rehype-react`](https://github.com/rhysd/rehype-react) made this a cinch, since they allow you to pass a custom method for `createElement`.
+React has a dead simple API for creating components without JSX in `React.createElement()`. Since it's just plain JavaScript and doesn't require any functions or non-json data structures, it turns out that you can make a JSON structure that represents a set of React components pretty easily. I had run into a use case for this same trick at work, so I put it to use again here: I modified the last step of my Unified pipeline to return JSON instead of a React component. [`rehype-react`](https://github.com/rhysd/rehype-react) made this a cinch, since they allow you to pass a custom method for `createElement`.
 
 ```js
 remarkPipeline().use(rehypeReact, {
@@ -108,7 +108,7 @@ I wanted to write in Markdown and have Next.js pick up the changes automatically
 
 By default, next will use any JavaScript modules that export a React component in your `pages/` directory. While writing markdown next to code is possible, it's gross. Same goes for duplicating the same boilerplate file for each post and importing the markdown source from some other directory. I wanted to skip all that an go straight from Markdown into Next's build and compile pipeline.
 
-💡 The lightbulb moment came when I realized the power of Next's support for custom Webpack configuration.
+💡 The light bulb moment came when I realized the power of Next's support for custom Webpack configuration.
 
 A  [webpack loader](https://webpack.js.org/concepts/loaders/) can transform markdown source files into modules on the spot! And better yet, I already had a build script from my prototype that was doing most of what I needed to do in the loader. I needed to change was how my build script found out about files (reading them from disk vs. passed in by webpack) and how it output the results (again, writing to disk vs. passing the result back to webpack). The loader plugin interface was dead simple:
 

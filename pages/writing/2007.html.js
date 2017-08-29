@@ -18,7 +18,7 @@ Then I wrecked my car.
 
 With no license. And no insurance. And with another car. I had to beg my brother to loan me money to fix the other person's car. Meanwhile my car sat unmoving and wrecked, collecting parking tickets until I sold it as-is for next to nothing.
 
-When I did get a job, it only paid $9 an hour. For 32 hours a week. Technically part time.
+When I did get a job, it only paid $9 an hour. For 32 hours a week—technically part time.
 
 I didn't have health insurance. I watched Prince perform the Super Bowl halftime show in the ER waiting room. I had a fever for 3 days and my tonsils were swollen enough to justify the ER visit.
 
@@ -38,9 +38,9 @@ I got promoted to assistant manager at the retail job. My pay was raised to $11 
 
 My wife and I adopted a beat up little shelter dog that winter and named him Jack. He's still here, but now he's old and cranky after 10 years of being doted on and loved unconditionally.
 
-2007 was the year I started riding a bike (for transportation, then for fun) and picked up skateboarding again (for fun, then for transportation.)
+2007 was the year I started riding a bike (at first for transportation, then for fun) and picked up skateboarding again (for fun, then transportation.)
 
-2007 was the year I started taking any job on any film shoot I could find. Most of them were unpaid, on the hope of paid gigs in the future.
+2007 was the year I started taking any job on any film shoot I could find that would take me. Most of them were unpaid, on the hope of paid gigs in the future.
 
 And 2007 was the year I started to code.
 
@@ -52,7 +52,7 @@ I was so excited to get that computer. I used it to climb out of debt and into a
 
 That year I listened to MGMT, Peter, Bjorn and John, and Kanye West. I can remember riding my bike to those albums as fall in Boulder started to turn cold.
 
-<hr class="mv4" />
+<hr class="mv4 bt b--red" />
 
 Across town, TechStars would host its first class. A year later one of those companies would be acquired AOL for seven figures. I'd find out about this well after it happened. At a local tech meetup the founder, who was only a year or two older than me, ended his presentation by throwing $500 in singles into the air.
 
@@ -68,8 +68,22 @@ But that night wasn't all bad.
 
 That was also the night I would meet Ingrid, who would eventually be my co-founder at Quick Left. But we wouldn't know that for another year. We just hung out and talked about bikes and software.
 
-And maybe I owe something to the guy who threw the money after all. After that I started hustling for web design jobs on craigslist and less than a year later I would have a full time job. That job turned into Quick Left, a company that I would become a founder of and lead for 6 years.
+And maybe I owe something to the guy who threw the money after all. After that I started hustling for web design jobs on Craigslist and less than a year later I would have a full time job. That job turned into Quick Left, a company that I would become a founder of and lead for 6 years.
 
-> Good things and bad things can happen in startlingly close proximity.
+<hr class="mv4 bt b--red" />
+
+2007 and 2008 were also the years I read a lot of science fiction. The second retail job had me unpacking boxes, lots of boxes, in the back of an American Apparel. I listened to Isaac Asimov and Robert Heinlein for the first time back there. I found a used bookstore that my girlfriend and I would ride our bikes to, backpacks bulging with paperbacks on the way home. Science Fiction was a great way to escape my broke-and-scared Non Fiction.
+
+Then I fell hard for the work of Philip K. Dick. _A Scanner Darkly_ had been made into a movie by Richard Linklater the year before. A well-adapted and underrated movie, it's still one of my favorites. I listened to the audiobook version, recorded by Paul Giamatti, and then devoured the paperback. I was so desperate to have a copy I condescended to buy it new from Borders; I couldn't wait for a copy to show up at the used bookstore. The only copy at Borders was the kind with the movie poster on it, they type that _everyone_ hates on because it's the most backwards type of marketing, and never lasts for more than one edition.
+
+I still have that copy of _A Scanner Darkly_, which Keanu and Winona and pre-Iron Man Robert Downey Jr. on the cover. I hate the cover, but I love the book so I can't get rid of it. The text inside is too good.
+
+> But in this dark world where he now dwelt, ugly things and surprising things and once in a long while a tiny wondrous thing spilled out at him constantly; he could count on nothing.
+
+<cite>
+— <i>A Scanner Darkly</i>, Philip K. Dick
+</cite>
+
+Good things and bad things can happen in startlingly close proximity.
 
 2007 was a bad year, but I wouldn't trade any of the lessons it taught me.
