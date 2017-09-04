@@ -37,6 +37,7 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [ ] Gödel, Escher, Bach: an Eternal Golden Braid – Douglas R. Hofstadter
 1. [x] The Cathedral and the Bazaar – Eric S. Raymond
 1. [ ] Dune – Frank Herbert
+1. [x] Decoding the Universe – Charles Seife                 
 
 <small>
 
