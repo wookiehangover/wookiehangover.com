@@ -12,13 +12,16 @@ export default () =>
           Samuel Breed
           <sup><a href="#footnote-01">1</a></sup>
         </h1>
-        <a href="mailto:samuel.breed@gmail.com">samuel.breed@gmail.com</a> <small><a href="/pub-gpg.txt" className={`none dib ml2`}>pgp 🔐</a></small>
-        <p className={`underline`}>Product Engineer<sup><a href="#footnote-02">2</a></sup></p>
+        <p>
+          <a href="mailto:samuel.breed@gmail.com">samuel.breed@gmail.com</a> 
+          <a href="/pub-gpg.txt" className={`f7 pa1 ba ml2`}>pgp 🔐</a>
+        </p>
+        <p>Product Engineer<sup><a href="#footnote-02">2</a></sup></p>
       </header>
 
       <section className={`lh-copy`}>
         <h4>Work Experience:</h4>
-        <ol>
+        <ol className="pl3">
           <li>
             <strong><a href="https://www.creditkarma.com">Credit Karma</a></strong>
             <cite>2015—present</cite>
@@ -70,7 +73,7 @@ export default () =>
         </ol>
       </section>
 
-      <section>
+      <section className={`lh-copy`}>
         <h4>Education:</h4>
         <ul>
           <li>
@@ -82,19 +85,21 @@ export default () =>
 
       <section>
         <h4>See also:<sup><a href="#footnote-07">7</a></sup></h4>
-        <ul>
-          <li><a href="https://obliquestrategies.website/">Oblique Strategies website</a> and <a href="https://chrome.google.com/webstore/detail/oblique-strategies-tab/mgmdhihgmkhangpfokjdhfhjaiadpopd">Chrome Plugin</a></li>
-          <li><a href="https://www.youtube.com/watch?v=QqSHrpro02g">Backbone Conf 2014</a></li>
-          <li><a href="https://www.youtube.com/watch?v=Lm05e5sJaE8">Backbone Conf 2013</a></li>
-          <li><a href="https://www.youtube.com/watch?v=W5ti8cl3nzs">jQuery Conf 2013</a></li>
-          <li>Favorite emoji: 🤗 <sup><a href="#footnote-07">7</a></sup></li>
-        </ul>
+          <div className={`flex flex-wrap justify-center`}>
+            <div className={`ba pa3 ma2`}><a href="https://frontendmasters.com/courses/backbone-js-in-depth-testing-mocha-sinon/">Frontend Masters</a></div>
+            <div className={`ba pa3 ma2`}>Favorite emoji: 🙈 <sup><a href="#footnote-08">8</a></sup></div>
+            <div className={`ba pa3 ma2`}><a href="https://www.youtube.com/watch?v=QqSHrpro02g">Backbone Conf 2014</a></div>
+            <div className={`ba pa3 ma2`}><a href="https://www.youtube.com/watch?v=nMVXumwItcw">Hapi Day Oakland 2014</a></div>
+            <div className={`ba pa3 ma2`}><a href="https://www.youtube.com/watch?v=Lm05e5sJaE8">Backbone Conf 2013</a></div>
+            <div className={`ba pa3 ma2`}><a href="https://www.youtube.com/watch?v=W5ti8cl3nzs">jQuery Conf 2013</a></div>
+            <div className={`ba pa3 ma2`}><a href="https://obliquestrategies.website/">obliquestrategies.website</a> + <a href="https://chrome.google.com/webstore/detail/oblique-strategies-tab/mgmdhihgmkhangpfokjdhfhjaiadpopd">Chrome Plugin</a> + <a href="https://twitter.com/ObliqueBot/status/886236405118062592">Twitter bot</a></div>
+          </div>
       </section>
 
-      <footer className={`pb4 mw-7 f6 lh-copy`}>
+      <footer className={`pb4 mw-7 lh-copy`}>
         <h4>Footnotes:</h4>
 
-        <ol>
+        <ol className={`f6`}>
           <li id="footnote-01">
             Hello and welcome to my résumé! Let's get to know each other a little before we get things started. My name is Samuel Breed and I made this website, which is fitting because it's about me. I live north of San Francisco. I started riding motorctyles in <b>2014</b>. My current daily rider is a <a href="/static/img/ktm_690.jpg">KTM Enduro 690</a>. It's fast and loud, which I enjoy.
           </li>

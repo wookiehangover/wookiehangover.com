@@ -13,7 +13,11 @@ export default () => {
         </header>
 
         <p className={cx(`lh-copy`)}>
-          Howdy! I&apos;m <a href="https://twitter.com/sambreed" className={cx(`f4`)}>@sambreed</a>. I make user experiences, software, and questionable decisions on the internet. More specifically, I am this website.
+          Howdy! I&apos;m <a href="https://twitter.com/sambreed" className={cx(`f4`)}>@sambreed</a>.
+        </p>
+
+        <p className={cx(`lh-copy`)}>
+          <b>I make websites faster, products better, and teams smarter.</b> And more specifically, I am trapped inside this website.
         </p>
 
         <p className={cx(`lh-copy`)}>
@@ -35,15 +39,17 @@ export default () => {
           </ol>
         </section>
 
-        <section className={cx(`mv2`)}>
-          <p className={cx(`mv4 lh-copy`)}>If you dig any of that, then you might also enjoy:</p>
-          <ul>
-            <li><Link href="/cv.html"><a>Perusing my C.V.</a></Link></li>
-            <li><a href="https://obliquestrategies.website/">Oblique Strategies website</a> and <a href="https://chrome.google.com/webstore/detail/oblique-strategies-tab/mgmdhihgmkhangpfokjdhfhjaiadpopd">Chrome Plugin</a> and <a href="https://twitter.com/ObliqueBot/status/886236405118062592">Twitter bot</a></li>
-            <li><a href="https://github.com/wookiehangover?tab=repositories">Checking out some of my projects</a> (including the very <a href="https://github.com/wookiehangover/wookiehangover.com">web page you&apos;re reading right now</a>!)</li>
-            <li><a href="https://twitter.com/sambreed">Following me on Twitter!</a></li>
-          </ul>
-          <p className={cx(`mv4 lh-copy`)}>Or if none of that is enough and you have some questions, drop me a line at <b>samuel.breed@gmail.com</b></p>
+        <center className={cx(`mv5`)}>∴</center>
+
+        <section>
+          <p className={cx(`lh-copy`)}>If you dig any of that, then you might also enjoy some of this:</p>
+          <div className={`flex flex-wrap justify-center mv4`}>
+            <div className={`ba pa3 ma2`}><Link href="/cv.html"><a>Peruse my C.V.</a></Link></div>
+            <div className={`ba pa3 ma2`}><a href="https://github.com/wookiehangover?tab=repositories">Check out some of my projects</a></div>
+            <div className={`ba pa3 ma2`}><a href="https://twitter.com/sambreed">Follow me on Twitter!</a></div>
+            <div className={`ba pa3 ma2`}><a href="https://obliquestrategies.website/">obliquestrategies.website</a> + <a href="https://chrome.google.com/webstore/detail/oblique-strategies-tab/mgmdhihgmkhangpfokjdhfhjaiadpopd">Chrome Plugin</a> + <a href="https://twitter.com/ObliqueBot/status/886236405118062592">Twitter bot</a></div>
+          </div>
+          <p className={cx(`lh-copy`)}>Or if none of that is enough and you have some questions, drop me a line at <b>sam@destroy.email</b></p>
         </section>
       </main>
 
