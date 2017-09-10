@@ -33,7 +33,7 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [ ] Barbarians at the Gate – Bryan Burrough & John Helyar
 1. [x] How Money Got Free – Brian Patrick Eha
 1. [x] Why Information Grows – César Hildago
-1. [ ] hackers: heroes of the computer revolution – Steven Levy
+1. [x] hackers: heroes of the computer revolution – Steven Levy
 1. [ ] Gödel, Escher, Bach: an Eternal Golden Braid – Douglas R. Hofstadter
 1. [x] The Cathedral and the Bazaar – Eric S. Raymond
 1. [ ] Dune – Frank Herbert
