@@ -34,7 +34,7 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [x] [Orientalism](http://www.worldcat.org/oclc/717738730) – Edward W Said                      
 1. [x] [How Money Got Free](http://www.worldcat.org/oclc/981123286) – Brian Patrick Eha
 1. [x] [Why Information Grows](http://www.worldcat.org/oclc/945232398) – César Hildago
-1. [x] [Hackersx](http://www.worldcat.org/oclc/615926697) – Steven Levy
+1. [x] [Hackers](http://www.worldcat.org/oclc/615926697) – Steven Levy
 1. [ ] [Gödel, Escher, Bach: an Eternal Golden Braid](http://www.worldcat.org/oclc/750541259) – Douglas R. Hofstadter
 1. [x] [The Cathedral and the Bazaar](http://www.worldcat.org/oclc/695866330) – Eric S. Raymond
 1. [ ] [Dune](http://www.worldcat.org/oclc/946058566) – Frank Herbert
