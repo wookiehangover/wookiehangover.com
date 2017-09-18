@@ -40,6 +40,7 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [ ] [Dune](http://www.worldcat.org/oclc/946058566) – Frank Herbert
 1. [x] [Decoding the Universe](http://www.worldcat.org/oclc/72799929) – Charles Seife
 1. [ ] [Code](https://www.worldcat.org/oclc/926699676) – Charles Petzold
+1. [ ] [The Soul of a New Machine](http://www.worldcat.org/oclc/934422966) – Tracy Kidder
 
 <small>
 
