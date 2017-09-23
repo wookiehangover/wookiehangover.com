@@ -18,6 +18,6 @@ In order to edit any of my lousy content, please open a pull request or use the 
 
 ## Complaints
 
-If you don't like this or think I could do better, please let me know by opening an issue. Or tweet at me, whatever. Everybody needs feedback, so bring it on; I'm ready and willing to receive your cowardly disrespect with the utmost grace and humility.
+If you don't like this or think I could do better, tell me what I'm doing wrong! Please let me know how you feel by opening an issue or creating a a pull request. Or tweet at me, whatever. Everybody needs feedback, so bring it on; I'm ready and willing to receive your cowardly disrespect with the utmost grace and humility.
 
 [1]: https://wookiehangover.com
