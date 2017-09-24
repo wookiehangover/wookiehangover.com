@@ -2,6 +2,8 @@
 
 # Welcome to the [wookiehangover.com][1] README!
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wookiehangover/wookiehangover.com.svg)](https://greenkeeper.io/)
+
 ![UNDER CONSTRUCTION](https://wookiehangover.com/wip.gif)
 
 ⚠️⚠️⚠️ YOU MUST READ THIS DOCUMENT IN ORDER TO PROPERLY USE THIS WEBSITE. USE OF THIS WEBSITE WITHOUT HAVING READ AND CONSENTED TO THE TERMS AND CONDITIONS OUTLINED HEREIN IS STRICTLY PROHIBITED. ⚠️⚠️⚠️
