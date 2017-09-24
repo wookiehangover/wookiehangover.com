@@ -28,7 +28,7 @@
     "postcss-cli": "^4.1.0",
     "postcss-csso": "^2.0.0",
     "postcss-extend": "^1.0.5",
-    "postcss-import": "^10.0.0",
+    "postcss-import": "^11.0.0",
     "postcss-url": "^7.1.2",
     "tachyons": "^4.8.1"
   },
