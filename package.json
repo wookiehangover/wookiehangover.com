@@ -36,7 +36,7 @@
     "classnames": "^2.2.5",
     "execa": "^0.8.0",
     "next": "^3.0.3",
-    "react": "^15.6.1",
+    "react": "^16.0.0",
     "react-dom": "^15.6.1",
     "rehype-raw": "^2.0.0",
     "rehype-react": "^3.0.0",
