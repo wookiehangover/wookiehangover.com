@@ -39,7 +39,7 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [x] [The Cathedral and the Bazaar](http://www.worldcat.org/oclc/695866330) – Eric S. Raymond
 1. [ ] [Dune](http://www.worldcat.org/oclc/946058566) – Frank Herbert
 1. [x] [Decoding the Universe](http://www.worldcat.org/oclc/72799929) – Charles Seife
-1. [ ] [Code](https://www.worldcat.org/oclc/926699676) – Charles Petzold
+1. [x] [Code](https://www.worldcat.org/oclc/926699676) – Charles Petzold
 1. [x] [The Soul of a New Machine](http://www.worldcat.org/oclc/934422966) – Tracy Kidder
 
 <small>
