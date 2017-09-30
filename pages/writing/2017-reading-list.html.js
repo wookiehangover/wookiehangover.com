@@ -41,6 +41,7 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [x] [Decoding the Universe](http://www.worldcat.org/oclc/72799929) – Charles Seife
 1. [x] [Code](https://www.worldcat.org/oclc/926699676) – Charles Petzold
 1. [x] [The Soul of a New Machine](http://www.worldcat.org/oclc/934422966) – Tracy Kidder
+1. [ ] [Payback](https://www.worldcat.org/oclc/864772458) – Margaret Atwood                      
 
 <small>
 
