@@ -41,8 +41,10 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [x] [Decoding the Universe](http://www.worldcat.org/oclc/72799929) – Charles Seife
 1. [x] [Code](https://www.worldcat.org/oclc/926699676) – Charles Petzold
 1. [x] [The Soul of a New Machine](http://www.worldcat.org/oclc/934422966) – Tracy Kidder
-1. [ ] [Payback](https://www.worldcat.org/oclc/864772458) – Margaret Atwood                      
-
+1. [x] [Payback](https://www.worldcat.org/oclc/864772458) – Margaret Atwood                      
+1. [ ] [We Were 8 Years in Power](http://www.worldcat.org/oclc/1003168303) – Ta-Nehisi Coates
+1. [ ] [One Hundred Years of Solitude](http://www.worldcat.org/oclc/64685014) – Gabriel Garcia Márquez
+                      
 <small>
 
 - ~~Strikethrough~~ _Abandoned and back on the shelf_ 🙅‍
