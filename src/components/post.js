@@ -1,39 +1,37 @@
 import React from 'react'
 import cx from 'classnames'
 import Link from 'next/link'
-import Head from './head'
-import Footer from './footer'
+import Layout from './layout'
+
+
+const styles = {
+  anchor: 'red link bb',
+  h1: 'sans-serif lh-title fw3'
+}
 
 export default (props) =>
-  <div>
-    <Head title={props.title} description={props.description} />
+  <Layout title={props.title} description={props.description}>
+    <header>
+      <h1 className={styles.h1}>
+        <Link><a className={styles.anchor} href="/">Samuel Breed</a></Link> made this website.
+      </h1>
+    </header>
 
-    <main className={cx(`mw7 pa3 pa4-ns center min-vh-100`)}>
-      <header>
-        <Link>
-          <a href="/">Back</a>
-        </Link>
-        <h1 className="fw2">
-          <Link><a href="/">Samuel Breed</a></Link> made this website.
-        </h1>
-      </header>
+    <center>∴</center>
 
-      <section className={cx(`posts pb4`)}>
-        <article className={cx(`f5 mv4`)} id={props.slug}>
+    <section className={cx(`posts`)}>
+      <article className={cx(`f5 mv4`)} id={props.slug}>
 
-          {props.children}
+        {props.children}
 
-          <footer className="mv2">
-            <time>Last updated on <small><code className="pa1 bg-near-white mid-gray">{props.updatedAt}</code></small></time>
-            <nav className="mv2 mv0-ns fr-ns">
-              <a className="mr1" href={`/${props.permalink.indexOf('.html') === -1 ? props.permalink + '.html' : props.permalink}`}>Link</a>
-              <a className="mr1" href={`https://github.com/wookiehangover/wookiehangover.com/edit/master/${props.path.replace('.html.html', '.html')}`}>Edit</a>
-              <a className="mr1" href={`https://github.com/wookiehangover/wookiehangover.com/commits/master/${props.path.replace('.html.html', '.html')}`}>History</a>
-            </nav>
-          </footer>
-        </article>
-      </section>
-    </main>
-
-    <Footer />
-  </div>
+        <footer className="mt5 sans-serif f6">
+          <time>Last updated on <small><code className="pa1 bg-near-white mid-gray">{props.updatedAt}</code></small></time>
+          <nav className="mv2 mv0-ns fr-ns">
+            <a className={`${styles.anchor} mr1`} href={`/${props.permalink.indexOf('.html') === -1 ? props.permalink + '.html' : props.permalink}`}>Link</a>
+            <a className={`${styles.anchor} mr1`} href={`https://github.com/wookiehangover/wookiehangover.com/edit/master/${props.path.replace('.html.html', '.html')}`}>Edit</a>
+            <a className={`${styles.anchor} mr1`} href={`https://github.com/wookiehangover/wookiehangover.com/commits/master/${props.path.replace('.html.html', '.html')}`}>History</a>
+          </nav>
+        </footer>
+      </article>
+    </section>
+  </Layout>

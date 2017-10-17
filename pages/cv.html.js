@@ -1,107 +1,123 @@
-import cx from 'classnames'
-import Head from '../src/components/head'
 import Link from 'next/link'
-import Footer from '../src/components/footer'
+import Layout from '../src/components/layout'
+
+const styles = {
+  h: 'relative sans-serif lh-title fw3',
+  hSection: 'relative f3 sans-serif',
+  hSup: 'f7 absolute top-1 right ml1',
+  sup: 'red no-underline pl1',
+  anchor: 'red no-underline bb',
+  cite: 'fr f5 mt1',
+  list: 'pl3',
+  moj: 'dib mr1'
+}
 
 export default () =>
-  <div>
-    <Head />
-    <main className={`mw7 pa3 pa4-ns center bg-rainbows`}>
-      <header>
-        <h1>
-          Samuel Breed
-          <sup><a href="#footnote-01">1</a></sup>
-        </h1>
+  <Layout>
+      <h1 className={styles.h}>Samuel Breed <a className={styles.anchor} href="#footnote-01"><sup className={styles.hSup}>1</sup></a></h1>
+      <h2 className={styles.h}>Product Engineer <a className={styles.anchor} href="#footnote-02"><sup className={styles.hSup}>2</sup></a></h2>
+
+      <section>
+        <h1 className={styles.hSection}>Contact Information:</h1>
         <p>
-          <a href="mailto:samuel.breed@gmail.com">samuel.breed@gmail.com</a> 
-          <a href="/pub-gpg.txt" className={`f7 pa1 ba ml2`}>pgp 🔐</a>
+          <a className={styles.anchor} href="mailto:samuel.breed@gmail.com">samuel.breed@gmail.com</a><br/>
+          <code className={`f7`}>
+            PGP <a className={styles.anchor} href="/pub-gpg.txt">ABBA D805 24B9 16F5 41C2  01E9 360C F6C4 7EC8 89D8</a>
+          </code>
         </p>
-        <p>Product Engineer<sup><a href="#footnote-02">2</a></sup></p>
-      </header>
+      </section>
 
-      <section className={`lh-copy`}>
-        <h4>Work Experience:</h4>
-        <ol className="pl3">
+      <section>
+        <h1 className={styles.hSection}>Work Experience:</h1>
+        <ol className={styles.list}>
           <li>
-            <strong><a href="https://www.creditkarma.com">Credit Karma</a></strong>
-            <cite>2015—present</cite>
+            <h2 className={styles.hSection}>
+              <a className={styles.anchor} href="https://www.creditkarma.com">Credit Karma</a>
+            </h2>
 
-            <ul className={`mt3`}>
-              <li>Staff Engineer<sup><a href="#footnote-03">3</a></sup></li>
+            <ul className={styles.list}>
+              <li>
+                Staff Engineer<sup><a className={styles.sup} href="#footnote-03">3</a></sup>
+                <cite className={styles.cite}>2015—present</cite>
+              </li>
             </ul>
 
-            <p>In the fall of 2015 I joined Credit Karma as the technical lead for the front-end web team. Under my direction, the front-end teams have created web applications responsible for hundreds of millions of pageviews.</p>
+            <p>In the fall of 2015 I joined Credit Karma as the technical lead for the front-end web team. Under my direction, the front-end teams have created web applications for more than 70 million members.</p>
 
-            <p className={`i`}>Notable Projects</p>
-            <ul className={`mb3`}>
-              <li>2017:
-                <ul>
-                  <li>Credit Cards team tech lead 💳</li>
-                  <li>Launch Node.js server side rendering platform 🖼</li>
+            <p className={`i f5`}>Notable Accomplishments (with accompanying emoji):</p>
+
+            <ul className={`f5 list pl0`}>
+              <li>2017
+                <ul className={`${styles.list} mv2`}>
+                  <li><span className={styles.moj}>💳</span> Credit Cards team tech lead</li>
+                  <li><span className={styles.moj}>🖼</span> Launch Node.js server side rendering platform</li>
                 </ul>
               </li>
-              <li>2016:
-                <ul>
-                  <li>Re-brand and site-wite redesign launch 🚀</li>
-                  <li>Create private npm to CDN deploy pipeline 📦</li>
-                  <li>Credit Karma Canada launch 🇨🇦 </li>
-                  <li>Mobile Web launch 📲</li>
+              <li>2016
+                <ul className={`${styles.list} mv2`}>
+                  <li><span className={styles.moj}>🚀</span> Re-brand and site-wite redesign launch </li>
+                  <li><span className={styles.moj}>📦</span> Create on-demand CDN deploy pipeline</li>
+                  <li><span className={styles.moj}>🇨🇦</span> Credit Karma Canada launch</li>
+                  <li><span className={styles.moj}>📲</span> Mobile Web launch</li>
                 </ul>
               </li>
-              <li>2015:
-                <ul>
-                  <li>Launch Credit Karma's first server rendered React app</li>
-                  <li>Adopt private npm and a modular front end architecture</li>
+              <li>2015
+                <ul className={`${styles.list} mv2`}>
+                  <li><span className={styles.moj}>🚀</span> Launch Credit Karma's first server rendered React app</li>
+                  <li><span className={styles.moj}>🤔</span> Adopt private npm and a modular front end architecture</li>
                 </ul>
               </li>
             </ul>
           </li>
           <li>
-            <a href="http://quickleft.com/">
-              <strong>Quick Left</strong>
-            </a>
-            <cite>2009—2015</cite>
-            <ul className={`mt3`}>
-              <li>Co-founder</li>
-              <li>Lead Developer</li>
-              <li>General Manager, Product</li>
+            <h2 className={styles.hSection}>
+              <a className={styles.anchor} href="http://quickleft.com/">Quick Left</a>
+            </h2>
+            
+            <ul className={styles.list}>
+              <li>Co-founder <cite className={styles.cite}>2009—2015</cite></li>
+              <li>Lead Developer <cite className={styles.cite}>2011—2014</cite></li>
+              <li>General Manager, Product <cite className={styles.cite}>2014—2015</cite></li>
             </ul>
-            <p>In 2009 I co-founded the Boulder, Colo. software consultancy Quick Left. Over the next 6 years, I led the business in various roles as we grew from a modest 2-person operation to a team of more than 40 spanning four offices. We specialized in building products, solving deep technical challenges and worked with companies ranging from small startups to the top of the Fortune 500.<sup><a href="#footnote-04">4</a></sup></p>
+            <p>In 2009 I co-founded the Boulder, Colo. software consultancy Quick Left. Over the next 6 years, I led the business in various roles as we grew from a modest 2-person operation to a team of more than 40 spanning four offices. We specialized in building products, solving deep technical challenges and worked with companies ranging from small startups to the top of the Fortune 500.<sup><a className={styles.sup} href="#footnote-04">4</a></sup></p>
 
-            <p>After departing in 2015<sup><a href="#footnote-05">5</a></sup>, I remained on the Board of Directors to see through the 2016 sale to the global consulting firm Cognizant.</p>
+            <p>After departing in 2015<sup><a className={styles.sup} href="#footnote-05">5</a></sup>, I remained on the Board of Directors to see through the 2016 sale to the global consulting firm Cognizant.</p>
           </li>
         </ol>
       </section>
 
       <section className={`lh-copy`}>
-        <h4>Education:</h4>
+        <h1 className={styles.hSection}>Education:</h1>
         <ul>
           <li>
-            BFA Film Production (incomplete)<sup><a href="#footnote-06">6</a></sup><br/>
+            BFA Film Production (incomplete)<sup><a className={styles.sup} href="#footnote-06">6</a></sup><br/>
             <i>Univeristy of Colorado, Boulder 2004—2007</i>
           </li>
         </ul>
       </section>
 
       <section>
-        <h4>See also:<sup><a href="#footnote-07">7</a></sup></h4>
-          <div className={`flex flex-wrap justify-center`}>
-            <div className={`ba pa3 ma2`}><a href="https://frontendmasters.com/courses/backbone-js-in-depth-testing-mocha-sinon/">Frontend Masters</a></div>
-            <div className={`ba pa3 ma2`}>Favorite emoji: 🙈 <sup><a href="#footnote-08">8</a></sup></div>
-            <div className={`ba pa3 ma2`}><a href="https://www.youtube.com/watch?v=QqSHrpro02g">Backbone Conf 2014</a></div>
-            <div className={`ba pa3 ma2`}><a href="https://www.youtube.com/watch?v=nMVXumwItcw">Hapi Day Oakland 2014</a></div>
-            <div className={`ba pa3 ma2`}><a href="https://www.youtube.com/watch?v=Lm05e5sJaE8">Backbone Conf 2013</a></div>
-            <div className={`ba pa3 ma2`}><a href="https://www.youtube.com/watch?v=W5ti8cl3nzs">jQuery Conf 2013</a></div>
-            <div className={`ba pa3 ma2`}><a href="https://obliquestrategies.website/">obliquestrategies.website</a> + <a href="https://chrome.google.com/webstore/detail/oblique-strategies-tab/mgmdhihgmkhangpfokjdhfhjaiadpopd">Chrome Plugin</a> + <a href="https://twitter.com/ObliqueBot/status/886236405118062592">Twitter bot</a></div>
-          </div>
+        <h1 className={styles.hSection}>
+          See also: <a className={styles.anchor} href="#footnote-07"><sup className={styles.hSup}>7</sup></a>
+        </h1>
+        <ul>
+          <li>Favorite emoji: 🙈 <sup><a className={styles.sup} href="#footnote-08">8</a></sup></li>
+          <li><a className={styles.anchor} href="https://frontendmasters.com/courses/backbone-js-in-depth-testing-mocha-sinon/">Frontend Masters</a></li>
+          <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=QqSHrpro02g">Backbone Conf 2014</a></li>
+          <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=nMVXumwItcw">Hapi Day Oakland 2014</a></li>
+          <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=Lm05e5sJaE8">Backbone Conf 2013</a></li>
+          <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=W5ti8cl3nzs">jQuery Conf 2013</a></li>
+          <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=Lm05e5sJaE8">Backbone Conf 2012</a></li>
+          <li><a className={styles.anchor} href="https://obliquestrategies.website/">obliquestrategies.website</a> + <a className={styles.anchor} href="https://chrome.google.com/webstore/detail/oblique-strategies-tab/mgmdhihgmkhangpfokjdhfhjaiadpopd">Chrome Plugin</a> + <a className={styles.anchor} href="https://twitter.com/ObliqueBot/status/886236405118062592">Twitter bot</a></li>
+        </ul>
       </section>
 
-      <footer className={`pb4 mw-7 lh-copy`}>
-        <h4>Footnotes:</h4>
+      <section className={`pb4 mw-7 lh-copy`}>
+        <h1 className={styles.hSection}>Footnotes:</h1>
 
-        <ol className={`f6`}>
+        <ol className={`${styles.list} f6`}>
           <li id="footnote-01">
-            Hello and welcome to my résumé! Let's get to know each other a little before we get things started. My name is Samuel Breed and I made this website, which is fitting because it's about me. I live north of San Francisco. I started riding motorctyles in <b>2014</b>. My current daily rider is a <a href="/static/img/ktm_690.jpg">KTM Enduro 690</a>. It's fast and loud, which I enjoy.
+            Hello and welcome to my résumé! Let's get to know each other a little before we get things started. My name is Samuel Breed and I made this website, which is fitting because it's about me. I live north of San Francisco. I started riding motorctyles in <b>2014</b>. My current daily rider is a <a className={styles.anchor} href="/static/img/ktm_690.jpg">KTM Enduro 690</a>. It's fast and loud, which I enjoy.
           </li>
 
           <li id="footnote-02">
@@ -117,7 +133,7 @@ export default () =>
           </li>
 
           <li id="footnote-05">
-            In 2008 I was the backstock manager of an American Apparel store, which means I counted and folded about 30,000 t-shirts. I had been doing occasional gig work in the Colorado film industry, which means a dozen or so student films, a handful of commercials, and most notably the shoot that produced <a href="/static/img/aaah.gif">this animated gif</a>. I ended up making a wordpress site for a small company I was working for and got paid for it. That's how I started freelancing. A year later I met Colin and a few months after that, Ingrid, and we started Quick Left. We ran a frantic pace for several years and I learned everything I know on that job, by the seat of my pants.
+            In 2008 I was the backstock manager of an American Apparel store, which means I counted and folded about 30,000 t-shirts. I had been doing occasional gig work in the Colorado film industry, which means a dozen or so student films, a handful of commercials, and most notably the shoot that produced <a className={styles.anchor} href="/static/img/aaah.gif">this animated gif</a>. I ended up making a wordpress site for a small company I was working for and got paid for it. That's how I started freelancing. A year later I met Colin and a few months after that, Ingrid, and we started Quick Left. We ran a frantic pace for several years and I learned everything I know on that job, by the seat of my pants.
           </li>
 
           <li id="footnote-06">
@@ -132,8 +148,10 @@ export default () =>
             Yes I'm for real with the custom cursor.
           </li>
         </ol>
-      </footer>
-    </main>
-
-    <Footer />
-  </div>
+      </section>
+      <style jsx>{`
+      section {
+        margin-top: 7rem;
+      }
+      `}</style>
+  </Layout>

@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-export default ({ title='Samuel Breed', description='Sam Breed is a developer person who maintains this website which is sort of like a geocities page' }) =>
+export default ({ title='Samuel Breed', description='Sam Breed is a person who maintains this award-winning website which is sort of like a geocities page' }) =>
   <Head>
-    <meta charset="utf-8" />
+    <meta charSet="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>{title} ∴ wookiehangover.com</title>
     <meta name="author" content="Samuel Breed" />

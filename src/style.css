@@ -4,8 +4,10 @@
 html, body {
   height: 100%;
   min-height: 100%;
+  @extend .bg-washed-yellow;
 }
 
+/*
 body {
   @extend .sans-serif;
   @extend .black;
@@ -105,15 +107,12 @@ body > footer {
 }
 
 body > footer > ol > li {
-  /*@extend .measure;*/
   @extend .mv1;
 }
 
 body > footer > ol > li:target {
   color: #D62288;
 }
-
-/* posts */
 
 article {
   @extend .f5;
@@ -131,7 +130,7 @@ article > h2:hover {
 }
 
 article li p {
-  margin: 0 !important; /* fuck it */
+  margin: 0 !important; 
 }
 
 article aside,
@@ -150,8 +149,6 @@ article blockquote {
   @extend .f3;
   @extend .mv3;
   @extend .i;
-  /*@extend .garamond;*/
-  /*@extend .measure;*/
   @extend .mh0;
   @extend .pl3;
   @extend .bl;
@@ -232,7 +229,7 @@ body > footer > nav > div:hover .grow {
   cursor: text;
 }
 
-/* @keyframes bg-rainbows {
+@keyframes bg-rainbows {
   0%    { background-color: #F6FFFE; }
   20%   { background-color: #E8FDF5; }
   40%   { background-color: #FFFCEB; }
