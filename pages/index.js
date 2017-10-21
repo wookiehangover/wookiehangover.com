@@ -35,7 +35,7 @@ export default () => {
           <li><Link href="/writing/picking-up-the-pieces.html"><a className={styles.anchor}>Picking up the pieces; or How I learned to stop worrying and embrace weird metaphors</a></Link></li>
           <li><Link href="/writing/making-things-for-fun.html"><a className={styles.anchor}>Making things for fun</a></Link></li>
           <li><Link href="/writing/2016-reading-list.html"><a className={styles.anchor}>2016 reading list</a></Link></li>
-          <li><a href="https://medium.com/@sambreed/2015-books-504cb79ac5c0#.f8izs5mpq">2015 reading list</a></li>
+          <li><a className={styles.anchor} href="https://medium.com/@sambreed/2015-books-504cb79ac5c0#.f8izs5mpq">2015 reading list</a></li>
         </ol>
       </section>
 
