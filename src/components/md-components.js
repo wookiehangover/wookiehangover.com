@@ -4,7 +4,8 @@ import cx from 'classnames'
 const classes = {
   p: `lh-copy mv3`,
   h: `dark-gray sans-serif fw3`,
-  li: ``,
+  list: `pl3`,
+  li: `pl1`,
   blockquote: `f3 mv3 i mh0 pl3 bl lh-title b--rainbows`,
   pre: `f7 ba br1 b--black-90 pre-code overflow-x-scroll`,
   code: `f7 `,
@@ -26,6 +27,9 @@ const components = {
 
   h3: props =>
     <h3 className={cx(classes.h, props.className)} id={props.id}>{props.children}</h3>,
+
+  ul: props => <ul className={classes.list}>{props.children}</ul>,
+  ol: props => <ol className={classes.list}>{props.children}</ol>,
 
   li: props =>
     <li className={cx(classes.li, props.className)}>{props.children}</li>,
