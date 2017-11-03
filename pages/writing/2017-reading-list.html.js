@@ -45,6 +45,7 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [x] [We Were 8 Years in Power](http://www.worldcat.org/oclc/1003168303) – Ta-Nehisi Coates
 1. [ ] [One Hundred Years of Solitude](http://www.worldcat.org/oclc/64685014) – Gabriel Garcia Márquez
 1. [x] [I Contain Multitudes](http://www.worldcat.org/oclc/971922979) – Ed Young
+1. [ ] [Mean Genes](https://www.worldcat.org/oclc/778420584) – Terry Burnham and Jay Phelan
                       
 <small>
 
