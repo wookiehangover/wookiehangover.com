@@ -6,7 +6,7 @@ const styles = {
   hSection: 'relative f3 sans-serif',
   hSup: 'f7 absolute top-1 right ml1',
   sup: 'red no-underline pl1',
-  anchor: 'red no-underline bb',
+  anchor: 'dark-gray no-underline bb',
   cite: 'fr f5 mt1',
   list: 'pl3',
   moj: 'dib mr1'
@@ -49,8 +49,9 @@ export default () =>
             <ul className={`f5 list pl0`}>
               <li>2017
                 <ul className={`${styles.list} mv2`}>
-                  <li><span className={styles.moj}>💳</span> Credit Cards team tech lead</li>
+                  <li><span className={styles.moj}>🛠</span> Front End Infrastructure team lead</li>
                   <li><span className={styles.moj}>🖼</span> Launch Node.js server side rendering platform</li>
+                  <li><span className={styles.moj}>💳</span> Credit Cards team tech lead</li>
                 </ul>
               </li>
               <li>2016
@@ -64,12 +65,12 @@ export default () =>
               <li>2015
                 <ul className={`${styles.list} mv2`}>
                   <li><span className={styles.moj}>🚀</span> Launch Credit Karma's first server rendered React app</li>
-                  <li><span className={styles.moj}>🤔</span> Adopt private npm and a modular front end architecture</li>
+                  <li><span className={styles.moj}>🤔</span> Establish private npm and a modular front end architecture</li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li>
+          <li className={`mt5`}>
             <h2 className={styles.hSection}>
               <a className={styles.anchor} href="http://quickleft.com/">Quick Left</a>
             </h2>
@@ -151,7 +152,7 @@ export default () =>
       </section>
       <style jsx>{`
       section {
-        margin-top: 7rem;
+        margin-top: 8rem;
       }
       `}</style>
   </Layout>

@@ -1,36 +1,35 @@
 import Head from './head'
 
 const styles = {
-  anchor: 'dark-red link bb hover-red',
+  anchor: 'dark-gray link bb hover-red',
   moj: 'dib mr2',
-  link: 'db mv3'
+  link: 'link bb hover-red'
 }
 
 
 export default (props) =>
-  <div className={`times ma2 ma6-ns measure darkgray`}>
+  <div className={`times ma2 ma6-ns measure dark-gray`}>
     <Head {...props} />
 
     <main className={`lh-copy f4 pb2`}>
       {props.children}
     </main>
 
-    <footer className={`bt pt4 b--green`}>
-      <small>
-        <i><a className={styles.anchor} rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">creative commons</a> &times; open source</i>, so be kind rewind
-      </small>
-      <nav>
-        <div className={styles.link}>
-          <span className={styles.moj}>&#x1F4D6;</span>
-          <a className={styles.anchor} href="https://twitter.com/sambreed" title="Follow me on Twitter">Sign my guestbook</a>
+    <center>∴</center>
+    
+    <footer>
+      <p className="tc mv4">
+        <a className={styles.anchor} rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">creative commons</a> &times; <a className={styles.anchor} title="View the source code of this website on Github" href="https://github.com/wookiehangover/wookiehangover.com">open source</a>, so be kind rewind
+      </p>
+      <nav className={`flex justify-around`}>
+        <div>
+          <a className={styles.anchor} href="https://twitter.com/sambreed" title="Follow me on Twitter">guestbook</a>
         </div>
-        <div className={styles.link}>
-          <span className={styles.moj}>&#x1F621;</span>
-          <a className={styles.anchor} href="https://github.com/wookiehangover/wookiehangover.com/issues/new" title="Complaints">Complaints</a>
+        <div>
+          <a className={styles.anchor} href="https://github.com/wookiehangover/wookiehangover.com/issues/new" title="Complaints">complaints</a>
         </div>
-        <div className={styles.link}>
-          <span className={styles.moj}>&#x1F481;&#x1F3FB;</span>
-          <a className={styles.anchor} href="mailto:sam@destroy.email" title="Send me an Email">Suggestions</a>
+        <div>
+          <a className={styles.anchor} href="mailto:sam@destroy.email" title="Send me an Email">suggestions</a>
         </div>
       </nav>
     </footer>
@@ -42,19 +41,8 @@ export default (props) =>
     }
     body {
       cursor: url(/static/img/avatar-sm.png) 10 10, auto;
-    }
-    body:after {
-      content: '';
-      z-index: -1;
-
-      background-color: #FFDEE9;
-      background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
-      
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      -webkit-font-smoothing: antialiased;
+      font-feature-settings: "calt","liga","hist","onum","pnum"; 
     }
     a:hover {
       cursor: url(/static/img/avatar-pointer.png) 10 10, auto;

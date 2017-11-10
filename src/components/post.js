@@ -5,7 +5,7 @@ import Layout from './layout'
 
 
 const styles = {
-  anchor: 'red link bb',
+  anchor: 'dark-gray link bb',
   h1: 'sans-serif lh-title fw3'
 }
 
@@ -20,11 +20,11 @@ export default (props) =>
     <center>∴</center>
 
     <section className={cx(`posts`)}>
-      <article className={cx(`f5 mv4`)} id={props.slug}>
+      <article className={cx(`mv4`)} id={props.slug}>
 
         {props.children}
 
-        <footer className="mt5 sans-serif f6">
+        <footer className="mt4 f5">
           <time>Last updated on <small><code className="pa1 bg-near-white mid-gray">{props.updatedAt}</code></small></time>
           <nav className="mv2 mv0-ns fr-ns">
             <a className={`${styles.anchor} mr1`} href={`/${props.permalink.indexOf('.html') === -1 ? props.permalink + '.html' : props.permalink}`}>Link</a>

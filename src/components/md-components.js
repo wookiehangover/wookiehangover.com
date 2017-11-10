@@ -4,12 +4,12 @@ import cx from 'classnames'
 const classes = {
   p: `lh-copy mv3`,
   h: `dark-gray sans-serif fw3`,
-  list: `pl3`,
+  list: `pl3-ns pl4`,
   li: `pl1`,
   blockquote: `f3 mv3 i mh0 pl3 bl lh-title b--rainbows`,
   pre: `f7 ba br1 b--black-90 pre-code overflow-x-scroll`,
   code: `f7 `,
-  anchor: 'dark-red link bb hover-red',
+  anchor: 'dark-gray link bb hover-red',
 }
 
 const components = {

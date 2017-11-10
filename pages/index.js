@@ -2,7 +2,7 @@ import Layout from '../src/components/layout'
 import Link from 'next/link'
 
 const styles = {
-  anchor: 'dark-red link bb hover-red',
+  anchor: 'dark-gray link bb hover-red',
   h1: 'sans-serif lh-title fw3'
 }
 
@@ -39,7 +39,6 @@ export default () => {
         </ol>
       </section>
 
-      <center>∴</center>
 
       <section>
         <p>If you dig any of that, then you might also enjoy some of this:</p>
