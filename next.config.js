@@ -8,10 +8,19 @@ module.exports = {
       loader: './src/post-loader'
     })
 
+    config.node = {
+      Buffer: false
+    }
+
+    if (dev) {
+      return config
+    }
+
     config.resolve.alias = {
       'react': 'preact-compat',
       'react-dom': 'preact-compat'
     }
+
     return config
   },
   exportPathMap() {
