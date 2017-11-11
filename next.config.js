@@ -7,6 +7,11 @@ module.exports = {
       include: path.join(__dirname, 'pages/writing'),
       loader: './src/post-loader'
     })
+
+    config.resolve.alias = {
+      'react': 'preact-compat',
+      'react-dom': 'preact-compat'
+    }
     return config
   },
   exportPathMap() {
