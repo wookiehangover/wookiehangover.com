@@ -9,7 +9,7 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [x] [Digital Gold](http://www.worldcat.org/oclc/930828718) – Nathaniel Popper
 1. [x] [Bed of Procrustes](http://www.worldcat.org/oclc/949639536) – Nassim Taleb
 1. [x] [Machine Learning](http://www.worldcat.org/oclc/960457556) – Ethem Alpaydin
-1. [ ] [Mathematics and the Imagination](http://www.worldcat.org/oclc/868280617) – Edward Kasner & James Newman
+1. [ ] [Mathematics and the Imagination](http://www.worldcat.org/oclc/868280617) – Edward Kasner and James Newman
 1. [x] [Snow Crash](http://www.worldcat.org/oclc/989979099) – Neil Stephenson
 1. [x] [Capitalist Realism](http://www.worldcat.org/oclc/699737863) – Mark Fisher
 1. [ ] ~~[Being a Beast : adventures across the species divide](http://www.worldcat.org/oclc/957021213) – Charles Foster~~
@@ -29,9 +29,9 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [x] [Antifragile](http://www.worldcat.org/oclc/949639536) – Nassim Taleb (re-read from 2016's list)
 1. [x] [Debugging Teams](http://www.worldcat.org/oclc/925332622) – Brian W. Fitzpatrick and Ben Collins-Sussman
 1. [ ] [Hands-On Machine Learning with Scikit-Learn & TensorFlow](http://www.worldcat.org/oclc/989085713) – Aurélien Géron
-1. [x] [Tragic Design](http://www.worldcat.org/oclc/992492753) – Jonathan Shariat & Cynthia Savard Saucier
-1. [ ] [Barbarians at the Gate](http://www.worldcat.org/oclc/248444643) – Bryan Burrough & John Helyar
-1. [x] [Orientalism](http://www.worldcat.org/oclc/717738730) – Edward W Said                      
+1. [x] [Tragic Design](http://www.worldcat.org/oclc/992492753) – Jonathan Shariat and Cynthia Savard Saucier
+1. [ ] [Barbarians at the Gate](http://www.worldcat.org/oclc/248444643) – Bryan Burrough abd John Helyar
+1. [x] [Orientalism](http://www.worldcat.org/oclc/717738730) – Edward W Said
 1. [x] [How Money Got Free](http://www.worldcat.org/oclc/981123286) – Brian Patrick Eha
 1. [x] [Why Information Grows](http://www.worldcat.org/oclc/945232398) – César Hildago
 1. [x] [Hackers](http://www.worldcat.org/oclc/615926697) – Steven Levy
@@ -41,12 +41,15 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [x] [Decoding the Universe](http://www.worldcat.org/oclc/72799929) – Charles Seife
 1. [x] [Code](https://www.worldcat.org/oclc/926699676) – Charles Petzold
 1. [x] [The Soul of a New Machine](http://www.worldcat.org/oclc/934422966) – Tracy Kidder
-1. [x] [Payback](https://www.worldcat.org/oclc/864772458) – Margaret Atwood                      
+1. [x] [Payback](https://www.worldcat.org/oclc/864772458) – Margaret Atwood
 1. [x] [We Were 8 Years in Power](http://www.worldcat.org/oclc/1003168303) – Ta-Nehisi Coates
 1. [ ] [One Hundred Years of Solitude](http://www.worldcat.org/oclc/64685014) – Gabriel Garcia Márquez
 1. [x] [I Contain Multitudes](http://www.worldcat.org/oclc/971922979) – Ed Young
 1. [x] [Mean Genes](https://www.worldcat.org/oclc/778420584) – Terry Burnham and Jay Phelan
-                      
+1. [ ] [The Wisest One in the Room](http://www.worldcat.org/oclc/944380361) – Thomas Gilovich and Lee Ross
+1. [ ] [The Timeless Way of Building](http://www.worldcat.org/oclc/840013131) - Christopher Alexander
+
+
 <small>
 
 - ~~Strikethrough~~ _Abandoned and back on the shelf_ 🙅‍

@@ -16,17 +16,17 @@ Then I got a dui.
 
 Then I wrecked my car.
 
-With no license. And no insurance. And in an accident with another car. I had to beg my brother to loan me money to fix the other person's car. Meanwhile my car sat unmoving and wrecked, collecting parking tickets until I sold it as-is for next to nothing.
+With no license. And no insurance. And in an accident with another vehicle. I had to beg my brother to loan me money to fix the other car. Meanwhile, my car sat unmoving and wrecked, collecting parking tickets until I sold it, as-is, for next to nothing.
 
-When I did get a job, it only paid $9 an hour. For 32 hours a week—technically part time.
+When I did get a job, it only paid $9 an hour. For 32 hours a week. Technically part time.
 
-I didn't have health insurance. I watched Prince perform the Super Bowl halftime show in the ER waiting room. I had a fever for 3 days and my tonsils were swollen enough to justify the ER visit.
+In 2007 I didn't have health insurance. In January, I had a three day fever and my tonsils were swollen enough to justify visit to the Emergency Room without health insurance. I watched Prince's infamous Super Bowl halftime show in the ER waiting room. 
 
-It would be 3 years before I would pay the bill for the ER visit that night, which would tarnish my credit score for years afterwards.
+It would be three years before I would pay the bill for the hospital trip that night, which would ruin my credit and follow me for years afterwards.
 
-The $12,000 tuition that I owed the school was sent to collections, which I ignored for 4 years and 20% annual interest in late fees.
+In 2007 I owed the University of Colorado $12,000. The tuition for the semester that I didn't finish. Eventually, it sent to collections, which I ignored while it accrued 20% annual interest for four years.
 
-My girlfriend and I became very good at grocery store math, because having to put stuff back after it was rung up was mortifying. A year earlier I had been living off a trust fund. The payments had stopped that winter.
+In 2007, my girlfriend and I became very good at grocery store math, because having to put stuff back after it was rung up was mortifying. A year earlier I had been living off a trust fund. The payments had stopped that winter.
 
 2007 was the worst year of my life.
 
