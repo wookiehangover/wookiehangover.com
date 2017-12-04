@@ -54,7 +54,9 @@ That year I listened to MGMT, Peter, Bjorn and John, and Kanye West. I can remem
 
 <hr class="mv4 bt b--red" />
 
-Across town, TechStars would host its first class. A year later one of those companies would be acquired AOL for seven figures. I'd find out about this well after it happened. At a local tech meetup the founder, who was only a year or two older than me, ended his presentation by throwing $500 in singles into the air.
+## 2008
+
+Across town, TechStars was hosting its first class. A year later one of those companies would be acquired AOL for seven figures. I'd find out about this well after it happened. At a local tech meetup the founder, who was only a year or two older than me, ended his presentation by throwing $500 in singles into the air.
 
 That guy is still around and I still hate him for doing that. It made me feel so worthless in that moment. I didn't have a job in tech yet, despite wanting one, and was only slightly better off than I had been a year earlier. And here comes some jerkoff that was first given money for a fucking _idea_ and then fucking _sold_ that idea for even more money!
 

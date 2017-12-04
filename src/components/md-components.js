@@ -3,7 +3,7 @@ import cx from 'classnames'
 
 const classes = {
   p: `lh-copy mv3`,
-  h: `dark-gray sans-serif fw3`,
+  h: `dark-gray code fw3`,
   list: `pl3-ns pl4`,
   li: `pl1`,
   blockquote: `f3 mv3 i mh0 pl3 bl lh-title b--rainbows`,

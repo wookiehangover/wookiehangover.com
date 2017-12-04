@@ -6,18 +6,17 @@ const styles = {
   link: 'link bb hover-red'
 }
 
-
 export default (props) =>
-  <div className={`times ma2 ma6-ns measure dark-gray`}>
+  <div className={`times ma2 ma6-ns measure dark-gray`} {...props}>
     <Head {...props} />
 
     <main className={`lh-copy f4 pb2`}>
       {props.children}
     </main>
 
-    <center>∴</center>
-    
-    <footer>
+
+    <footer className="code measure">
+      <center>∴</center>
       <p className="tc mv4">
         <a className={styles.anchor} rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">creative commons</a> &times; <a className={styles.anchor} title="View the source code of this website on Github" href="https://github.com/wookiehangover/wookiehangover.com">open source</a>, so be kind rewind
       </p>
@@ -42,6 +41,8 @@ export default (props) =>
     body {
       cursor: url(/static/img/avatar-sm.png) 10 10, auto;
       -webkit-font-smoothing: antialiased;
+    }
+    li, p {
       font-feature-settings: "calt","liga","hist","onum","pnum"; 
     }
     a:hover {

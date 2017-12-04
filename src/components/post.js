@@ -24,8 +24,8 @@ export default (props) =>
 
         {props.children}
 
-        <footer className="mt4 f5">
-          <time>Last updated on <small><code className="pa1 bg-near-white mid-gray">{props.updatedAt}</code></small></time>
+        <footer className="code mt4 f6 mid-gray pa1 bg-near-white">
+          <time>{props.updatedAt}</time>
           <nav className="mv2 mv0-ns fr-ns">
             <a className={`${styles.anchor} mr1`} href={`/${props.permalink.indexOf('.html') === -1 ? props.permalink + '.html' : props.permalink}`}>Link</a>
             <a className={`${styles.anchor} mr1`} href={`https://github.com/wookiehangover/wookiehangover.com/edit/master/${props.path.replace('.html.html', '.html')}`}>Edit</a>
