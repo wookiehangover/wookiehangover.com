@@ -48,7 +48,7 @@ const Resume = () => (
 
         <p>In the fall of 2015 I joined Credit Karma as the technical lead for the front-end web team. Under my direction, the front-end teams have created web applications for more than 70 million members.</p>
 
-        <h4>Notable Accomplishments (with accompanying emoji):</h4>
+        <h3>Notable Accomplishments (with accompanying emoji):</h3>
 
         <ul>
           <li>2017
@@ -77,7 +77,7 @@ const Resume = () => (
       <li className="mt2">
         <a className={styles.anchor} href="https://quickleft.com/">Quick Left</a>
 
-        <ul>
+        <ul className="mv2">
           <li>Co-founder <cite className={styles.cite}>2009—15</cite></li>
           <li>Lead Developer <cite className={styles.cite}>2011—14</cite></li>
           <li>General Manager, Product <cite className={styles.cite}>2014—15</cite></li>
@@ -199,7 +199,7 @@ const Resume = () => (
     </div>)
 
 export default () => (
-  <Layout className={`code ma6-ns`}>
+  <Layout className={`code ma6-ns ma2`}>
     <Resume />
   </Layout>
 )
