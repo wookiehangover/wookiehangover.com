@@ -46,9 +46,9 @@ description: A non-exhaustive list of the books I'm reading in 2017
 1. [ ] [One Hundred Years of Solitude](http://www.worldcat.org/oclc/64685014) – Gabriel Garcia Márquez
 1. [x] [I Contain Multitudes](http://www.worldcat.org/oclc/971922979) – Ed Young
 1. [x] [Mean Genes](https://www.worldcat.org/oclc/778420584) – Terry Burnham and Jay Phelan
-1. [ ] [The Wisest One in the Room](http://www.worldcat.org/oclc/944380361) – Thomas Gilovich and Lee Ross
+1. [x] [The Wisest One in the Room](http://www.worldcat.org/oclc/944380361) – Thomas Gilovich and Lee Ross
 1. [ ] [The Timeless Way of Building](http://www.worldcat.org/oclc/840013131) - Christopher Alexander
-
+1. [ ] [Creativity, Inc.](http://www.worldcat.org/oclc/943261694) – Ed Catmull
 
 <small>
 

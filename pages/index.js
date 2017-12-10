@@ -26,12 +26,12 @@ export default () => {
       <section>
         <ol>
           <li><Link href="/writing/2007.html"><a className={styles.anchor}>2007</a></Link></li>
-          <li><Link href="/writing/static-sites-with-next-js.html"><a className={styles.anchor}>How to make a static blog with Next.js</a></Link></li>
+          <li><Link href="/writing/static-sites-with-next-js.html"><a className={styles.anchor}>How to make a static website with Next.js</a></Link></li>
           <li><Link href="/writing/tragic-design-is.html"><a className={styles.anchor}>Tragic design is...</a></Link></li>
           <li><Link href="/writing/2017-reading-list.html"><a className={styles.anchor}>2017 reading list</a></Link></li>
-          <li><Link href="/writing/protect-your-history.html"><a className={styles.anchor}>Protect your browsing history with DNSCrypt</a></Link></li>
+          <li><Link href="/writing/protect-your-history.html"><a className={styles.anchor}>Protect your DNS history with DNSCrypt</a></Link></li>
           <li><Link href="/writing/what-I-read-in-2016.html"><a className={styles.anchor}>Why I read what I read in 2016</a></Link></li>
-          <li><Link href="/writing/lessons-from-the-jerk.html"><a className={styles.anchor}>Lessons from The Jerk</a></Link></li>
+          <li><Link href="/writing/lessons-from-the-jerk.html"><a className={styles.anchor}>Lessons from The Jerk (1978)</a></Link></li>
           <li><Link href="/writing/picking-up-the-pieces.html"><a className={styles.anchor}>Picking up the pieces; or How I learned to stop worrying and embrace weird metaphors</a></Link></li>
           <li><Link href="/writing/making-things-for-fun.html"><a className={styles.anchor}>Making things for fun</a></Link></li>
           <li><Link href="/writing/2016-reading-list.html"><a className={styles.anchor}>2016 reading list</a></Link></li>
