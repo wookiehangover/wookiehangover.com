@@ -56,9 +56,9 @@ That year I listened to MGMT, Peter, Bjorn and John, and Kanye West. I can remem
 
 ## 2008
 
-Across town, TechStars was hosting its first class. A year later one of those companies would be acquired by AOL for seven figures. I'd find out about this well after it happened. At a local tech meetup the founder, who was only a year or two older than me, ended his presentation by throwing $500 in singles into the air.
+Across town, TechStars was hosting its first class. A year later one of those companies would be acquired by AOL for seven figures. One night at a local meetup the founder of that company, who was only a year or two older than me, ended his presentation by throwing $500 in singles into the air. For him, it must have been a moment of jubilant celebration, but I don't remember the point I was trying to make. From the back row of the auidence, as a 22 year old college drop-out still working in retail and trying to get in to the Boulder tech community, I only remember the hot pang of shame and regret for not being "in" already. For not having $500 to throw in the air.
 
-That guy is still around and I still hate him for doing that. It made me feel so worthless in that moment. I didn't have a job in tech yet, despite wanting one, and was only slightly better off than I had been a year earlier. And here comes some jerkoff that was first given money for a fucking _idea_ and then turned around and _sold_ it for even more money!
+That guy is still around and I still hate him for doing that. It made me feel so worthless in that moment. I didn't have a job in tech yet, despite wanting one, and was only slightly better off than I had been a year earlier. And here comes some jerkoff that was first given money for a fucking _idea_ and then turned around and _sold_ it for even more money! _Why couldn't I do that?_
 
 A year earlier I was excited to get a raise for less money than he just threw on the ground.
 
@@ -82,11 +82,11 @@ I found a used bookstore that my girlfriend and I would ride our bikes to, our b
 
 Then I fell hard for the work of Philip K. Dick. _A Scanner Darkly_ had been made into a movie by Richard Linklater the year before. A well-adapted and underrated movie, it's still one of my favorites. I listened to the audiobook version, recorded by Paul Giamatti, and then devoured the paperback.
 
-I was so desperate to have a copy, but I couldn't wait for a copy to show up at the used bookstore, I condescended to buy it new from Borders; . The only copy at Borders was the kind with the movie poster on it, the type that _everyone_ hates on because it's the most backwards type of marketing, and never lasts for more than one edition.
+I was so desperate to have a copy but I couldn't wait for a copy to show up at the used bookstore, so I condescended to buy it new from Borders. The only copy at Borders was the kind with the movie poster on it, the type that _everyone_ hates on because it's the most backwards type of marketing, and never lasts for more than one edition. The one way you can make a good book less good is by forever shackling it to the most recent film adaptation. If the book has something to gain via association with the movie adaptation, you can safely skip the book.
 
-The one way you can make a good book less so is by forever shackling it to the most recent film adaptation. If the book has something to gain via association with the movie adaptation, you can safely skip the book.
+I still have that copy of _A Scanner Darkly_, with Keanu and Winona and pre-Iron Man Robert Downey Jr. on the cover. I hate the cover, but I love the book so I can't get rid of it.
 
-I still have that copy of _A Scanner Darkly_, with Keanu and Winona and pre-Iron Man Robert Downey Jr. on the cover. I hate the cover, but I love the book so I can't get rid of it. The text inside is too good.
+The text inside is too good.
 
 > But in this dark world where he now dwelt, ugly things and surprising things and once in a long while a tiny wondrous thing spilled out at him constantly; he could count on nothing.
 
@@ -94,6 +94,4 @@ I still have that copy of _A Scanner Darkly_, with Keanu and Winona and pre-Iron
 — <i>A Scanner Darkly</i>, Philip K. Dick
 </cite>
 
-Good things and bad things can happen in startlingly close proximity.
-
-2007 was a bad year, but I wouldn't trade any of the lessons it taught me.
+Good things and bad things can happen in startlingly close proximity. 2007 was a "bad" year, but I wouldn't trade any of the lessons it taught me.
