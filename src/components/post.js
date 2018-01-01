@@ -13,7 +13,7 @@ export default (props) =>
   <Layout title={props.title} description={props.description}>
     <header>
       <h1 className={styles.h1}>
-        <Link><a className={styles.anchor} href="/">Samuel Breed</a></Link> made this website.
+        <Link href="/"><a className={styles.anchor}>Samuel Breed</a></Link> made this website.
       </h1>
     </header>
 

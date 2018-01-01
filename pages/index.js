@@ -25,10 +25,10 @@ export default () => {
 
       <section>
         <ol>
+          <li><Link href="/writing/2017-reading-list.html"><a className={styles.anchor}>2017 reading list</a></Link></li>
           <li><Link href="/writing/2007.html"><a className={styles.anchor}>2007</a></Link></li>
           <li><Link href="/writing/static-sites-with-next-js.html"><a className={styles.anchor}>How to make a static website with Next.js</a></Link></li>
           <li><Link href="/writing/tragic-design-is.html"><a className={styles.anchor}>Tragic design is...</a></Link></li>
-          <li><Link href="/writing/2017-reading-list.html"><a className={styles.anchor}>2017 reading list</a></Link></li>
           <li><Link href="/writing/protect-your-history.html"><a className={styles.anchor}>Protect your DNS history with DNSCrypt</a></Link></li>
           <li><Link href="/writing/what-I-read-in-2016.html"><a className={styles.anchor}>Why I read what I read in 2016</a></Link></li>
           <li><Link href="/writing/lessons-from-the-jerk.html"><a className={styles.anchor}>Lessons from The Jerk (1978)</a></Link></li>
