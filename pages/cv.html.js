@@ -22,97 +22,98 @@ const Fn = (props) =>
 const Contact = () =>
   <div className={`mv3`}>
     <a className={styles.anchor} href="mailto:samuel.breed@gmail.com">samuel.breed@gmail.com</a>
-    <span className={`pa1 mt1 dib bg-near-white f7`}>
-      PGP <a className={styles.anchor} href="/pub-gpg.txt">ABBA D805 24B9 16F5 41C2 01E9 360C F6C4 7EC8 89D8</a>
-    </span>
+    <br/>
+    <span className={`pa1 mt1 dib bg-near-white f7`}> PGP <a className={styles.anchor} href="/pub-gpg.txt">ABBA D805 24B9 16F5 41C2 01E9 360C F6C4 7EC8 89D8</a></span>
   </div>
 
 const Resume = () => (
-  <div className={`f6 mw6 lh-copy`}>
-    <h1>Samuel Breed<Fn>1</Fn></h1>
-    <p>Product Engineer<Fn>2</Fn></p>
+  <div className={`f6 lh-copy`}>
+    <div className={`mw6`}>
+      <h1>Samuel Breed<Fn>1</Fn></h1>
+      <p>Product Engineer<Fn>2</Fn></p>
 
-    <Contact />
+      <Contact />
 
-    <h2>Work Experience:</h2>
-    <ol>
-      <li>
-        <a className={styles.anchor} href="https://www.creditkarma.com">Credit Karma</a>
+      <h2>Work Experience:</h2>
+      <ol>
+        <li>
+          <a className={styles.anchor} href="https://www.creditkarma.com">Credit Karma</a>
 
-        <ul className="mv3">
-          <li>
-            Staff Engineer<Fn>3</Fn>
-            <cite className={styles.cite}>2015—present</cite>
-          </li>
-        </ul>
+          <ul className="mv3">
+            <li>
+              Staff Engineer<Fn>3</Fn>
+              <cite className={styles.cite}>2015—present</cite>
+            </li>
+          </ul>
 
-        <p>In the fall of 2015 I joined Credit Karma as the technical lead for the front-end web team. Under my direction, the front-end teams have created web applications for more than 70 million members.</p>
+          <p>In the fall of 2015 I joined Credit Karma as the technical lead for the front-end web team. Under my direction, the front-end teams have created web applications for more than 70 million members.</p>
 
-        <h3>Notable Accomplishments (with accompanying emoji):</h3>
+          <h3>Notable Accomplishments (with accompanying emoji):</h3>
 
-        <ul>
-          <li>2017
-              <ul>
-              <li><span className={styles.moj}>🛠</span> Front End Infrastructure team lead</li>
-              <li><span className={styles.moj}>🖼</span> Launch Node.js server side rendering platform</li>
-              <li><span className={styles.moj}>💳</span> Credit Cards team tech lead</li>
-            </ul>
-          </li>
-          <li>2016
-              <ul>
-              <li><span className={styles.moj}>🚀</span> Re-brand and site-wite redesign launch </li>
-              <li><span className={styles.moj}>📦</span> Create on-demand CDN deploy pipeline</li>
-              <li><span className={styles.moj}>🇨🇦</span> Credit Karma Canada launch</li>
-              <li><span className={styles.moj}>📲</span> Mobile Web launch</li>
-            </ul>
-          </li>
-          <li>2015
-              <ul>
-              <li><span className={styles.moj}>🚀</span> Launch Credit Karma's first server rendered React app</li>
-              <li><span className={styles.moj}>🤔</span> Establish private npm and a modular front end architecture</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li className="mt2">
-        <a className={styles.anchor} href="https://quickleft.com/">Quick Left</a>
+          <ul>
+            <li>2017
+                <ul>
+                <li><span className={styles.moj}>🛠</span> Front End Infrastructure team lead</li>
+                <li><span className={styles.moj}>🖼</span> Launch Node.js server side rendering platform</li>
+                <li><span className={styles.moj}>💳</span> Credit Cards team tech lead</li>
+              </ul>
+            </li>
+            <li>2016
+                <ul>
+                <li><span className={styles.moj}>🚀</span> Re-brand and site-wite redesign launch </li>
+                <li><span className={styles.moj}>📦</span> Create on-demand CDN deploy pipeline</li>
+                <li><span className={styles.moj}>🇨🇦</span> Credit Karma Canada launch</li>
+                <li><span className={styles.moj}>📲</span> Mobile Web launch</li>
+              </ul>
+            </li>
+            <li>2015
+                <ul>
+                <li><span className={styles.moj}>🚀</span> Launch Credit Karma's first server rendered React app</li>
+                <li><span className={styles.moj}>🤔</span> Establish private npm and a modular front end architecture</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li className="mt4">
+          <a className={styles.anchor} href="https://quickleft.com/">Quick Left</a>
 
-        <ul className="mv2">
-          <li>Co-founder <cite className={styles.cite}>2009—15</cite></li>
-          <li>Lead Developer <cite className={styles.cite}>2011—14</cite></li>
-          <li>General Manager, Product <cite className={styles.cite}>2014—15</cite></li>
-        </ul>
+          <ul className="mv2">
+            <li>Co-founder <cite className={styles.cite}>2009—15</cite></li>
+            <li>Lead Developer <cite className={styles.cite}>2011—14</cite></li>
+            <li>General Manager, Product <cite className={styles.cite}>2014—15</cite></li>
+          </ul>
 
-        <p>In 2009 I co-founded the Boulder, Colo. software consultancy Quick Left. Over the next 6 years, I led the business in various roles as we grew from a modest 2-person operation to a team of more than 40 spanning four offices. We specialized in building products, solving deep technical challenges and worked with companies ranging from small startups to the top of the Fortune 500.<Fn>4</Fn></p>
+          <p>In 2009 I co-founded the Boulder, Colo. software consultancy Quick Left. Over the next 6 years, I led the business in various roles as we grew from a modest 2-person operation to a team of more than 40 spanning four offices. We specialized in building products, solving deep technical challenges and worked with companies ranging from small startups to the top of the Fortune 500.<Fn>4</Fn></p>
 
-        <p>After departing in 2015<Fn>5</Fn>, I remained on the Board of Directors to see through the 2016 sale to the global consulting firm Cognizant.</p>
-      </li>
-    </ol>
+          <p>After departing in 2015<Fn>5</Fn>, I remained on the Board of Directors to see through the 2016 sale to the global consulting firm Cognizant.</p>
+        </li>
+      </ol>
 
-    <h2>Education:</h2>
-    <ul>
-      <li>
-        BFA Film Production (incomplete)<Fn>6</Fn><br />
-        <i>Univeristy of Colorado, Boulder 2004—2007</i>
-      </li>
-    </ul>
+      <h2>Education:</h2>
+      <ul>
+        <li>
+          BFA Film Production (incomplete)<Fn>6</Fn><br />
+          <i>Univeristy of Colorado, Boulder 2004—2007</i>
+        </li>
+      </ul>
 
-    <h2>
-      See also <Fn>7</Fn>
-    </h2>
-    <ul>
-      <li>Favorite emoji: 🙈 <Fn>8</Fn></li>
-      <li><a className={styles.anchor} href="https://frontendmasters.com/courses/backbone-js-in-depth-testing-mocha-sinon/">Frontend Masters</a></li>
-      <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=QqSHrpro02g">Backbone Conf 2014</a></li>
-      <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=nMVXumwItcw">Hapi Day Oakland 2014</a></li>
-      <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=Lm05e5sJaE8">Backbone Conf 2013</a></li>
-      <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=W5ti8cl3nzs">jQuery Conf 2013</a></li>
-      <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=Lm05e5sJaE8">Backbone Conf 2012</a></li>
-      <li><a className={styles.anchor} href="https://obliquestrategies.website/">obliquestrategies.website</a> + <a className={styles.anchor} href="https://goo.gl/Z9w7Rb">Chrome Plugin</a> + <a className={styles.anchor} href="https://twitter.com/ObliqueBot">Twitter bot</a>
-      </li>
-    </ul>
+      <h2>
+        See also <Fn>7</Fn>
+      </h2>
+      <ul>
+        <li>Favorite emoji: 🙈 <Fn>8</Fn></li>
+        <li><a className={styles.anchor} href="https://frontendmasters.com/courses/backbone-js-in-depth-testing-mocha-sinon/">Frontend Masters</a></li>
+        <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=QqSHrpro02g">Backbone Conf 2014</a></li>
+        <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=nMVXumwItcw">Hapi Day Oakland 2014</a></li>
+        <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=Lm05e5sJaE8">Backbone Conf 2013</a></li>
+        <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=W5ti8cl3nzs">jQuery Conf 2013</a></li>
+        <li><a className={styles.anchor} href="https://www.youtube.com/watch?v=Lm05e5sJaE8">Backbone Conf 2012</a></li>
+        <li><a className={styles.anchor} href="https://obliquestrategies.website/">obliquestrategies.website</a> + <a className={styles.anchor} href="https://goo.gl/Z9w7Rb">Chrome Plugin</a> + <a className={styles.anchor} href="https://twitter.com/ObliqueBot">Twitter bot</a>
+        </li>
+      </ul>
+    </div>
 
-    <footer className={`f7`}>
+    <footer className={`f7 mw8`}>
       <h3>Footnotes:</h3>
 
       <ol>
@@ -166,7 +167,6 @@ const Resume = () => (
     h3::before { content: '### '; }
     h4::before { content: '#### '; }
     p::before  { content: '> '; }
-  
 
     ul > li::before { content: '* '; display: inline; }
 

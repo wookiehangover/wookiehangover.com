@@ -44,11 +44,11 @@ export default () => {
         <p>If you dig any of that, then you might also enjoy some of this:</p>
         <nav>
           <div className={``}><Link href="/cv.html"><a className={styles.anchor}>Peruse my C.V.</a></Link></div>
-          <div className={``}><a className={styles.anchor}href="https://github.com/wookiehangover?tab=repositories">Check out some of my projects</a></div>
-          <div className={``}><a className={styles.anchor}href="https://twitter.com/sambreed">Follow me on Twitter!</a></div>
-          <div className={``}><a className={styles.anchor}href="https://obliquestrategies.website/">obliquestrategies.website</a> + <a className={styles.anchor}href="https://chrome.google.com/webstore/detail/oblique-strategies-tab/mgmdhihgmkhangpfokjdhfhjaiadpopd">Chrome Plugin</a> + <a className={styles.anchor}href="https://twitter.com/ObliqueBot/status/886236405118062592">Twitter bot</a></div>
+          <div className={``}><a className={styles.anchor} href="https://github.com/wookiehangover?tab=repositories">Check out some of my projects</a></div>
+          <div className={``}><a className={styles.anchor} href="https://twitter.com/sambreed">Follow me on Twitter!</a></div>
+          <div className={``}><a className={styles.anchor} href="https://obliquestrategies.website/">obliquestrategies.website</a> / <a className={styles.anchor}href="https://chrome.google.com/webstore/detail/oblique-strategies-tab/mgmdhihgmkhangpfokjdhfhjaiadpopd">Chrome Plugin</a> / <a className={styles.anchor}href="https://twitter.com/ObliqueBot/status/886236405118062592">Twitter bot</a></div>
         </nav>
-        <p>Or if none of that is enough and you have some questions, drop me a line at <b>sam@destroy.email</b></p>
+        <p>Or if none of that is enough and you have some questions, drop me an <a className={styles.anchor} href="mailto:sam@destroy.email">e-letter</a>.</p>
       </section>
     </Layout>
   )
