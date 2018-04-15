@@ -11,7 +11,7 @@ Keeping reading lists year-over-year has been fun. This year felt a bit differen
 _Currently_
 
 * [The Timeless Way of Building](http://www.worldcat.org/oclc/840013131) by Christoper Alexander. I never really put this one down from last year, the clarity of language and thought is unmatched. I foresee myself deep-reading (and re-reading) this for a long, long time.
-* [2666](http://www.worldcat.org/oclc/216941696) by Roberto Bolaño. Keep at least one fiction book going at all times. The longer, the better. Started after finishing 100 Years of Solitude, staying on the theme of english translations of spanish lit.
+* [2666](http://www.worldcat.org/oclc/216941696) by Roberto Bolaño. Keep at least one fiction book going at all times; the longer, the better. Started after finishing 100 Years of Solitude, staying on the theme of english translations of spanish lit.
 * [The Workbench Book](http://www.worldcat.org/oclc/41071867) by Scott Landis and [Best Workbenches](http://www.worldcat.org/oclc/973537637) by the Editors of Fine Woodworking. I've taken on woodworking/joinery as hobby over the past year or so and a mentor recommended my next project be a cabinetmaker's workbench.
 
 _Recently_

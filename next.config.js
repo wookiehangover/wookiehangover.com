@@ -40,6 +40,7 @@ module.exports = {
       "/writing/what-I-read-in-2016.html": { page: "/writing/what-I-read-in-2016.html" },
       "/writing/static-sites-with-next-js.html": { page: "/writing/static-sites-with-next-js.html" },
       "/writing/2007.html": { page: "/writing/2007.html" },
+      "/writing/books.html": { page: "/writing/books.html" },
     }
   },
 }
