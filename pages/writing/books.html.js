@@ -19,11 +19,20 @@ _Recently_
 * [Skin in the Game](http://www.worldcat.org/oclc/1027035134) by [Nassim Nicholas Taleb](https://twitter.com/nntaleb)
 * [100 Years of Solitude](http://www.worldcat.org/oclc/881869530) by Gabriel García Márquez
 * [NeuroTribes](http://www.worldcat.org/oclc/932001597) by Steve Silberman
+* [Lao Tzu: Tao Te Ching](http://www.worldcat.org/oclc/884955043) translation by Urula K Le Guin
+* [The Lathe of Heaven](http://www.worldcat.org/oclc/1012127153) by Ursula K Le Guin
 * [They Can't Kill Us Until They Kill Us](http://www.worldcat.org/oclc/1027559077) by [Hanif Abdurraqib](https://twitter.com/NifMuhammad)
 * [Pale Fire](http://www.worldcat.org/oclc/24467494) by Vladimir Nabokov
 
 _Upcoming_
 
+* [The Time Machine Did It](http://www.worldcat.org/oclc/670128324) by John Swartzwelder
 * [Midnight's Children](http://www.worldcat.org/oclc/854809464) by Salaman Rushdie
 * [Underworld](http://www.worldcat.org/oclc/930928743) by Don DeLillo
 * [City of God](http://www.worldcat.org/oclc/889324546) by E.L. Doctorow
+
+_Technophilia_
+
+* [Code Complete 2](http://www.worldcat.org/oclc/951650600) by Steve McConnell
+* [Programming Beyond Practices](http://www.worldcat.org/oclc/995161733) by [Gregory T. Brown](https://twitter.com/practicingdev)
+* [SVG Animations](http://www.worldcat.org/oclc/981929715) by [Sarah Drasner](https://twitter.com/sarah_edo)
