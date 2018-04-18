@@ -60,7 +60,7 @@ const Resume = () => (
             </li>
             <li>2016
                 <ul>
-                <li><span className={styles.moj}>🚀</span> Re-brand and site-wite redesign launch </li>
+                <li><span className={styles.moj}>🚀</span> Re-brand and site-wide redesign launch </li>
                 <li><span className={styles.moj}>📦</span> Create on-demand CDN deploy pipeline</li>
                 <li><span className={styles.moj}>🇨🇦</span> Credit Karma Canada launch</li>
                 <li><span className={styles.moj}>📲</span> Mobile Web launch</li>
