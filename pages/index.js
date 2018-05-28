@@ -28,7 +28,7 @@ export default () => {
       </p>
 
       <section>
-        <ul style={{ listStyleType: 'lower-greek' }}>
+        <ul style={{ listStyleType: 'circle' }}>
           <li><Link href="/writing/2017-reading-list.html"><a className={styles.anchor}>2017 reading list</a></Link></li>
           <li><Link href="/writing/2007.html"><a className={styles.anchor}>What the fuck happened in 2007</a></Link></li>
           <li><Link href="/writing/static-sites-with-next-js.html"><a className={styles.anchor}>How to make a static website with Next.js</a></Link></li>
@@ -51,7 +51,7 @@ export default () => {
 
       <section>
         <p>But there's even more. So much more.</p>
-        <ul style={{ listStyleType: 'hebrew' }}>
+        <ul style={{ listStyleType: 'decimal-leading-zero' }}>
           <li className={``}>
             <Link href="/cv.html"><a className={styles.anchor}>Peruse my C.V.</a></Link>
           </li>
