@@ -1,11 +1,18 @@
 const path = require('path')
 
 module.exports = {
-  webpack(config, { dev }) {
+  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+
+  webpack(config, { dev, defaultLoaders }) {
     config.module.rules.push({
-      test: /\.html.js$/,
+      test: /\.html.md$/,
       include: path.join(__dirname, 'pages/writing'),
-      loader: './src/post-loader'
+      use: [
+        defaultLoaders.babel,
+        {
+          loader: './src/post-loader'
+        }
+      ]
     })
 
     config.node = {
