@@ -25,7 +25,7 @@
     "autoprefixer": "^7.1.6",
     "imagemin-cli": "^3.0.0",
     "postcss": "^6.0.14",
-    "postcss-cli": "^4.1.1",
+    "postcss-cli": "^6.0.0",
     "postcss-csso": "^2.0.0",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^11.0.0",
