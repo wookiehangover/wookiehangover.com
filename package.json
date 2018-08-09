@@ -29,7 +29,7 @@
     "postcss-csso": "^2.0.0",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^11.0.0",
-    "postcss-url": "^7.1.2",
+    "postcss-url": "^8.0.0",
     "tachyons": "^4.9.0"
   },
   "dependencies": {
