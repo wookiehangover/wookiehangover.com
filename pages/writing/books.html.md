@@ -12,10 +12,12 @@ _Currently_
 
 * [The Timeless Way of Building](http://www.worldcat.org/oclc/840013131) by Christoper Alexander. I never really put this one down from last year, the clarity of language and thought is unmatched. I foresee myself deep-reading (and re-reading) this for a long, long time.
 * [2666](http://www.worldcat.org/oclc/216941696) by Roberto Bolaño. Keep at least one fiction book going at all times; the longer, the better. Started after finishing 100 Years of Solitude, staying on the theme of english translations of spanish lit.
-* [The Workbench Book](http://www.worldcat.org/oclc/41071867) by Scott Landis and [Best Workbenches](http://www.worldcat.org/oclc/973537637) by the Editors of Fine Woodworking. I've taken on woodworking/joinery as hobby over the past year or so and a mentor recommended my next project be a cabinetmaker's workbench.
+* [The Wind-up Bird Chronicle](http://www.worldcat.org/oclc/747193445) by Haruki Murakami
 
 _Recently_
 
+* [Bullshit Jobs](http://www.worldcat.org/oclc/1030241785) by David Graeber
+* [The Workbench Book](http://www.worldcat.org/oclc/41071867) by Scott Landis and [Best Workbenches](http://www.worldcat.org/oclc/973537637) by the Editors of Fine Woodworking. I've taken on woodworking/joinery as hobby over the past year or so and a mentor recommended my next project be a cabinetmaker's workbench.
 * [Skin in the Game](http://www.worldcat.org/oclc/1027035134) by [Nassim Nicholas Taleb](https://twitter.com/nntaleb)
 * [100 Years of Solitude](http://www.worldcat.org/oclc/881869530) by Gabriel García Márquez
 * [NeuroTribes](http://www.worldcat.org/oclc/932001597) by Steve Silberman
@@ -33,6 +35,7 @@ _Upcoming_
 
 _Technophilia_
 
+* [Cryptography Engineering: Design Principles and Practical Applications](http://www.worldcat.org/oclc/436030574) by Nies Ferguson, Bruce Schneier, and Tadayoshi Kohno
 * [Code Complete 2](http://www.worldcat.org/oclc/951650600) by Steve McConnell
 * [Programming Beyond Practices](http://www.worldcat.org/oclc/995161733) by [Gregory T. Brown](https://twitter.com/practicingdev)
 * [SVG Animations](http://www.worldcat.org/oclc/981929715) by [Sarah Drasner](https://twitter.com/sarah_edo)

@@ -30,7 +30,7 @@ const Resume = () => (
   <div className={`f6 lh-copy`}>
     <div className={`mw6`}>
       <h1>Samuel Breed<Fn>1</Fn></h1>
-      <p>Product Engineer<Fn>2</Fn></p>
+      <p>Web Developer<Fn>2</Fn></p>
 
       <Contact />
 
@@ -41,8 +41,12 @@ const Resume = () => (
 
           <ul className="mv3">
             <li>
+              Senior Staff Engineer
+              <cite className={styles.cite}>2018—present</cite>
+            </li>
+            <li>
               Staff Engineer<Fn>3</Fn>
-              <cite className={styles.cite}>2015—present</cite>
+              <cite className={styles.cite}>2015—2018</cite>
             </li>
           </ul>
 
@@ -51,9 +55,14 @@ const Resume = () => (
           <h3>Notable Accomplishments (with accompanying emoji):</h3>
 
           <ul>
+            <li>2018
+              <ul>
+                <li><span className={styles.moj}>🐒</span> Launch serverless web app platform</li>
+              </ul>
+            </li>
             <li>2017
                 <ul>
-                <li><span className={styles.moj}>🛠</span> Front End Infrastructure team lead</li>
+                <li><span className={styles.moj}>🛠</span> Started the Front End Infrastructure team</li>
                 <li><span className={styles.moj}>🖼</span> Launch Node.js server side rendering platform</li>
                 <li><span className={styles.moj}>💳</span> Credit Cards team tech lead</li>
               </ul>
@@ -63,7 +72,7 @@ const Resume = () => (
                 <li><span className={styles.moj}>🚀</span> Re-brand and site-wide redesign launch </li>
                 <li><span className={styles.moj}>📦</span> Create on-demand CDN deploy pipeline</li>
                 <li><span className={styles.moj}>🇨🇦</span> Credit Karma Canada launch</li>
-                <li><span className={styles.moj}>📲</span> Mobile Web launch</li>
+                <li><span className={styles.moj}>📲</span> Mobile Web rewrite & launch</li>
               </ul>
             </li>
             <li>2015
