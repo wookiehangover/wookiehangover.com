@@ -73,9 +73,6 @@ export default () => {
                 </ul>
               </li>
               <li>
-                <a className={styles.anchor} href="http://stendigcalendar.website/">stendigcalendar.website</a>
-              </li>
-              <li>
                 <a className={styles.anchor} href="https://chrome.google.com/webstore/detail/%CA%8D-wikipedia/icfadkjhpjekoifngfldhkkjakifokln">ʍ-wikipedia</a> chrome extension
               </li>
             </ul>
