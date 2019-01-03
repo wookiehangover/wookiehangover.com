@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/wookiehangover/wookiehangover.com#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
+    "autoprefixer": "^9.4.4",
     "imagemin-cli": "^3.0.0",
     "postcss": "^6.0.14",
     "postcss-cli": "^4.1.1",
