@@ -38,7 +38,7 @@
     "next": "^6.0.3",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
-    "react": "^16.1.0",
+    "react": "^16.8.1",
     "react-dom": "^16.1.0",
     "rehype-raw": "^2.0.0",
     "rehype-react": "^3.0.1",
