@@ -16,7 +16,7 @@ When an app lets you accidentally enter a zip code instead of a full address and
 
 The following was adapted using [Darius Kazemi's](http://tinysubversions.com/) wonderful new alternative to twitter moments™, [spooler](https://tinysubversions.com/spooler/?url=https://twitter.com/sambreed/status//885343588485259264).
 
-### A thread by <a href="https://twitter.com/sambreed/status//885343588485259264">very un-dude</a> (that's me)
+### A thread by <a href="https://twitter.com/sambreed/status/885343588485259264">very un-dude</a> (that's me)
 
 Why do twitter &amp; instagram go out of their way to make it impossible to either right click or drag images out of the browser to save? I mean I know why but it fucking sucks.<sup>[[1](https://twitter.com/sambreed/status/8853397799439441931)]</sup> It's a god damn browser feature that you have to go out of your way to obscure. Web devs: push back!<sup>[[2](https://twitter.com/sambreed/status/885340468485120000)]</sup>
 
