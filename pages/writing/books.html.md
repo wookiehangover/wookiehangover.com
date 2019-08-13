@@ -10,15 +10,23 @@ Keeping reading lists year-over-year has been fun. This year felt a bit differen
 
 _Currently_
 
+
+* [Incerto](https://www.amazon.com/gp/product/198481981X) by Nassim Nicholas Taleb. A hardcover edition of 5 books that I already own. Taleb is one of a few writers good enough to buy multiple copies of when better editions come out. This is an excellent priting.
+* [An Elegant Puzzle: Systems of Engineering Management](https://www.amazon.com/dp/1732265186) by Will Larson. Published by Stripe Press. This is a beatiful book.
 * [The Timeless Way of Building](http://www.worldcat.org/oclc/840013131) by Christoper Alexander. I never really put this one down from last year, the clarity of language and thought is unmatched. I foresee myself deep-reading (and re-reading) this for a long, long time.
 * [2666](http://www.worldcat.org/oclc/216941696) by Roberto Bolaño. Keep at least one fiction book going at all times; the longer, the better. Started after finishing 100 Years of Solitude, staying on the theme of english translations of spanish lit.
 * [The Wind-up Bird Chronicle](http://www.worldcat.org/oclc/747193445) by Haruki Murakami
 
-_Recently_
+_2019_
 
-* [Black Leopard Red Wolf]() by Marlon James
-* [Makers and Takers]() by Rana Foroohar
-* [Ghosts of My Life]() by Mark Fisher
+* [Good Morning, Midnight](https://www.amazon.com/dp/0812988191) by Lily Brooks-Dalton
+* [Every Tool's a Hammer: Life Is What You Make It](https://www.amazon.com/dp/1982113472) by Adam Savage
+* [Black Leopard Red Wolf](https://www.amazon.com/gp/product/0735220174) by Marlon James
+* [Makers and Takers](https://www.amazon.com/dp/0553447238) by Rana Foroohar
+* [Ghosts of My Life](https://www.amazon.com/dp/1780992262) by Mark Fisher
+
+_2018_
+
 * [Bullshit Jobs](http://www.worldcat.org/oclc/1030241785) by David Graeber
 * [The Workbench Book](http://www.worldcat.org/oclc/41071867) by Scott Landis and [Best Workbenches](http://www.worldcat.org/oclc/973537637) by the Editors of Fine Woodworking. I've taken on woodworking/joinery as hobby over the past year or so and a mentor recommended my next project be a cabinetmaker's workbench.
 * [Skin in the Game](http://www.worldcat.org/oclc/1027035134) by [Nassim Nicholas Taleb](https://twitter.com/nntaleb)
@@ -38,7 +46,7 @@ _Upcoming_
 
 _Technophilia_
 
-* [The Dream Machine]() by M. Mitchell Waldrop
+* [The Dream Machine](https://www.amazon.com/dp/B07GBCX7YC) by M. Mitchell Waldrop
 * [Cryptography Engineering: Design Principles and Practical Applications](http://www.worldcat.org/oclc/436030574) by Nies Ferguson, Bruce Schneier, and Tadayoshi Kohno
 * [Code Complete 2](http://www.worldcat.org/oclc/951650600) by Steve McConnell
 * [Programming Beyond Practices](http://www.worldcat.org/oclc/995161733) by [Gregory T. Brown](https://twitter.com/practicingdev)
