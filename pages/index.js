@@ -29,6 +29,8 @@ export default () => {
 
       <section>
         <ul style={{ listStyleType: 'circle' }}>
+          <li><Link href="/writing/16-open-tabs.html"><a className={styles.anchor}>I have 16 open tabs right now</a></Link></li>
+          <li><Link href="/writing/books.html"><a className={styles.anchor}>Bookshelf</a></Link></li>
           <li><Link href="/writing/2017-reading-list.html"><a className={styles.anchor}>2017 reading list</a></Link></li>
           <li><Link href="/writing/2007.html"><a className={styles.anchor}>What the fuck happened in 2007</a></Link></li>
           <li><Link href="/writing/static-sites-with-next-js.html"><a className={styles.anchor}>How to make a static website with Next.js</a></Link></li>

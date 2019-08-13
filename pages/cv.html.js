@@ -14,7 +14,7 @@ const styles = {
 
 const Fn = (props) =>
   <sup>
-    <a href={`#footnote-${props.children}`} className={`${styles.anchor} relative`} style={{ left: '0.0625em' }}>
+    <a href={`#footnote-${props.children}`} className={`${styles.anchor} relative fn`} style={{ left: '0.0625em' }}>
       [{props.children}]
   </a>
   </sup>
@@ -23,7 +23,7 @@ const Contact = () =>
   <div className={`mv3`}>
     <a className={styles.anchor} href="mailto:samuel.breed@gmail.com">samuel.breed@gmail.com</a>
     <br/>
-    <span className={`pa1 mt1 dib bg-near-white f7`}> PGP <a className={styles.anchor} href="/pub-gpg.txt">ABBA D805 24B9 16F5 41C2 01E9 360C F6C4 7EC8 89D8</a></span>
+    <span className={`pa1 mt1 dib bg-near-white f7`}> PGP <a className={styles.anchor} href="/pub-gpg.txt" title="public pgp key">ABBA D805 24B9 16F5 41C2 01E9 360C F6C4 7EC8 89D8</a></span>
   </div>
 
 const Resume = () => (
@@ -37,15 +37,15 @@ const Resume = () => (
       <h2>Work Experience:</h2>
       <ol>
         <li>
-          <a className={styles.anchor} href="https://www.creditkarma.com">Credit Karma</a>
+          <a className={styles.anchor} href="https://www.creditkarma.com" title="Credit Karma">Credit Karma</a>
 
           <ul className="mv3">
             <li>
-              Senior Staff Engineer
+              Senior Staff Software Engineer
               <cite className={styles.cite}>2018—present</cite>
             </li>
             <li>
-              Staff Engineer<Fn>3</Fn>
+              Staff Software Engineer<Fn>3</Fn>
               <cite className={styles.cite}>2015—2018</cite>
             </li>
           </ul>
@@ -55,14 +55,20 @@ const Resume = () => (
           <h3>Notable Accomplishments (with accompanying emoji):</h3>
 
           <ul>
+            <li>2019
+              <ul>
+                <li><span className={styles.moj}> 📱</span> Improve performance for web views on iOS and Android apps</li>
+              </ul>
+            </li>
             <li>2018
               <ul>
-                <li><span className={styles.moj}>🐒</span> Launch serverless web app platform</li>
+                <li><span className={styles.moj}>⬆</span> Promoted to Senior Staff Software Engineer</li>
+                <li><span className={styles.moj}>🐒</span> Launch single page web app platform</li>
               </ul>
             </li>
             <li>2017
                 <ul>
-                <li><span className={styles.moj}>🛠</span> Started the Front End Infrastructure team</li>
+                <li><span className={styles.moj}>🛠</span> Start the Front End Infrastructure team</li>
                 <li><span className={styles.moj}>🖼</span> Launch Node.js server side rendering platform</li>
                 <li><span className={styles.moj}>💳</span> Credit Cards team tech lead</li>
               </ul>

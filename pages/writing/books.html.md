@@ -16,6 +16,9 @@ _Currently_
 
 _Recently_
 
+* [Black Leopard Red Wolf]() by Marlon James
+* [Makers and Takers]() by Rana Foroohar
+* [Ghosts of My Life]() by Mark Fisher
 * [Bullshit Jobs](http://www.worldcat.org/oclc/1030241785) by David Graeber
 * [The Workbench Book](http://www.worldcat.org/oclc/41071867) by Scott Landis and [Best Workbenches](http://www.worldcat.org/oclc/973537637) by the Editors of Fine Woodworking. I've taken on woodworking/joinery as hobby over the past year or so and a mentor recommended my next project be a cabinetmaker's workbench.
 * [Skin in the Game](http://www.worldcat.org/oclc/1027035134) by [Nassim Nicholas Taleb](https://twitter.com/nntaleb)
@@ -35,6 +38,7 @@ _Upcoming_
 
 _Technophilia_
 
+* [The Dream Machine]() by M. Mitchell Waldrop
 * [Cryptography Engineering: Design Principles and Practical Applications](http://www.worldcat.org/oclc/436030574) by Nies Ferguson, Bruce Schneier, and Tadayoshi Kohno
 * [Code Complete 2](http://www.worldcat.org/oclc/951650600) by Steve McConnell
 * [Programming Beyond Practices](http://www.worldcat.org/oclc/995161733) by [Gregory T. Brown](https://twitter.com/practicingdev)
