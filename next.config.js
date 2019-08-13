@@ -37,6 +37,7 @@ module.exports = {
     return {
       "/": { page: "/" },
       "/cv.html": { page: "/cv.html" },
+      "/writing/16-open-tabs.html": { page: "/writing/16-open-tabs.html" },
       "/writing/2016-reading-list.html": { page: "/writing/2016-reading-list.html" },
       "/writing/2017-reading-list.html": { page: "/writing/2017-reading-list.html" },
       "/writing/lessons-from-the-jerk.html": { page: "/writing/lessons-from-the-jerk.html" },
