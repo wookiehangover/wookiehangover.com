@@ -8,9 +8,9 @@ description: I have 16 open browser tabs RIGHT NOW
 
 Right now, I have 16 open tabs in my browser.
 
-By all measures, this is not a lot of tabs. I see people at work that have tab stacks so dense only a single pixel is given to each one. Or multiple windows, 6 or 7 layers deep, each with 10 tabs or more, taking up the full width of the screen. I try and do better than that. 
+By all measures, this is not a lot of tabs. I see people at work that have tab stacks so dense only a single pixel rendering the faintest sliver of each tab. Or multiple windows, 6 or 7 layers deep, each with 10 tabs or more, the tab bar taking up the full width of the screen. I try and do better than that. 
 
-I like to treat my browser—my work environment—with a little more respect by closing things down at the beginning or end of each day, or at very least once a week.
+I like to treat my work environment with a little more respect by closing things down at the beginning or end of each day, or at very least once a week.
 
 So that leaves my pc at home. That's where the tabs pile up, unread and unwanted, for weeks on end. I come back to them every day, occasionally adding to them, and sometimes nuking the whole session altogether.
 
