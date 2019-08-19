@@ -10,7 +10,7 @@ export default ({ title='Samuel Breed', description='Sam Breed is a person who m
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://wookiehangover.com/static/img/theodore-rex.jpg" />
+    <meta property="og:image" content="https://wookiehangover.com/static/img/john-wayne.jpg" />
     <meta property="og:description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/static/style.css" />
