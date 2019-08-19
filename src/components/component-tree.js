@@ -2,7 +2,7 @@ import React from 'react'
 import has from 'lodash/has'
 import map from 'lodash/map'
 
-function ComponentTree({ type, props, children, components={} }) {
+function ComponentTree ({ type, props, children, components = {} }) {
   let component
 
   if (has(components, type)) {

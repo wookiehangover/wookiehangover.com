@@ -1,23 +1,12 @@
 import React from 'react'
 import cx from 'classnames'
-import Link from 'next/link'
 import Layout from './layout'
-
-
-const styles = {
-  anchor: 'dark-gray link bb',
-  h1: 'sans-serif lh-title fw3'
-}
+import styles from '../styles'
+import Header from './header'
 
 export default (props) =>
   <Layout title={props.title} description={props.description}>
-    <header>
-      <h1 className={styles.h1}>
-        <Link href="/"><a className={styles.anchor}>Samuel Breed</a></Link> made this website.
-      </h1>
-    </header>
-
-    <center>∴</center>
+    <Header />
 
     <section className={cx(`posts`)}>
       <article className={cx(`mv4`)} id={props.slug}>

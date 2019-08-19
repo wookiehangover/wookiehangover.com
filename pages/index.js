@@ -1,16 +1,12 @@
 import Layout from '../src/components/layout'
 import Link from 'next/link'
-
-const styles = {
-  anchor: 'dark-gray link bb hover-red',
-  h1: 'sans-serif lh-title fw3'
-}
+import styles from '../src/styles'
+import Header from '../src/components/header'
 
 export default () => {
   return (
     <Layout>
-      <h1 className={styles.h1}><a className={styles.anchor}href="https://wookiehangover.com/">Samuel Breed</a> made this website.</h1>
-
+      <Header />
       <p>
         Howdy! I&apos;m <a className={styles.anchor}href="https://twitter.com/sambreed">@sambreed</a>.
       </p>
@@ -42,14 +38,13 @@ export default () => {
           </li>
           <li>
             <Link href="/writing/protect-your-history.html"><a className={styles.anchor}>Protect your DNS history with DNSCrypt</a></Link>
-            </li>
+          </li>
           <li><Link href="/writing/lessons-from-the-jerk.html"><a className={styles.anchor}>Lessons from The Jerk (1978)</a></Link></li>
           <li><Link href="/writing/picking-up-the-pieces.html"><a className={styles.anchor}>Picking up the pieces; or How I learned to stop worrying and embrace weird metaphors</a></Link></li>
           <li><Link href="/writing/making-things-for-fun.html"><a className={styles.anchor}>Making things for fun</a></Link></li>
           <li><a className={styles.anchor} href="https://medium.com/@sambreed/2015-books-504cb79ac5c0#.f8izs5mpq">2015 reading list</a></li>
         </ul>
       </section>
-
 
       <section>
         <p>But there's even more. So much more.</p>
@@ -61,7 +56,7 @@ export default () => {
             internet websites: <a className={styles.anchor} href="https://twitter.com/sambreed">twitter</a>, <a className={styles.anchor} href="https://instagram.com/wookiehangover">instagram</a>
           </li>
           <li className={``}>
-            code, etc: <a className={styles.anchor} href="https://github.com/wookiehangover?tab=repositories">github</a>, <a className={styles.anchor} href="https://github.com/sam-breed-ck">wørk</a>
+            code, etc: <a className={styles.anchor} href="https://github.com/wookiehangover?tab=repositories">github</a>
           </li>
           <li className={``}>
             side projects:
