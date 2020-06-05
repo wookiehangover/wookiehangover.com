@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Layout from '../src/components/layout'
+import '../src/sentry'
 
 const styles = {
   h: 'relative lh-title code fw3',

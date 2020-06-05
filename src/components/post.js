@@ -3,6 +3,7 @@ import cx from 'classnames'
 import Layout from './layout'
 import styles from '../styles'
 import Header from './header'
+import '../sentry'
 
 export default (props) =>
   <Layout title={props.title} description={props.description}>

@@ -2,6 +2,7 @@ import Layout from '../src/components/layout'
 import Link from 'next/link'
 import styles from '../src/styles'
 import Header from '../src/components/header'
+import '../src/sentry'
 
 export default () => {
   return (

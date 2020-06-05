@@ -33,6 +33,8 @@
     "tachyons": "^4.9.0"
   },
   "dependencies": {
+    "@sentry/apm": "^5.16.1",
+    "@sentry/browser": "^5.16.1",
     "classnames": "^2.2.5",
     "execa": "^0.8.0",
     "next": "^6.0.3",
