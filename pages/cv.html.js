@@ -109,7 +109,7 @@ const Resume = () => (
       <ul>
         <li>
           BFA Film Production (incomplete)<Fn>6</Fn><br />
-          <i>Univeristy of Colorado, Boulder 2004—2007</i>
+          <i>University of Colorado, Boulder 2004—2007</i>
         </li>
       </ul>
 
