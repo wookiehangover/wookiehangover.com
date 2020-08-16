@@ -5,7 +5,7 @@ export default () =>
   <>
     <header>
       <h1 className={styles.h1}>
-        <Link href="/"><a className={styles.anchor}>Samuel Breed</a></Link> is a web developer.
+        <Link href="/"><a className={''}>Samuel Breed</a></Link> is a web developer.
       </h1>
     </header>
 

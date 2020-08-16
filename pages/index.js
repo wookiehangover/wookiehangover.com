@@ -9,8 +9,13 @@ export default () => {
     <Layout>
       <Header />
       <p>
-        Howdy! I&apos;m <a className={styles.anchor}href="https://twitter.com/sambreed">@sambreed</a>.
+        Hey 👋
       </p>
+
+      <p>
+        I'm <a className={styles.anchor}href="https://twitter.com/sambreed">@sambreed</a>.
+      </p>
+
 
       <p>
         I help make websites faster, products better, and teams smarter.
