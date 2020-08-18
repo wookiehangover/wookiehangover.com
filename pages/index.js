@@ -9,8 +9,13 @@ export default () => {
     <Layout>
       <Header />
       <p>
-        Howdy! I&apos;m <a className={styles.anchor}href="https://twitter.com/sambreed">@sambreed</a>.
+        Hey 👋
       </p>
+
+      <p>
+        I'm <a className={styles.anchor}href="https://twitter.com/sambreed">@sambreed</a>.
+      </p>
+
 
       <p>
         I help make websites faster, products better, and teams smarter.
@@ -76,7 +81,7 @@ export default () => {
             </ul>
           </li>
         </ul>
-        <p>Or if none of that is enough (word, really?) or you have some other unanswered questions, <a className={styles.anchor} href="mailto:sam@destroy.email">drop me a line via email</a> or use one of the links below.</p>
+        <p>Or if none of that is enough (word, really?) or you have some other unanswered questions, <a className={styles.anchor} href="mailto:sam@destroy.email">send me an email</a> or use one of the links below.</p>
       </section>
     </Layout>
   )

@@ -2,11 +2,11 @@ const execa = require('execa')
 const path = require('path')
 const reactToHast = require('./react-to-hast')
 
-const postTemplate = (props, tree) => (`
+const postTemplate = (props, tree, relativePath = '../..') => (`
 import { Component } from 'react'
-import Post from '../../src/components/post'
-import ComponentTree from '../../src/components/component-tree'
-import components from '../../src/components/md-components'
+import Post from '${relativePath}/src/components/post'
+import ComponentTree from '${relativePath}/src/components/component-tree'
+import components from '${relativePath}/src/components/md-components'
 
 export default (props) => {
   const data = ${JSON.stringify(props, null, 2)}
@@ -26,20 +26,25 @@ const compileMarkdown = (source) => new Promise((resolve, reject) => {
   })
 })
 
-const renderPost = (source, resourcePath) => {
-  return Promise.all([
-    compileMarkdown(source),
-    execa('git', ['log', '-n', '1', '--pretty=format:%ad', '--', resourcePath])
-  ]).then((output) => {
-    const [ postHast, stats ] = output
-    const { slug } = postHast.data
-    const props = Object.assign({}, postHast.data, {
-      path: `pages/writing/${slug}.html.js`,
-      permalink: `writing/${slug}`,
-      updatedAt: stats.stdout
-    })
-    return postTemplate(props, postHast.contents)
+const renderPost = async (source, resourcePath) => {
+
+  const normalizedPath = path.normalize(resourcePath)
+  const normalizedPathChunks = normalizedPath.split('pages')[1]?.split(path.sep)
+  const relativePath = new Array(normalizedPathChunks.length).join('../').slice(0, -1)
+  const postHast = await compileMarkdown(source)
+  let stats = {}
+  try {
+    stats = await execa('git', ['log', '-n', '1', '--pretty=format:%ad', '--', resourcePath])
+  } catch (e) {}
+  const { slug } = postHast.data
+
+  const props = Object.assign({}, postHast.data, {
+    path: `pages/writing/${slug}.html.js`,
+    permalink: `writing/${slug}`,
+    updatedAt: stats.stdout
   })
+
+  return postTemplate(props, postHast.contents, relativePath)
 }
 
 module.exports = function(source, map) {

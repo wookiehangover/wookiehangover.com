@@ -6,7 +6,6 @@ module.exports = {
   webpack(config, { dev, defaultLoaders }) {
     config.module.rules.push({
       test: /\.html.md$/,
-      include: path.join(__dirname, 'pages/writing'),
       use: [
         defaultLoaders.babel,
         {
