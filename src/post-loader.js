@@ -29,7 +29,7 @@ const compileMarkdown = (source) => new Promise((resolve, reject) => {
 const renderPost = async (source, resourcePath) => {
 
   const normalizedPath = path.normalize(resourcePath)
-  const normalizedPathChunks = normalizedPath.split('pages')[1]?.split(path.sep)
+  const normalizedPathChunks = normalizedPath.split('pages')[1].split(path.sep)
   const relativePath = new Array(normalizedPathChunks.length).join('../').slice(0, -1)
   const postHast = await compileMarkdown(source)
   let stats = {}
