@@ -27,10 +27,15 @@ const compileMarkdown = (source) => new Promise((resolve, reject) => {
 })
 
 const renderPost = async (source, resourcePath) => {
-  console.log(resourcePath)
-  const relativePath = resourcePath.includes('drafts') ? '../../..' : '../..'
+
+  const normalizedPath = path.normalize(resourcePath)
+  const normalizedPathChunks = normalizedPath.split('pages')[1]?.split(path.sep)
+  const relativePath = new Array(normalizedPathChunks.length).join('../').slice(0, -1)
   const postHast = await compileMarkdown(source)
-  const stats = await execa('git', ['log', '-n', '1', '--pretty=format:%ad', '--', resourcePath])
+  let stats = {}
+  try {
+    stats = await execa('git', ['log', '-n', '1', '--pretty=format:%ad', '--', resourcePath])
+  } catch (e) {}
   const { slug } = postHast.data
 
   const props = Object.assign({}, postHast.data, {

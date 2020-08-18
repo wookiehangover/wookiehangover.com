@@ -14,7 +14,7 @@ export default (props) =>
 
         {props.children}
 
-        <footer className="code mt4 f6 mid-gray pa1 bg-near-white">
+        <footer className="code mt4 f6 mid-gray pa1">
           <time>{props.updatedAt}</time>
           <nav className="mv2 mv0-ns fr-ns">
             <a className={`${styles.anchor} mr1`} href={`/${props.permalink.indexOf('.html') === -1 ? props.permalink + '.html' : props.permalink}`}>Link</a>

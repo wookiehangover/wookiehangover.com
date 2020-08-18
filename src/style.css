@@ -7,12 +7,6 @@ html, body {
   @extend .bg-yellow;
 }
 
-.cooper {
-  font-family: 'Cooper Std Black';
-  letter-spacing: -0.1rem;
-  line-height: 0.9;
-}
-
 /*
 body {
   @extend .sans-serif;
@@ -260,6 +254,6 @@ body > footer > nav > div:hover .grow {
 }
 
 td {
-  padding: 1rem;
+  padding: 0 1rem;
   border: 1px solid grey;
 }

@@ -8,15 +8,14 @@ const styles = {
 }
 
 export default (props) =>
-  <div className={`times ma2 ma6-ns mw7 black-70`} {...props}>
+  <div className={`sans-serif ma2 ma6-ns mw7 black-70`} {...props}>
     <Head {...props} />
 
-    <main className={`lh-copy f4 pb2`}>
+    <main className={`lh-copy pb2`}>
       {props.children}
     </main>
 
-    <footer className="code measure mt5 bg-red pv4 ph5 br1 shadow-5">
-      <center className="white b f3"><Link href="/"><a>∴</a></Link></center>
+    <footer className="code mt5 pv4 ph5 br1 shadow-5">
       <p className="tc mv4 lh-copy">
         <a className={styles.anchor} rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">creative commons</a> &times; <a className={styles.anchor} title="View the source code of this website on Github" href="https://github.com/wookiehangover/wookiehangover.com">open source</a>, <br/> so be kind rewind
       </p>
@@ -41,9 +40,6 @@ export default (props) =>
     body {
       cursor: url(/static/img/avatar-sm.png) 10 10, auto;
       -webkit-font-smoothing: antialiased;
-    }
-    li, p {
-      font-feature-settings: "calt","liga","hist","onum","pnum";
     }
     a:hover {
       cursor: url(/static/img/avatar-pointer.png) 10 10, auto;
