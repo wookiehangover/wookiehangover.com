@@ -50,7 +50,7 @@ Too bad I wasn't very happy with my first pass. I added a necessary-but-clunky b
 
 ### 🐰 Rabbit Hole: React from HTML Markdown
 
-One of the itches I _really_ wanted to scratch was the minor annoyance of having to use `__dangerouslySetInnerHtml` to use most off-the-shelf markdown libraries with React. I even made it a bit harder on myself by lazily abusing markdown and sprinkling bits of markup in many of my posts, since most React components that render markdown tend to fall back to to _dangerouslySet_ instead of parsing the markdown to generate a valid React component for the entire markdown document. This isn't a new or unsolved problem, so I did some research and ended up geeking out on text processing and abstract syntax trees. Turns out that there are already a bunch of well documented AST parser/compilers that support markdown on npm!
+One of the itches I _really_ wanted to scratch was the minor annoyance of having to use `__dangerouslySetInnerHtml` to use most off-the-shelf markdown libraries with React. I even made it a bit harder on myself by lazily abusing markdown and sprinkling bits of markup in many of my posts, since most React components that render markdown tend to fall back to _dangerouslySet_ instead of parsing the markdown to generate a valid React component for the entire markdown document. This isn't a new or unsolved problem, so I did some research and ended up geeking out on text processing and abstract syntax trees. Turns out that there are already a bunch of well documented AST parser/compilers that support markdown on npm!
 
 I really didn't want to make clients do any of the parsing work. Even though parsing markdown can be optimized to be fast in modern browsers, making users download additional JavaScript and spend CPU time to convert posts clientside just didn't sit well with me.
 
@@ -175,7 +175,7 @@ A few snags I ran into:
 
 * Github pages still perversely retains some of it's Jekyll roots, and ignores file and directory names that start with an underscore 🙄
   * **Fix:** add `.nojekyll` to your `docs/` directory (or whatever is configured in the "Pages" portion of your repo config in Github)
-* The `.html.js` file extension on the posts was because I wanted backwards compatabilty with my static html version, which used plain old html files
+* The `.html.js` file extension on the posts was because I wanted backwards compatibilty with my static html version, which used plain old html files
   * _Minor annoyance:_ `next export` adds directories for every static file to avoid the .html extension showing up in the path, but now I have urls with trailing slashes.
   * If I ever want to change a URL (like to drop the `.html` extension because it's not 1998), I'll need to figure out how to manage the redirects.
 * I need to remember to add new posts to `next.config.js`, which I seem pathologically incapable of. I'll probably make the webpack plugin emit a JSON file with all the post metadata, but I haven't done that yet.

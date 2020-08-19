@@ -85,7 +85,7 @@ The last thing I expected to find this year was yet another author to do a deep-
 
 Boy was I wrong.
 
-Full of bluster: yes. Taleb is absurdly bumptious, but in a way that I find endearing. Lacking in content: hardly. The only similarity to cheapie business books is some of the repetitiveness in the arguments being presented, but that’s at best a superficial criticism. I poured through _Antifragile_, the cumulative argument in the [_Incerto_][incerto] series, but the the prologue assured me that I wouldn’t need to read the previous three volumes as a prerequisite to grokking the subject matter.
+Full of bluster: yes. Taleb is absurdly bumptious, but in a way that I find endearing. Lacking in content: hardly. The only similarity to cheapie business books is some of the repetitiveness in the arguments being presented, but that’s at best a superficial criticism. I poured through _Antifragile_, the cumulative argument in the [_Incerto_][incerto] series, but the prologue assured me that I wouldn’t need to read the previous three volumes as a prerequisite to grokking the subject matter.
 
 After reading _Antifragile_ I let its ideas stew in my brain for a few months, as I dug through other non-fiction in nearby fields and concepts, particularly by Niall Ferguson. But _Antifragile_ kept on bugging me. I wanted to re-read it.
 

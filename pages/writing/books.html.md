@@ -12,7 +12,7 @@ _Currently_
 
 
 * [Incerto](https://www.amazon.com/gp/product/198481981X) by Nassim Nicholas Taleb. A hardcover edition of 5 books that I already own. Taleb is one of a few writers good enough to buy multiple copies of when better editions come out. This is an excellent priting.
-* [An Elegant Puzzle: Systems of Engineering Management](https://www.amazon.com/dp/1732265186) by Will Larson. Published by Stripe Press. This is a beatiful book.
+* [An Elegant Puzzle: Systems of Engineering Management](https://www.amazon.com/dp/1732265186) by Will Larson. Published by Stripe Press. This is a beautiful book.
 * [The Timeless Way of Building](http://www.worldcat.org/oclc/840013131) by Christoper Alexander. I never really put this one down from last year, the clarity of language and thought is unmatched. I foresee myself deep-reading (and re-reading) this for a long, long time.
 * [2666](http://www.worldcat.org/oclc/216941696) by Roberto Bolaño. Keep at least one fiction book going at all times; the longer, the better. Started after finishing 100 Years of Solitude, staying on the theme of english translations of spanish lit.
 * [The Wind-up Bird Chronicle](http://www.worldcat.org/oclc/747193445) by Haruki Murakami

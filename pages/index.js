@@ -9,7 +9,7 @@ export default () => {
     <Layout>
       <Header />
       <p>
-        Hey 👋
+        Hello 👋
       </p>
 
       <p>
