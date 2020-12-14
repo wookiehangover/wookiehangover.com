@@ -4,7 +4,7 @@ import styles from '../src/styles'
 import Header from '../src/components/header'
 import '../src/sentry'
 
-export default () => {
+const Index = () => {
   return (
     <Layout>
       <Header />
@@ -85,4 +85,6 @@ export default () => {
       </section>
     </Layout>
   )
-}
+};
+
+export default Index;

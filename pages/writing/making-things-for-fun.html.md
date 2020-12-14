@@ -5,7 +5,7 @@ slug: making-things-for-fun.html
 ## Making things for fun
 
 <div class="w-60-l w-50-m w-100 mb2 fr-ns tc">
-  <img src="/static/img/head-in-a-jar.png" alt="it me" /><br/>
+  <img src="/img/head-in-a-jar.png" alt="it me" /><br/>
   <small><i>"some idiot"</i></small>
 </div>
 

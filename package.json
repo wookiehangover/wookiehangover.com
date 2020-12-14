@@ -33,12 +33,12 @@
     "tachyons": "^4.9.0"
   },
   "dependencies": {
-    "~": "file:./",
     "@sentry/apm": "^5.16.1",
     "@sentry/browser": "^5.16.1",
+    "~": "file:./",
     "classnames": "^2.2.5",
     "execa": "^0.8.0",
-    "next": "^6.0.3",
+    "next": "^10.0.3",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
     "react": "^16.1.0",

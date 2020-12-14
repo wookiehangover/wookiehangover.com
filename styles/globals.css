@@ -1,0 +1,21 @@
+@import 'tachyons';
+@import 'highlight.js/styles/solarized-dark.css';
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  @extend .bg-yellow;
+}
+
+@keyframes border-rainbows {
+  0%    { border-color: rgba(0, 14, 96, 10); }
+  25%   { border-color: rgb(255, 0, 94); }
+  50%   { border-color: rgb(255, 217, 102); }
+  75%   { border-color: rgb(0, 240, 77); }
+  100%  { border-color: rgba(0, 14, 96, 10); }
+}
+
+td {
+  padding: 0 1rem;
+  border: 1px solid grey;
+}

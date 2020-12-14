@@ -8,7 +8,7 @@ slug: tragic-design-is.html
 When an app lets you accidentally enter a zip code instead of a full address and still completes your order. Optimizing for click-throughs, I guess?
 
 <div class="w-100 mb2 fr-ns tc">
-  <a href="/img/tragic-01.png"><img src="/static/img/tragic-01.png" alt="uber eats it" /></a><br/>
+  <a href="/img/tragic-01.png"><img src="/img/tragic-01.png" alt="uber eats it" /></a><br/>
   <small><i>huh?</i></small>
 </div>
 
@@ -22,11 +22,11 @@ Why do twitter &amp; instagram go out of their way to make it impossible to eith
 
 Twitter stop spending time fucking up built in features. The contents of an &lt;img&gt; tags aren't DRM'ed (yet), here's to hoping they never are.<sup>[[3](https://twitter.com/sambreed/status/885341066592870400)]</sup> I should not have to do this to save silly images, you shitheels!<sup>[[4](https://twitter.com/sambreed/status/885341803079016448)]</sup>
 
-<a href="/img/twitter-images2.gif" class="none"><img src="/static/img/twitter-images.gif" alt="twitter obscures image urls" /></a>
+<a href="/img/twitter-images2.gif" class="none"><img src="/img/twitter-images.gif" alt="twitter obscures image urls" /></a>
 
 > oh shit I made a dope new feature tho — that image is now _every_ image. twitter, if you hire me I will gladly ruin this product with you...<sup>[[5](https://twitter.com/sambreed/status/885341803079016448)]</sup>
 
-<a href="/img/twitter-images2.gif" class="none"><img src="/static/img/twitter-images2.gif" alt="wherein I ruin the product" /></a>
+<a href="/img/twitter-images2.gif" class="none"><img src="/img/twitter-images2.gif" alt="wherein I ruin the product" /></a>
 
 ### Why is this tragic?
 

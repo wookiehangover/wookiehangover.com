@@ -1,5 +1,4 @@
 import Head from './head'
-import Link from 'next/link'
 
 const styles = {
   anchor: 'dark-gray link bb hover-blue',
@@ -7,7 +6,8 @@ const styles = {
   link: 'link bb hover-blue'
 }
 
-export default (props) =>
+export default function Layout(props) {
+  return (
   <div className={`sans-serif ma2 ma6-ns mw7 black-70`} {...props}>
     <Head {...props} />
 
@@ -38,11 +38,13 @@ export default (props) =>
       min-height: 100%;
     }
     body {
-      cursor: url(/static/img/avatar-sm.png) 10 10, auto;
+      cursor: url(/img/avatar-sm.png) 10 10, auto;
       -webkit-font-smoothing: antialiased;
     }
     a:hover {
-      cursor: url(/static/img/avatar-pointer.png) 10 10, auto;
+      cursor: url(/img/avatar-pointer.png) 10 10, auto;
     }
     `}</style>
   </div>
+  )
+}

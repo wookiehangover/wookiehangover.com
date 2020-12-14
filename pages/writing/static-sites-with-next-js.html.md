@@ -6,7 +6,7 @@ description: I recently used Next.js 3 to make a static blog. Learn how I did it
 
 # How to Make a Static Website with Next.js
 
-![make a static next.js blog](/static/img/next-blog-1.gif)
+![make a static next.js blog](/img/next-blog-1.gif)
 
 👋  Hey, so I recently figured out how to upgrade _this very website_ to use [Next.js 3][next] as a static blog engine. No longer is my corner of the internet a cobbled-together mess of node and of shell scripts. No, now it's a fully-fledged modern JavaScript app with [Next.js 3][next]!
 

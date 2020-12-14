@@ -22,7 +22,7 @@ Even worse, an ISP could resolve a DNS entry for a different website altogether 
 Which means that even if I took every reasonable precaution and always made sure `https` was in the URL when buying John Tesh cd's on Amazon, watching John Tesh videos on Youtube, or posting updates to my John Tesh fanzine, Comcast would still be able to see the URLs of the pages and sell them to anyone who cared. That is unacceptable. My secret love of John Tesh is too precious for a greedy corporate entity to harvest for profits.
 
 <a href="../img/the-cyber.jpg">
-  <img src="/static/img/the-cyber.jpg"
+  <img src="/img/the-cyber.jpg"
     class="w-60-l w-50-m w-100 ml3-ns fr-ns mt1 mb2 pa1 br1 ba b--rainbows" />
 </a>
 

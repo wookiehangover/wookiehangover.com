@@ -9,7 +9,7 @@ description: A story about how I've come to embrace odd metaphors to color langu
 Metaphors are fractals of language: once you start to examine them closely, you end up seeing the same pattern over and over and over again.
 
 <a href="../img/john-wayne.jpg" class="none">
-  <img src="/static/img/john-wayne.jpg"
+  <img src="/img/john-wayne.jpg"
     class="w-100 mv1 pa1 br1 ba b--rainbows" />
 </a>
 
