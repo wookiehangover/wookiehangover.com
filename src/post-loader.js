@@ -8,7 +8,7 @@ import Post from '${relativePath}/src/components/post'
 import ComponentTree from '${relativePath}/src/components/component-tree'
 import components from '${relativePath}/src/components/md-components'
 
-export default (props) => {
+export default function Page(props) {
   const data = ${JSON.stringify(props, null, 2)}
   const body = ${JSON.stringify(tree)}
   return (

@@ -7,7 +7,7 @@
     "build": "./build/all.sh",
     "build:next": "next build && next export",
     "build:css": "postcss -c postcss.config.js src/style.css -d static",
-    "build:img": "imagemin static/img/*.jpg static/img/*.png -o docs/static/img",
+    "build:img": "imagemin public/img/*.jpg public/img/*.png -o docs/img",
     "dev": "next"
   },
   "repository": {
@@ -41,8 +41,8 @@
     "next": "^10.0.3",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
-    "react": "^16.1.0",
-    "react-dom": "^16.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "rehype-raw": "^2.0.0",
     "rehype-react": "^3.0.1",
     "remark-frontmatter": "^1.1.0",

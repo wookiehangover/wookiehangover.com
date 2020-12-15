@@ -19,7 +19,7 @@ I tried to read more this year, I really did. I had serious intentions about it,
   <img src="/img/kissinger.jpg"
     class="w-60-l w-50-m w-100 ml3-ns fr-ns mt1 mb2 pa1 br1 ba b--rainbows" />
 </a>
-
+	
 I started on Wunderlist. Probably around the second half of 2015 enough static had built up around the problem to trigger a release, a single spasm of output into list form, tapped diligently onto the keyboard of my iPhone. That list, of things I was currently reading and thing I remembered reading up to that point in the year and books I had already purchased and were waiting for me on my bookshelf, was what source my 2015 post, which I still wrote in a hurry on New Year’s Day 2016.
 
 I kept up the practice of maintaining a reading list in Wunderlist. It unfurled itself ahead of me and pushed the past books forever below the fold. I got ambitious a couple of times and added dozens of titles, so many in fact that the list became a burden. I couldn’t look at it. And the format, for however much it rewarded me with the initial thrill of checking off a title, downplayed the previous items in a way that was a little unsatisfying. I had also taken to using Wunderlist (which I love, btw, despite the criticism) for work task tracking, so it became a thing that now did two things, which is far to many functions for my limbic brain to remember how to reward. So I let that list wither a little until finally I abandoned it entirely.
