@@ -12,7 +12,7 @@ samuel.breed@gmail.com
 
     * **Engineer In Residence**, 2020 - present
 
-- ### <u>Credit Karma</u>
+- ### Credit Karma
 
     https://www.creditkarma.com/
 
@@ -33,7 +33,7 @@ samuel.breed@gmail.com
     | 2015 | <ul><li>Launch Credit Karma's first server rendered React app</li><li>Establish private npm and a modular front end architecture</li></ul> |
     </details>
 
-- ### <u>Quick Left</u>
+- ### Quick Left
 
     https://quickleft.com/
 
