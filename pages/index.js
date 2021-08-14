@@ -16,12 +16,11 @@ const Index = () => {
         I'm <a className={styles.anchor}href="https://twitter.com/sambreed">@sambreed</a>.
       </p>
 
-
       <p>
         I help make websites faster, products better, and teams smarter.
       </p>
 
-      <p>When I'm not doing that, I collect records and ride motorcycles and make stuff with hand tools and lots of cursing. And, more specifically, I am trapped inside this website. It's now your job to find the clues that I've hidden in my typo-laden and occasionally coherent &ldquo;blog&rdquo; &ldquo;posts&rdquo; to help free my from this cursed mouse cursor. Except if you&apos;re on mobile web.</p>
+      <p>When I'm not doing that, I'm usually trail running somewhere around Mt Tam. I also collect records, enjoy riding motorcycles, and building thing in my woodshop. And, more specifically, I am trapped inside this website. Welcome to my typo-laden and occasionally-coherent website.</p>
 
       <p>Here's <Link href="/writing/books.html"><a className={styles.anchor}>what I've been reading</a></Link> lately. That's a good place to start.</p>
 
