@@ -5,7 +5,7 @@ export default () =>
   <>
     <header>
       <h1 className={styles.h1}>
-        <Link href="/"><a className={'black-40 no-underline ttu'}>Samuel Breed</a></Link> is a web developer.
+        <Link href="/"><a className={'black-50'}>Samuel Breed</a></Link> made a website (this one).
       </h1>
     </header>
 

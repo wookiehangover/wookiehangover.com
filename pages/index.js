@@ -13,7 +13,7 @@ const Index = () => {
       </p>
 
       <p>
-        I'm <a className={styles.anchor}href="https://twitter.com/sambreed">@sambreed</a>.
+        I'm <a className={styles.anchor}href="https://twitter.com/sambreed">@sambreed</a>. If you're here for my <Link href="/cv.html"><a>résumé</a></Link>, have at it.
       </p>
 
       <p>
@@ -58,7 +58,7 @@ const Index = () => {
             <Link href="/cv.html"><a className={styles.anchor}>Peruse my C.V.</a></Link>
           </li>
           <li className={``}>
-            internet websites: <a className={styles.anchor} href="https://twitter.com/sambreed">twitter</a>, <a className={styles.anchor} href="https://instagram.com/wookiehangover">instagram</a>
+            social media presences: <a className={styles.anchor} href="https://twitter.com/sambreed">twitter</a>, <a className={styles.anchor} href="https://instagram.com/wookiehangover">instagram</a>
           </li>
           <li className={``}>
             code, etc: <a className={styles.anchor} href="https://github.com/wookiehangover?tab=repositories">github</a>

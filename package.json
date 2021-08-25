@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./build/all.sh",
+    "start": "next start",
+    "build": "next build && next export",
     "build:next": "next build && next export",
     "build:css": "postcss -c postcss.config.js src/style.css -d static",
     "build:img": "imagemin public/img/*.jpg public/img/*.png -o docs/img",
