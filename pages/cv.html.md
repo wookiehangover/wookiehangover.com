@@ -36,7 +36,7 @@ samuel.breed@gmail.com
 
 - ### Quick Left
 
-    https://quickleft.com/
+    [https://quickleft.com/](https://web.archive.org/web/20141016195333/http://quickleft.com/)
 
     In 2009 I co-founded the Boulder, Colo. software consultancy Quick Left. Over the next 6 years, I led the business in various roles as we grew from a modest 2-person operation to a team of more than 40 spanning four offices. We specialized in building products, solving deep technical challenges and worked with companies ranging from small startups to the top of the Fortune 500.
 
