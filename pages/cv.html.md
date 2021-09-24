@@ -10,7 +10,8 @@ samuel.breed@gmail.com
 
     https://shv.com
 
-    * **Engineer In Residence**, 2020 - present
+    * **Partner**, 2021 - present
+    * **Engineer In Residence**, 2020 - 2021
 
 - ### Credit Karma
 
