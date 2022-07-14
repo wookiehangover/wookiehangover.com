@@ -35,7 +35,7 @@ another link dump, some of these have been open for months and need to be closed
 - [The Bill Gurley Chronicles: VCs, Marketplaces, and Early-Stage Investing](https://macro-ops.com/the-bill-gurley-chronicles-an-above-the-crowd-mba-on-vcs-marketplaces-and-early-stage-investing/)
     - This might be the single most informative blog post I have ever read. It summarizes 20 years of Bill Gurley's blog, which is just nugget after interesting nugget of shrewd analysis and galaxy-brain predictions that were more accurate than not.
 - [CSS: Flexible Repeating SVG Masks](https://tylergaw.com/blog/css-repeating-svg-masks/)
-    - Tyler designed me something like this for WebRTC.party and I did my own shitty version and then found this post. For next time.
+    - [redacted] designed me something like this for [WebRTC.party](https://webrtc.party/) and I did my own half-baked version and then found this post. For next time.
 - [I'm All-In on Server-Side SQLite · Fly](https://fly.io/blog/all-in-on-sqlite-litestream/)
     - more SQLite hype
 - [Local warming - Works in Progress](https://www.worksinprogress.co/issue/local-warming/)
