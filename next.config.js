@@ -48,6 +48,7 @@ module.exports = {
       "/writing/static-sites-with-next-js.html": { page: "/writing/static-sites-with-next-js.html" },
       "/writing/2007.html": { page: "/writing/2007.html" },
       "/writing/books.html": { page: "/writing/books.html" },
+      "/writing/links-part-one.html": { page: "/writing/links-part-one.html" },
     }
   },
 }
