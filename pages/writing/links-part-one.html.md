@@ -7,13 +7,13 @@ description: Links! more links to things I've had open
 another link dump, some of these have been open for months and need to be closed or forgotten. It's healthy to pay down the tab debt at least once a quarter.
 
 - [10 Years of Meteor](https://meteor10.sachagreif.com/)
-    - meteor had some good parts but was largely misguided. I didn't trust them at the time, and still look at their output a bit askance
+    - meteor had some good parts but missed the mark on several. I didn't care for meteor at the time, but did go on to use Apollo GraphQL heavily at Credit Karma. It was ok, but perhaps overly complicated.
     - [Sidebar](https://sidebar.io/)
         - linked from the meteor piece, it's a daily link aggregator
 - [Body Margin 8px | Miriam Eric Suzanne](https://www.miriamsuzanne.com/2022/07/04/body-margin-8px/)
     - a few too many words on the history of browser resets, specifically the 8px body margin
 - [auth-helpers/packages/nextjs at main · supabase-community/auth-helpers](https://github.com/supabase-community/auth-helpers/tree/main/packages/nextjs?utm_medium=email&_hsmi=218642387&utm_content=218642387&utm_source=hs_email#migrating-from-supabasesupabase-auth-helpers-to-supabaseauth-helpers)
-    - supabase might have finally fixed their auth? I need to update this in [[🪄 Presto]]
+    - supabase might have finally fixed their auth? I need to update this in [redacted]
 - [The new wave of React state management](https://frontendmastery.com/posts/the-new-wave-of-react-state-management/)
     - everything is new, again. this time it's state management, because flow was fucked and redux is too repetitive, so we need more of these.
     - [pmndrs/zustand: 🐻 Bear necessities for state management in React](https://github.com/pmndrs/zustand) looks cool though
@@ -22,7 +22,7 @@ another link dump, some of these have been open for months and need to be closed
 - [Google AI Blog: Minerva: Solving Quantitative Reasoning Problems with Language Models](https://ai.googleblog.com/2022/06/minerva-solving-quantitative-reasoning.html)
     - more AI research for the pile.
 - [Things You Should Know About Databases](https://architecturenotes.co/things-you-should-know-about-databases/)
-    - I can't produce this knowledge a priori, but this tread over territory I was already familiar with from reading Martin Klepperman's Warthog book. (Everyone should read the Warthog book.)
+    - I can't produce this knowledge a priori, but this tread over territory I was already familiar with from reading Martin Kleppmann's Warthog book. (Everyone should read the Warthog book.)
 - [multiprocessio/datastation: App to easily query, script, and visualize data from every database, file, and API.](https://github.com/multiprocessio/datastation)
     - another notebook alternative. under-designed imo.
 - [Tailscale · Best VPN Service for Secure Networks](https://tailscale.com/)
