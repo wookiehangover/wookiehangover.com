@@ -8,27 +8,24 @@ const Index = () => {
   return (
     <Layout>
       <Header />
+      <div className={`measure`}>
+
       <p>
         Hello 👋
       </p>
 
       <p>
-        I'm <a className={styles.anchor}href="https://twitter.com/sambreed">@sambreed</a>. If you're here for my <Link href="/cv.html"><a>résumé</a></Link>, have at it.
+        I'm <a className={styles.anchor}href="https://twitter.com/sambreed">@sambreed</a>. If you're here for my <Link href="/cv.html"><a className={styles.anchor}>résumé</a></Link>, have at it.
       </p>
 
       <p>
         I help make websites faster, products better, and teams smarter.
       </p>
 
-      <p>When I'm not doing that, I'm usually trail running somewhere around Mt Tam. I also collect records, enjoy riding motorcycles, and building thing in my woodshop. And, more specifically, I am trapped inside this website. Welcome to my typo-laden and occasionally-coherent website.</p>
-
-      <p>Here's <Link href="/writing/books.html"><a className={styles.anchor}>what I've been reading</a></Link> lately. That's a good place to start.</p>
-
-      <p>
-        And here's what I&apos;ve been thinking deep thoughts about recently. But don't take my word for it.
-      </p>
+      <p>When I'm not doing that, I'm usually trail running somewhere around Mt Tam. I also collect records, enjoy riding motorcycles, and building thing in my woodshop.</p>
 
       <section>
+        <h2>Writing</h2>
         <ul style={{ listStyleType: 'circle' }}>
           <li><Link href="/writing/twitter.html"><a className={styles.anchor}>So I'm thinking about getting off Twitter</a></Link></li>
           <li><Link href="/writing/links-part-one.html"><a className={styles.anchor}>Links, continued</a></Link></li>
@@ -54,7 +51,7 @@ const Index = () => {
       </section>
 
       <section>
-        <p>But there's even more. So much more.</p>
+        <h2>Ephemera</h2>
         <ul style={{ listStyleType: 'decimal-leading-zero' }}>
           <li className={``}>
             <Link href="/cv.html"><a className={styles.anchor}>Peruse my C.V.</a></Link>
@@ -84,6 +81,7 @@ const Index = () => {
         </ul>
         <p>Or if none of that is enough (word, really?) or you have some other unanswered questions, <a className={styles.anchor} href="mailto:sam@destroy.email">send me an email</a> or use one of the links below.</p>
       </section>
+      </div>
     </Layout>
   )
 };

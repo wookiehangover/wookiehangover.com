@@ -9,7 +9,7 @@ const Post = props => <Layout title={props.title} description={props.description
   <Header />
 
   <section className={cx(`posts`)}>
-    <article className={cx(`mv4`)} id={props.slug}>
+    <article className={cx(`mv4 measure`)} id={props.slug}>
 
       {props.children}
 
