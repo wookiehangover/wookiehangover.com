@@ -30,6 +30,7 @@ const Index = () => {
 
       <section>
         <ul style={{ listStyleType: 'circle' }}>
+          <li><Link href="/writing/twitter.html"><a className={styles.anchor}>So I'm thinking about getting off Twitter</a></Link></li>
           <li><Link href="/writing/links-part-one.html"><a className={styles.anchor}>Links, continued</a></Link></li>
           <li><Link href="/writing/16-open-tabs.html"><a className={styles.anchor}>I have 16 open tabs right now</a></Link></li>
           <li><Link href="/writing/books.html"><a className={styles.anchor}>Bookshelf</a></Link></li>
