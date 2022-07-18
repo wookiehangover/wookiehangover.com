@@ -1,10 +1,10 @@
 ---
 title: Twitter
 slug: twitter
-description: So I'm thinking of leaving Twitter
+description: Leaving Twitter
 ---
 
-- So I'm thinking about getting off twitter.
+So I'm thinking about getting off twitter.
 
 The more I use it, the less I get out of it. 
 
