@@ -45,6 +45,7 @@ module.exports = {
       "/writing/2007.html": { page: "/writing/2007.html" },
       "/writing/books.html": { page: "/writing/books.html" },
       "/writing/links-part-one.html": { page: "/writing/links-part-one.html" },
+      "/writing/links-august-2022.html": { page: "/writing/links-august-2022.html" },
       "/writing/twitter.html": { page: "/writing/twitter.html" },
     }
   },

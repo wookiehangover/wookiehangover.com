@@ -27,6 +27,7 @@ const Index = () => {
       <section>
         <h2>Writing</h2>
         <ul style={{ listStyleType: 'circle' }}>
+          <li><Link href="/writing/links-august-2022.html"><a className={styles.anchor}>Links, August 2022</a></Link></li>
           <li><Link href="/writing/twitter.html"><a className={styles.anchor}>So I'm thinking about getting off Twitter</a></Link></li>
           <li><Link href="/writing/links-part-one.html"><a className={styles.anchor}>Links, continued</a></Link></li>
           <li><Link href="/writing/16-open-tabs.html"><a className={styles.anchor}>I have 16 open tabs right now</a></Link></li>
