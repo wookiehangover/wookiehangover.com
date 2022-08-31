@@ -6,10 +6,10 @@ const styles = {
   link: 'link bb hover-blue'
 }
 
-export default function Layout(props) {
+export default function Layout({ title, description, ...props}) {
   return (
   <div className={`sans-serif ma2 ma6-ns mw7 black-70`} {...props}>
-    <Head {...props} />
+    <Head title={title} description={description} />
 
     <main className={`lh-copy pb2`}>
       {props.children}
