@@ -21,7 +21,7 @@ export default function Layout({ title, description, ...props}) {
       </p>
       <nav className={`flex justify-around`}>
         <div>
-          <a className={styles.anchor} href="https://twitter.com/sambreed" title="Follow me on Twitter">guestbook</a>
+          <a className={styles.anchor} rel="me" href="https://mastodon.social/@sambreed">guestbook</a>
         </div>
         <div>
           <a className={styles.anchor} href="https://github.com/wookiehangover/wookiehangover.com/issues/new" title="Complaints">complaints</a>
